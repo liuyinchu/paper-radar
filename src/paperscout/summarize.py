@@ -132,7 +132,7 @@ def ensure_abstracts(papers: List[PaperMeta], ignore_version: bool, max_batch: i
 @dataclass
 class LLMConfig:
     api_key: str
-    base_url: str = "https://api.deepseek.com"
+    base_url: str
     model: str = "deepseek-chat"
     timeout: float = 60.0
     max_retries: int = 5
