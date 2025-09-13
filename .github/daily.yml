@@ -1,0 +1,177 @@
+name: Daily arXiv Digest
+
+on:
+  schedule:
+    - cron: '30 18 * * *'  # 每天 UTC 18:30（北京时间次日 02:30 左右）
+  workflow_dispatch: {}     # 允许手动触发
+
+permissions:
+  contents: write   # 需要推送代码
+
+jobs:
+  build-run:
+    runs-on: ubuntu-latest
+
+    env:
+      # 输出文件名使用UTC日期（与题意一致），格式沿用第二步/第三步实现：DD_MM_YY_Daily_Arxiv.json
+      DATE_UTC: ${{ steps.dates.outputs.date_utc_ddmmyy }}
+      OUT_FILE: out/${{ steps.dates.outputs.date_utc_ddmmyy }}_Daily_Arxiv.json
+      THEME_FILE: src/paperscout/themes.yaml
+      RESULTS_JSON: results.json
+      IDS_TXT: ids.txt
+      TOTAL_IDS: data/total_ids.txt
+      NEW_IDS: data/new_ids.txt
+      NEW_RESULTS: data/new_results.json
+      PROMPT_FILE: prompts/deepseek_system.txt
+
+    steps:
+      - name: Check out repository (full history for push/rebase)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Compute dates (UTC)
+        id: dates
+        run: |
+          echo "date_utc_ddmmyy=$(date -u +'%d_%m_%y')" >> "$GITHUB_OUTPUT"
+          echo "date_utc_iso=$(date -u +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Ensure directories
+        run: |
+          mkdir -p data out
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+          uv --version
+
+      - name: Install dependencies (uv sync)
+        run: |
+          uv sync
+
+      - name: Activate venv (for clarity; uv run 亦可不激活)
+        run: |
+          source .venv/bin/activate
+          python -V
+          pip -V
+
+      # ----------------- Step 1: 获取候选并输出 ids.txt / results.json -----------------
+      - name: Step 1 - Fetch latest papers (start from today, keep 100)
+        run: |
+          # 从“当日开始”的最新文献，滚动窗口策略会优先当天，不够再补近36/72h，确保稳定拿到100或尽量接近
+          uv run paperscout \
+            --themes "$THEME_FILE" \
+            --out-json "$RESULTS_JSON" \
+            --out-ids "$IDS_TXT" \
+            --n 100 --pool 180 --force
+
+          test -s "$RESULTS_JSON" && echo "results.json OK" || (echo "results.json missing!"; exit 1)
+          test -s "$IDS_TXT" && echo "ids.txt OK" || (echo "ids.txt missing!"; exit 1)
+
+      # ----------------- Step 2: 去重，得到纯新ID（不立即更新总表） -----------------
+      - name: Step 2 - Dedupe against historical total
+        run: |
+          # total_ids.txt 初次可能不存在；工具会把不存在当作空处理
+          uv run paperscout-dedupe \
+            --current-ids "$IDS_TXT" \
+            --total-ids "$TOTAL_IDS" \
+            --out-new-ids "$NEW_IDS" \
+            --filter-json "$NEW_RESULTS"
+
+          NEW_COUNT=$(grep -vE '^\s*$|^\s*#' "$NEW_IDS" | wc -l || true)
+          echo "NEW_COUNT=$NEW_COUNT" >> $GITHUB_ENV
+          echo "Pure-new IDs: $NEW_COUNT"
+
+      # ----------------- Step 3: 调用 AI，总结纯新论文，写出当日文件 -----------------
+      - name: Prepare secrets & daily output name
+        run: |
+          # 强制生成当日文件（若已存在，先删后写）
+          if [ -f "$OUT_FILE" ]; then
+            rm -f "$OUT_FILE"
+            echo "Removed existing $OUT_FILE"
+          fi
+        env:
+          # Secrets 注入（在仓库 Settings → Secrets and variables → Actions 中配置）
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+
+      - name: Step 3 - Summarize pure-new papers with LLM
+        run: |
+          # 将 GitHub Secrets 映射到脚本期望的环境变量名
+          export DEEPSEEK_API_KEY="${OPENAI_API_KEY:-}"
+          export OPENAI_BASE_URL="${OPENAI_BASE_URL:-}"
+
+          # 如果纯新列表为空，也生成一个空列表[]的当日文件，便于一致化处理
+          if [ ! -s "$NEW_IDS" ]; then
+            echo "[]">"$OUT_FILE"
+            echo "No new IDs today; wrote empty $OUT_FILE"
+          else
+            uv run paperscout-summarize \
+              --new-ids "$NEW_IDS" \
+              --results "$NEW_RESULTS" \
+              --prompt-file "$PROMPT_FILE" \
+              --out "$OUT_FILE"
+          fi
+
+          # 错误检查：文件必须存在、且非空（至少包含 [] 两个字符）
+          test -s "$OUT_FILE" && echo "$OUT_FILE generated." || (echo "Daily output missing!"; exit 1)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+
+      # ----------------- 写Summary（运行概况） -----------------
+      - name: Job summary
+        run: |
+          COUNT_OUT=$(jq 'length' "$OUT_FILE" 2>/dev/null || echo 0)
+          {
+            echo "## Daily arXiv Digest (${{ steps.dates.outputs.date_utc_iso }})"
+            echo ""
+            echo "- New IDs (deduped): ${NEW_COUNT:-0}"
+            echo "- Summarized items written to: \`$OUT_FILE\`"
+            echo "- JSON count: $COUNT_OUT"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # ----------------- 提交与推送（先提交日报，成功后更新总表，再推送） -----------------
+      - name: Commit and push changes (robust with retries)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 仅加入两个变化：当日 out/<file>.json + 更新后的 total_ids.txt
+          # total_ids.txt 先更新（以确保与当日产物一致）
+          uv run paperscout-dedupe \
+            --current-ids "$IDS_TXT" \
+            --total-ids "$TOTAL_IDS" \
+            --out-new-ids "$NEW_IDS" \
+            --update-total
+
+          git add "$OUT_FILE" "$TOTAL_IDS"
+
+          # 若没有变化就直接结束
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+
+          NEW_COUNT=${NEW_COUNT:-0}
+          COUNT_OUT=$(jq 'length' "$OUT_FILE" 2>/dev/null || echo 0)
+
+          git commit -m "chore(daily): ${DATE_UTC} arXiv digest (items=${COUNT_OUT}, new=${NEW_COUNT})"
+
+          n=0
+          until [ $n -ge 3 ]
+          do
+            if git push origin HEAD:main; then
+              echo "Push succeeded."
+              exit 0
+            else
+              echo "Push failed. Attempt $((n+1)) of 3; trying to rebase..."
+              git pull --rebase origin main || true
+              n=$((n+1))
+            fi
+          done
+
+          echo "Push still failing after 3 attempts. Failing the job."
+          exit 1

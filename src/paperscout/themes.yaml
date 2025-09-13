@@ -1,0 +1,35 @@
+themes:
+  - name: "Data Driven Modeling"
+    priority: 5
+    keywords: ["data-driven", "system identification", "SINDy", "sparse identification", "symbolic regression", "Koopman", "nonparametric identification", "learning dynamics"]
+    arxiv_categories: ["cs.LG", "eess.SY", "math.OC", "nlin.CD"]
+
+  - name: "Data Driven Control"
+    priority: 5
+    keywords: ["data-driven control", "learning-based control", "reinforcement learning control", "MPC", "model predictive control", "adaptive control", "Koopman control", "safe control", "offline RL", "LQR"]
+    arxiv_categories: ["cs.SY", "eess.SY", "cs.LG", "cs.AI"]
+
+  - name: "Dynamical Systems"
+    priority: 4
+    keywords: ["dynamical systems", "nonlinear dynamics", "bifurcation", "chaos", "stability", "Lyapunov", "phase portrait"]
+    arxiv_categories: ["math.DS", "nlin.CD", "eess.SY"]
+
+  - name: "Machine Learning"
+    priority: 4
+    keywords: ["machine learning", "deep learning", "representation learning", "foundation model", "self-supervised", "transformer", "diffusion"]
+    arxiv_categories: ["cs.LG", "stat.ML"]
+
+  - name: "Systems and Control"
+    priority: 3
+    keywords: ["control", "systems", "feedback", "observer", "robust control", "optimal control", "estimation", "identification"]
+    arxiv_categories: ["cs.SY", "eess.SY", "math.OC"]
+
+  - name: "Artificial Intelligence"
+    priority: 2
+    keywords: ["artificial intelligence", "reasoning", "planning", "AGI", "LLM"]
+    arxiv_categories: ["cs.AI"]
+
+  - name: "Robotics"
+    priority: 2
+    keywords: ["robotics", "manipulation", "mobile robot", "SLAM", "motion planning", "grasping"]
+    arxiv_categories: ["cs.RO"]

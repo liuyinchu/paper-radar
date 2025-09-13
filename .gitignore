@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# else
+.paperscout_cache/
+results.json
+ids.txt
+data/new_ids.txt
+data/new_results.json

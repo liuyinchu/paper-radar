@@ -1,0 +1,37 @@
+[project]
+name = "paperscout"
+version = "0.2.0"
+description = "Daily arXiv fetcher with priority-aware scoring (ToU compliant)"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "arxiv>=2.2.0",            # 官方推荐的 Python 封装，支持分页/速率限制
+  "pydantic>=2.7.0",
+  "PyYAML>=6.0.1",
+  "python-dateutil>=2.9.0.post0",
+  "rapidfuzz>=3.9.3",
+  "scikit-learn>=1.4.2",
+  "charset-normalizer>=3.3.2",
+  "pytest>=8.2",
+  "pytest-cov>=5.0", # 可选
+  "openai>=1.52.0",
+]
+
+[project.scripts]
+paperscout = "paperscout.runner:main"
+paperscout-dedupe = "paperscout.dedupe:main"
+paperscout-summarize = "paperscout.summarize:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
