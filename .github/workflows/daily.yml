@@ -29,14 +29,25 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
+      # 改动1：在原“UTC”基础上，增加 UTC+8（用于文件命名），并在本步内组装 OUT_FILE 后导出
       - name: Compute dates (UTC) and export env
         run: |
+          # 保留原有 UTC 变量
           DATE_UTC_DDMMYY="$(date -u +'%d_%m_%y')"
           DATE_UTC_ISO="$(date -u +'%Y-%m-%d')"
           echo "DATE_UTC_DDMMYY=$DATE_UTC_DDMMYY" >> "$GITHUB_ENV"
           echo "DATE_UTC_ISO=$DATE_UTC_ISO" >> "$GITHUB_ENV"
-          echo "OUT_FILE=out/${DATE_UTC_DDMMYY}_Daily_Arxiv.json" >> "$GITHUB_ENV"
-          echo "Computed OUT_FILE=$OUT_FILE"
+
+          # 仅用于文件命名的 UTC+8（北京时间）
+          DATE_LOCAL_DDMMYY="$(date -u -d '+8 hours' +'%d_%m_%y')"
+          DATE_LOCAL_ISO="$(date -u -d '+8 hours' +'%Y-%m-%d')"
+          OUT_FILE_LOCAL="out/${DATE_LOCAL_DDMMYY}_Daily_Arxiv.json"
+
+          echo "DATE_LOCAL_DDMMYY=$DATE_LOCAL_DDMMYY" >> "$GITHUB_ENV"
+          echo "DATE_LOCAL_ISO=$DATE_LOCAL_ISO" >> "$GITHUB_ENV"
+          echo "OUT_FILE=$OUT_FILE_LOCAL" >> "$GITHUB_ENV"
+
+          echo "Computed OUT_FILE=$OUT_FILE_LOCAL"
 
       - name: Ensure directories
         run: |
@@ -151,7 +162,8 @@ jobs:
           fi
 
           COUNT_OUT=$(jq 'length' "$OUT_FILE" 2>/dev/null || echo 0)
-          git commit -m "chore(daily): ${DATE_UTC_DDMMYY} arXiv digest (items=${COUNT_OUT}, new=${NEW_COUNT:-0})"
+          # 改动2：commit 使用 UTC+8 的日期，和文件名一致
+          git commit -m "chore(daily): ${DATE_LOCAL_DDMMYY} arXiv digest (items=${COUNT_OUT}, new=${NEW_COUNT:-0})"
 
           n=0
           until [ $n -ge 3 ]
