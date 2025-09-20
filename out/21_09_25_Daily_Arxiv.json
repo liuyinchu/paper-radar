@@ -1,0 +1,50 @@
+[
+  {
+    "arXiv id": "2509.14659v1",
+    "date": "2025-09-18",
+    "title": "Aligning Audio Captions with Human Preferences",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2509.14659v1",
+    "author list": [
+      "Kartik Hegde",
+      "Rehana Mahfuz",
+      "Yinyi Guo",
+      "Erik Visser"
+    ],
+    "problem": "音频字幕生成系统依赖昂贵的配对音频-字幕数据集进行监督学习，这些数据可能无法反映真实场景中的人类偏好，导致生成的字幕不够准确和自然。",
+    "method": "提出基于人类反馈强化学习（RLHF）的偏好对齐框架，使用基于CLAP的奖励模型捕获人类偏好，并通过强化学习微调基线字幕生成系统，无需真实标注。",
+    "result": "人类评估显示该方法生成的字幕在多个数据集上优于基线模型，尤其在基线失败时表现更佳，且性能接近使用真实标注的监督方法，证明了其有效性和可扩展性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2509.14657v1",
+    "date": "2025-09-18",
+    "title": "Threat Modeling for Enhancing Security of IoT Audio Classification Devices under a Secure Protocols Framework",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2509.14657v1",
+    "author list": [
+      "Sergio Benlloch-Lopez",
+      "Miquel Viel-Vazquez",
+      "Javier Naranjo-Alcazar",
+      "Jordi Grau-Haro",
+      "Pedro Zuccarello"
+    ],
+    "problem": "解决物联网音频分类设备在资源受限环境下运行时敏感音频数据易受安全威胁的问题，需在边缘设备、蜂窝网络和云后端三个独立信任域中实现深度防御。",
+    "method": "提出基于STRIDE威胁模型和攻击树分析的深度防御架构，采用TPM远程认证和双向TLS 1.3认证链路，结合LUKS加密分区、后量子混合加密（Kyber与Dilithium）及端到端特征加密，并部署防回滚AI模型和篡改响应传感器。",
+    "result": "通过TPM启动验证确保恶意设备失效，传输数据受后量子TLS保护，静态数据采用3-2-1加密策略（LUKS硬盘、离线冷存储加密副本和云加密副本），并制定了物理与逻辑安全评估计划。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2509.14663v1",
+    "date": "2025-09-18",
+    "title": "Unified Framework for Geodesic Dynamics with Conservative, Dissipative, and GUP Effects",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2509.14663v1",
+    "author list": [
+      "Gaurav Bhandari",
+      "S. D. Pathak",
+      "Harjit Ghotra"
+    ],
+    "problem": "研究如何在弯曲时空中统一描述包含保守力、耗散效应和量子引力修正的广义测地线动力学，以探索外力、时空曲率与普朗克尺度物理之间的相互作用。",
+    "method": "通过外部矢量势引入保守力，通过对粒子拉格朗日量的指数重标度引入耗散动力学，并利用广义不确定性原理（GUP）变形的泊松括号在哈密顿框架中引入量子引力修正。",
+    "result": "理论分析表明自由粒子测地线在领头阶不受影响，但外部势会诱导速度依赖的修正（可能违反等效原理）；应用展示了在尘埃、辐射、刚性能量和暗能量主导的FLRW宇宙中的修正轨迹。",
+    "theme": "Data Driven Modeling"
+  }
+]
