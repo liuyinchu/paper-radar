@@ -1,0 +1,167 @@
+[
+  {
+    "arXiv id": "2510.21693v1",
+    "date": "2025-10-24",
+    "title": "Mechanistic Interpretability for Neural TSP Solvers",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21693v1",
+    "author list": [
+      "Reuben Narad",
+      "Leonard Boussioux",
+      "Michael Wagner"
+    ],
+    "problem": "神经网络组合优化求解器（如Transformer TSP求解器）作为黑箱模型，缺乏对其学习到的几何模式与启发式策略的可解释性。",
+    "method": "对基于强化学习的指针网络编码器残差流应用稀疏自编码器（SAE），提取过完备的字典特征，以识别模型内部表征的几何概念。",
+    "result": "发现模型自发学习到边界节点检测、簇敏感特征和几何分割特征，与经典TSP概念（凸包、密集区域）对应，首次揭示了神经求解器在节点选择前的内部计算机制。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.21706v1",
+    "date": "2025-10-24",
+    "title": "Equivariance by Contrast: Identifiable Equivariant Embeddings from Unlabeled Finite Group Actions",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21706v1",
+    "author list": [
+      "Tobias Schmidt",
+      "Steffen Schneider",
+      "Matthias Bethge"
+    ],
+    "problem": "从无标签的有限群作用观测对中学习等变嵌入，无需依赖特定群结构的归纳偏置，旨在实现通用编码器仅从群作用观测中学习群表示。",
+    "method": "提出Equivariance by Contrast (EbC)方法，联合学习潜在空间和群表示，使群作用对应可逆线性映射；通过对比观测对$(\\mathbf{y}, g \\cdot \\mathbf{y})$进行训练。",
+    "result": "在无限dSprites数据集上验证，对有限群$G:= (R_m \\times \\mathbb{Z}_n \\times \\mathbb{Z}_n)$实现高保真等变性；在合成数据上成功处理非阿贝尔正交群$O(n)$和一般线性群$GL(n)$，并提供了可识别性理论证明。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.21686v1",
+    "date": "2025-10-24",
+    "title": "Multimodal Datasets with Controllable Mutual Information",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21686v1",
+    "author list": [
+      "Raheem Karim Hashmani",
+      "Garrett W. Merz",
+      "Helen Qu",
+      "Mariel Pettee",
+      "Kyle Cranmer"
+    ],
+    "problem": "针对多模态自监督学习和互信息估计方法缺乏具有已知互信息真值的基准数据集的问题，构建可控互信息的多模态数据集以支持系统化评估。",
+    "method": "提出基于流生成模型和结构化因果框架的生成方法，通过生成具有相关性的潜变量来构造具有显式可计算互信息的真实多模态数据集。",
+    "result": "所生成数据集提供精确的互信息真值，为互信息估计器和多模态自监督学习技术提供了可量化评估的基准测试平台。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.21691v1",
+    "date": "2025-10-24",
+    "title": "On Uncertainty Calibration for Equivariant Functions",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21691v1",
+    "author list": [
+      "Edward Berman",
+      "Jacob Ginesin",
+      "Marco Pacini",
+      "Robin Walters"
+    ],
+    "problem": "研究等变函数在数据稀疏场景（如机器人操作、分子物理）中的不确定性校准问题，分析对称性失配如何导致模型置信度估计失准。",
+    "method": "通过建立等变性与校准误差的理论关联，推导分类（ECE）和回归（ENCE）校准误差在等变条件下的上下界，揭示对称性约束对不确定性估计的影响机制。",
+    "result": "理论证明等变模型在对称性匹配时具有更优的校准误差界，数值实验验证了对称性失配、群规模及认知/偶然不确定性对校准性能的具体影响规律。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.21697v1",
+    "date": "2025-10-24",
+    "title": "Visual Diffusion Models are Geometric Solvers",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21697v1",
+    "author list": [
+      "Nir Goren",
+      "Shai Yehezkel",
+      "Omer Dahary",
+      "Andrey Voynov",
+      "Or Patashnik",
+      "Daniel Cohen-Or"
+    ],
+    "problem": "解决几何学中几个长期存在的难题：内接正方形问题（判断任意Jordan曲线是否包含四点构成正方形）、Steiner树问题和简单多边形问题，这些问题的传统解法通常需要复杂的数学推导。",
+    "method": "将几何问题实例视为图像，使用标准视觉扩散模型从高斯噪声生成近似解图像；通过将几何推理转化为图像生成任务，模型学习将噪声几何结构转换为正确配置。",
+    "result": "在三个经典几何问题上验证了方法有效性，生成的视觉解与精确解高度匹配；该方法无需专门架构或领域适配，为处理更广泛挑战性几何问题提供了通用框架。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.21698v1",
+    "date": "2025-10-24",
+    "title": "Advanced Cutting-Plane Algorithms for ACOPF",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21698v1",
+    "author list": [
+      "Daniel Bienstock",
+      "Matias Villagra"
+    ],
+    "problem": "针对交流最优潮流（ACOPF）问题的大规模多时段松弛求解，传统非线性凸求解器难以处理其计算复杂度与规模。",
+    "method": "基于线性割平面的半定规划松弛方法，支持热启动，利用线性结构实现高效求解。",
+    "result": "在PGLIB基准测试中相比现有方法得到更紧且精确的边界，初步实验显示其可扩展至大规模问题。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.21695v1",
+    "date": "2025-10-24",
+    "title": "A Knowledge-Graph Translation Layer for Mission-Aware Multi-Agent Path Planning in Spatiotemporal Dynamics",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21695v1",
+    "author list": [
+      "Edward Holmberg",
+      "Elias Ioup",
+      "Mahdi Abdelguerfi"
+    ],
+    "problem": "自主智能体在动态环境中的协调面临高层任务目标与底层路径规划输入之间的语义鸿沟，导致难以快速适应复杂任务变化。",
+    "method": "提出以知识图谱为核心的双层架构翻译框架：将声明式事实编译为面向个体的任务感知世界观与物理感知遍历规则，实现任务语义与领域无关规划器的解耦。",
+    "result": "墨西哥湾自主水下航行器案例表明，仅通过修改知识图谱中的声明式策略即可生成差异化高性能路径，验证了框架在产生自适应可解释解决方案方面的有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.21689v1",
+    "date": "2025-10-24",
+    "title": "On Thin Ice: Towards Explainable Conservation Monitoring via Attribution and Perturbations",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21689v1",
+    "author list": [
+      "Jiayi Zhou",
+      "Günel Aghakishiyeva",
+      "Saagar Arya",
+      "Julian Dale",
+      "James David Poling",
+      "Holly R. Houliston",
+      "Jamie N. Womble",
+      "Gregory D. Larsen",
+      "David W. Johnston",
+      "Brinnae Bent"
+    ],
+    "problem": "生态保护监测中基于计算机视觉的目标检测模型缺乏可解释性，导致实际部署时难以信任黑盒神经网络预测结果。",
+    "method": "采用Faster R-CNN检测海豹，结合梯度类激活映射（HiResCAM、LayerCAM）、局部可解释模型（LIME）和基于扰动的解释方法进行后验归因分析。",
+    "result": "归因区域集中于海豹躯干而非背景，移除目标使检测置信度下降；发现模型易混淆海豹与黑冰/岩石，为数据增强和错误修正提供依据。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.21679v1",
+    "date": "2025-10-24",
+    "title": "A Multimodal Benchmark for Framing of Oil & Gas Advertising and Potential Greenwashing Detection",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21679v1",
+    "author list": [
+      "Gaku Morio",
+      "Harri Rowlands",
+      "Dominik Stammbach",
+      "Christopher D. Manning",
+      "Peter Henderson"
+    ],
+    "problem": "针对石油与天然气公司广告中可能存在的‘漂绿’现象，研究如何大规模理解其多模态（视频）广告的框架类型与变化，以揭示公关宣传的目标与本质。",
+    "method": "构建一个专家标注的多模态基准数据集，包含从Facebook和YouTube收集的视频广告，标注了13种框架类型；设计用于评估视觉-语言模型在识别隐含框架、处理不同视频长度与文化背景等方面的能力。",
+    "result": "基线实验显示GPT-4.1在检测环境信息时F1分数达79%，而最佳模型在识别绿色创新框架上仅获46% F1分数，表明现有视觉-语言模型在处理隐含框架和多模态挑战方面仍有较大改进空间。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.21669v1",
+    "date": "2025-10-24",
+    "title": "Optimal Graph Clustering without Edge Density Signals",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.21669v1",
+    "author list": [
+      "Maximilien Dreveton",
+      "Elaine Siyu Liu",
+      "Matthias Grossglauser",
+      "Patrick Thiran"
+    ],
+    "problem": "针对图聚类问题，现有模型如随机块模型（SBM）和度修正块模型（DCBM）存在局限：SBM假设顶点度均匀，DCBM对簇间应用统一度修正，均未充分刻画连接模式的局部差异。",
+    "method": "提出流行度调整块模型（PABM），为簇内和簇间连接分别引入独立的流行度参数；理论分析表明其期望邻接矩阵秩介于k与k²之间，因此采用包含k²个特征向量的谱嵌入以捕捉更丰富的结构信息。",
+    "result": "理论证明在传统边密度信号消失时，只要簇内与簇间流行度系数存在差异，聚类仍可实现；在合成与真实数据集上的实验显示，结合k²个特征向量的谱聚类算法优于传统谱方法。",
+    "theme": "Data Driven Control"
+  }
+]
