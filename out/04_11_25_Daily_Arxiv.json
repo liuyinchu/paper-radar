@@ -1,0 +1,1661 @@
+[
+  {
+    "arXiv id": "2510.27445v1",
+    "date": "2025-10-31",
+    "title": "Linear control systems on a 4D solvable Lie group used to model primary visual cortex $V1$",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27445v1",
+    "author list": [
+      "Adriano Da Silva",
+      "Eyüp Kizil",
+      "Victor Ayala"
+    ],
+    "problem": "研究4维可解李群上的线性控制系统，该群用于建模初级视觉皮层V1的几何结构，其中状态空间由视网膜平面、方向、空间频率和相位构成。",
+    "method": "采用基于李群G(ω)=ℝ²×S¹×S¹的线性控制系统框架，分析其可控性并刻画控制集。",
+    "result": "获得了该控制系统关于可控性的新结果，并完整表征了系统的控制集。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27336v1",
+    "date": "2025-10-31",
+    "title": "Numerical solution of elliptic distributed optimal control problems with boundary value tracking",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27336v1",
+    "author list": [
+      "Ulrich Langer",
+      "Richard Löscher",
+      "Olaf Steinbach",
+      "Huidong Yang"
+    ],
+    "problem": "求解一类椭圆分布最优控制问题，其目标是通过控制源项实现边界值的跟踪，约束条件为带Neumann边界条件的椭圆偏微分方程。",
+    "method": "将最优控制问题重构为基于状态的变分问题，采用张量积有限元方法进行离散化，并推导相应的快速求解器。",
+    "result": "数值实验定量验证了理论分析得到的离散化误差估计，表明该方法在边界跟踪控制问题中具有预期的收敛性能。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27640v1",
+    "date": "2025-10-31",
+    "title": "Enhancing software product lines with machine learning components",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27640v1",
+    "author list": [
+      "Luz-Viviana Cobaleda",
+      "Julián Carvajal",
+      "Paola Vallejo",
+      "Andrés López",
+      "Raúl Mazo"
+    ],
+    "problem": "软件产品线（SPL）集成机器学习组件时，缺乏对可变性和复用性的系统化建模与管理支持，现有方法多孤立处理SPL可变性或ML集成，未有效结合两者。",
+    "method": "提出结构化框架扩展软件产品线工程，通过VariaMos工具实现ML组件的可变性建模与复用机制，支持含ML能力的SPL设计。",
+    "result": "框架已在VariaMos工具中部分实现，验证了其支持ML组件集成与SPL可变性管理的可行性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27414v1",
+    "date": "2025-10-31",
+    "title": "A Switching Strategy for Event-Trigger Control of Spacecraft Rendezvous",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27414v1",
+    "author list": [
+      "Tommaso Del Carro",
+      "Gerson Portilla",
+      "Alexandre Seuret",
+      "Rafael Vazquez"
+    ],
+    "problem": "针对航天器交会控制任务，设计一种在保证闭环稳定性的同时最小化推进器触发次数的控制策略，以降低燃料消耗和系统磨损。",
+    "method": "基于Hill-Clohessy-Wiltshire方程构建状态反馈控制律，采用脉冲控制策略和状态依赖的切换框架确定控制输入大小与触发条件，结合Lyapunov稳定性和线性矩阵不等式理论设计非线性控制器。",
+    "result": "理论证明闭环系统稳定且最小化执行事件总数，数值案例研究表明相比标准模型预测控制方案在控制效率方面具有优势，展示了所提控制结构的性能折衷。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27525v1",
+    "date": "2025-10-31",
+    "title": "Active transfer learning for structural health monitoring",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27525v1",
+    "author list": [
+      "J. Poole",
+      "N. Dervilis",
+      "K. Worden",
+      "P. Gardner",
+      "V. Giglioni",
+      "R. S. Mills",
+      "A. J. Hughes"
+    ],
+    "problem": "结构健康监测（SHM）中训练数据获取成本高且困难，尤其是有标签数据；基于群体的SHM（PBSHM）中不同结构的数据分布差异导致传统机器学习方法泛化误差大，且现有无监督域适应方法未考虑在线更新与标签获取的集成。",
+    "method": "提出贝叶斯域适应框架，利用少量有标签目标数据改进无监督域适应映射；结合主动采样策略，选择信息量最大的观测进行标注以降低标注数据需求。",
+    "result": "在实验桥梁群体数据上验证，结合迁移学习与主动学习在标签稀缺场景下提升分类模型学习的数据效率，表明可减少结构运维期间的检测次数与成本。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27428v1",
+    "date": "2025-10-31",
+    "title": "Learning Soft Robotic Dynamics with Active Exploration",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27428v1",
+    "author list": [
+      "Hehui Zheng",
+      "Bhavya Sukhija",
+      "Chenhao Li",
+      "Klemens Iten",
+      "Andreas Krause",
+      "Robert K. Katzschmann"
+    ],
+    "problem": "软体机器人具有高维非线性动力学特性，现有数据驱动方法因任务演示局限或随机探索低效而难以建立通用动力学模型。",
+    "method": "提出SoftAE框架，采用概率集成模型估计认知不确定性，通过主动探索状态-动作空间的未充分表征区域，实现无任务监督的高效动力学学习。",
+    "result": "在连续体机械臂、流体中游动鱼体和肌肉骨骼腿等仿真平台及真实气动连续体臂上验证，相比随机探索和任务特定方法，所建模型精度更高、零样本控制性能更优，且对传感噪声和驱动延迟具有鲁棒性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27187v1",
+    "date": "2025-10-31",
+    "title": "Solving Infinite-Horizon Optimal Control Problems using the Extreme Theory of Functional Connections",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27187v1",
+    "author list": [
+      "Tanay Raghunandan Srinivasa",
+      "Suraj Kumar"
+    ],
+    "problem": "针对无限时域最优控制问题，求解Hamilton-Jacobi-Bellman偏微分方程以合成最优反馈控制策略，适用于具有可分离且严格凸控制成本的仿射动态系统。",
+    "method": "结合功能连接理论与极限学习机的X-TFC方法，通过解析满足边界条件的值函数逼近来求解HJB方程，相比传统物理信息神经网络显著降低训练成本。",
+    "result": "在已知解析解的线性和非线性系统上验证方法有效性，并应用于航天器最优消旋控制任务，证明其计算效率优势。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27222v1",
+    "date": "2025-10-31",
+    "title": "Soft Task-Aware Routing of Experts for Equivariant Representation Learning",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27222v1",
+    "author list": [
+      "Jaebyeong Jeon",
+      "Hyeonseo Jang",
+      "Jy-yong Sohn",
+      "Kibok Lee"
+    ],
+    "problem": "现有方法使用独立投影头联合学习等变与不变表示，忽略了二者间的共享信息，导致特征冗余与模型容量利用低效。",
+    "method": "提出软任务感知路由（STAR），将投影头建模为专家网络，通过路由机制使其分别专注于捕获共享信息或任务特定信息。",
+    "result": "实验显示等变与不变嵌入间的典型相关性降低，且在多种迁移学习任务中取得一致性能提升。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27334v1",
+    "date": "2025-10-31",
+    "title": "When AI Trading Agents Compete: Adverse Selection of Meta-Orders by Reinforcement Learning-Based Market Making",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27334v1",
+    "author list": [
+      "Ali Raza Jafree",
+      "Konark Jain",
+      "Nick Firoozye"
+    ],
+    "problem": "研究高频做市商如何对中频交易者进行逆向选择，关注中频交易者在执行大宗订单时因价格漂移而承受的滑点成本增加的问题。",
+    "method": "采用基于霍克斯极限订单簿模型的强化学习框架，使用PPO与自我模仿学习训练高频做市智能体，通过脉冲控制更新策略以应对订单流事件。",
+    "result": "强化学习做市智能体学会利用大宗订单引发的价格漂移获利，但实验表明其利润增加并未导致中频交易者的滑点成本显著上升。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27126v1",
+    "date": "2025-10-31",
+    "title": "AURA: A Reinforcement Learning Framework for AI-Driven Adaptive Conversational Surveys",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27126v1",
+    "author list": [
+      "Jinwen Tang",
+      "Yi Shang"
+    ],
+    "problem": "传统在线调查缺乏个性化导致参与度低和回答肤浅，现有AI调查聊天机器人仍依赖固定对话树或静态提示模板，无法在会话中动态适应用户，造成后续问题泛化且回答质量弱。",
+    "method": "提出基于强化学习的自适应对话调查框架AURA，使用LSDE四维指标量化回答质量，通过ε-greedy策略选择后续问题类型，在10-15轮对话中平衡探索与利用，实时适应个体参与者。",
+    "result": "在控制评估中，AURA实现响应质量均值提升0.12，较非自适应基线有统计显著改善(p=0.044)，具体表现为规范提示减少63%和验证行为增加10倍。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27303v1",
+    "date": "2025-10-31",
+    "title": "The memory-dependent FPK equation for fractional Gaussian noise",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27303v1",
+    "author list": [
+      "Lifang Feng",
+      "Bin Pei",
+      "Yong Xu"
+    ],
+    "problem": "研究非线性动力系统在分数阶高斯噪声（FGN）和高斯白噪声（GWN）共同作用下的非马尔可夫动力学问题。FGN的长记忆特性使得传统FPK方程失效，无法通过有限维马尔可夫增广系统建模。",
+    "method": "基于分数阶Wick-Itô-Skorohod积分理论推导分数阶Itô公式，构造记忆核函数刻画FGN的长记忆特性，结合分部积分建立记忆依赖FPK方程。采用Volterra可调解耦近似重构记忆核依赖项以求解方程。",
+    "result": "数值算例验证了所提方法的准确性和有效性。该memFPK方程适用于广泛形式的漂移项和扩散项，能够有效获取FGN和GWN激励下非线性系统的概率响应。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.27474v1",
+    "date": "2025-10-31",
+    "title": "Spectral Neural Graph Sparsification",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27474v1",
+    "author list": [
+      "Angelica Liguori",
+      "Ettore Ritacco",
+      "Pietro Sabatino",
+      "Annalisa Socievole"
+    ],
+    "problem": "针对图神经网络依赖固定结构、易过平滑的问题，提出一种图表示学习框架，旨在生成保留原图关键特性的简化图，以降低社区检测、影响力传播等下游任务的计算开销。",
+    "method": "提出谱保持网络，包含联合图演化层与谱一致性损失：前者共同演化图拓扑与节点特征，克服静态邻域聚合的局限性；后者通过约束图谱特性与节点特征的一致性来正则化变换过程。",
+    "result": "在节点级图稀疏化任务上的实验表明，该方法在多个标准指标上优于现有先进方法，展现出优越的性能与计算效率优势。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27306v1",
+    "date": "2025-10-31",
+    "title": "Simplifying Preference Elicitation in Local Energy Markets: Combinatorial Clock Exchange",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27306v1",
+    "author list": [
+      "Shobhit Singhal",
+      "Lesia Mitridati"
+    ],
+    "problem": "分布式能源资源（DERs）普及后，产消者面临复杂且相互依赖的电力产品偏好，同时受限于认知与计算资源，难以参与传统复杂市场结构与投标格式。",
+    "method": "结合组合时钟交换与机器学习技术，构建多产品市场机制：产消者仅需按公布价格选择偏好产品组合，无需预测价格或遵循复杂投标格式；ML辅助价格发现加速收敛，线性定价规则提升透明度。",
+    "result": "数值模拟表明机制可在约15轮时钟迭代内收敛至出清价格，验证了市场效率与可操作性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27528v1",
+    "date": "2025-10-31",
+    "title": "Risk-constrained stochastic scheduling of multi-market energy storage systems",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27528v1",
+    "author list": [
+      "Gabriel D. Patrón",
+      "Di Zhang",
+      "Lavinia M. P. Ghilardi",
+      "Evelin Blom",
+      "Maldon Goodridge",
+      "Erik Solis",
+      "Hamidreza Jahangir",
+      "Jorge Angarita",
+      "Nandhini Ganesan",
+      "Kevin West",
+      "Nilay Shah",
+      "Calvin Tsay"
+    ],
+    "problem": "研究多市场环境下储能系统的随机调度问题，重点应对电力市场价格不确定性带来的风险，旨在平衡间歇性可再生能源的供需。",
+    "method": "采用两阶段随机风险约束优化方法，第一阶段观察电价轨迹或特定电力市场，第二阶段进行调度调整；使用条件风险价值（CVaR）量化尾部风险，允许明确设定概率风险限制。",
+    "result": "在集成氢系统和电池储能系统的案例中，风险约束导致更大的设备容量安装（增加资本成本但能缓冲价格不确定性）；随着风险厌恶水平提高，系统显示出更高的预期成本但风险显著降低，验证了风险与预期收益间的权衡关系。",
+    "theme": "Systems and Control"
+  },
+  {
+    "arXiv id": "2510.27268v1",
+    "date": "2025-10-31",
+    "title": "Information geometry of perturbed gradient flow systems on hypergraphs: A perspective towards nonequilibrium physics",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27268v1",
+    "author list": [
+      "Dimitri Loutchko",
+      "Keisuke Sugie",
+      "Tetsuya J Kobayashi"
+    ],
+    "problem": "该论文旨在建立超图上的扰动梯度流系统与信息几何之间的联系，为理解非平衡物理现象提供几何视角。",
+    "method": "基于Bregman散度诱导的几何结构，探讨对偶叶理和无穷小黎曼几何，并引入模空间和热力学面积等新概念。",
+    "result": "作为综述性工作，未报告具体实验数据，但系统整合了热力学不确定性关系、速度极限和熵产生率分解等现代非平衡物理原理。",
+    "theme": "Systems and Control"
+  },
+  {
+    "arXiv id": "2510.27146v1",
+    "date": "2025-10-31",
+    "title": "SERVIMON: AI-Driven Predictive Maintenance and Real-Time Monitoring for Astronomical Observatories",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27146v1",
+    "author list": [
+      "Emilio Mastriani",
+      "Alessandro Costa",
+      "Federico Incardona",
+      "Kevin Munari",
+      "Sebastiano Spinello"
+    ],
+    "problem": "解决分布式天文观测系统（如ASTRI Mini-Array望远镜阵列）的实时质量监控、预测性维护与异常检测需求，旨在降低系统停机时间并提升科学数据质量。",
+    "method": "集成Prometheus、Grafana、Cassandra等云原生技术构建遥测数据处理管道，采用孤立森林算法对读写延迟、吞吐量等时序指标进行异常检测，并通过InfluxDB v2实现实时日志存储与可视化。",
+    "result": "AI异常检测能早期识别性能退化，减少系统停机；遥测数据与天文观测数据的关联分析提升了科学数据质量，云边协同架构可扩展至未来大规模实验。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27292v1",
+    "date": "2025-10-31",
+    "title": "Bifurcation analysis for a SIRS model with a nonlinear incidence rate",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27292v1",
+    "author list": [
+      "Xiaoling Wang",
+      "Kuilin Wu"
+    ],
+    "problem": "研究具有一般非线性发生率 f(I)S=βI(1+υI^(k-1))S (k>0) 的SIRS传染病模型的动力学行为，分析其平衡点稳定性与分岔现象。",
+    "method": "应用局部分岔理论分析模型的动力学行为，推导Bogdanov-Takens分岔、幂零焦点分岔和Hopf分岔的正规形，并计算前四个焦点量以确定Hopf分岔的余维数。",
+    "result": "理论分析表明模型可产生极限环等复杂动力学行为，数值模拟验证了Bogdanov-Takens分岔、幂零焦点分岔和Hopf分岔的存在性。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.27120v1",
+    "date": "2025-10-31",
+    "title": "Gradient Flows as Optimal Controlled Evolutions: From Rn to Wasserstein product spaces",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27120v1",
+    "author list": [
+      "Yongxin Chen",
+      "Tryphon Georgiou",
+      "Michele Pavon"
+    ],
+    "problem": "研究连续时间梯度下降与最优控制演化之间的等价关系，并将其从欧几里得空间推广到Wasserstein乘积空间，旨在为随机控制问题（如Schrödinger桥）提供变分框架。",
+    "method": "将梯度流重新表述为特定作用泛函的最优控制演化：在欧氏空间中对应梯度下降，在Wasserstein空间中用相对熵的Wasserstein梯度替代欧氏梯度，并在乘积空间中引入双控制速度的变分结构。",
+    "result": "证明了连续时间作用泛函在步长趋于零时与Jordan-Kinderlehrer-Otto格式一致，并揭示了乘积空间中两个分量的诱导通量等大反向的对称性质。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27669v1",
+    "date": "2025-10-31",
+    "title": "Technical Report for Dissipativity Learning in Reproducing Kernel Hilbert Space",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27669v1",
+    "author list": [
+      "Xiuzhen Ye",
+      "Wentao Tang"
+    ],
+    "problem": "针对未知非线性系统，在无需显式动态模型的情况下，从输入输出数据中学习系统的耗散性，以实现稳定性与性能的数据驱动认证。",
+    "method": "在再生核希尔伯特空间中提出非参数化框架，将存储函数与供给率表示为希尔伯特-施密特算子，通过一类支持向量机形式转化为有限维凸优化问题，并利用表示定理保证可解性。",
+    "result": "数值实验表明该方法能直接从数据中识别非线性耗散行为；统计学习理论提供了耗散率与L2增益的置信界，为无模型控制分析提供了可解释保证。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27194v1",
+    "date": "2025-10-31",
+    "title": "From product to system network challenges in system of systems lifecycle management",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27194v1",
+    "author list": [
+      "Vahid Salehi",
+      "Josef Vilsmeier",
+      "Shirui Wang"
+    ],
+    "problem": "传统线性生命周期模型难以应对系统之系统（SoS）中跨学科互操作性、变体与配置管理、跨组织边界可追溯性与治理等挑战。",
+    "method": "提出以模型驱动系统工程（MBSE）为语义主干、产品生命周期管理（PLM）为治理层、CAD-CAE为衍生领域，结合数字主线与数字孪生实现持续反馈的实践框架，并定义四原则：参考架构与数据模型、端到端配置主权、带审查节点的模型治理、可量化价值贡献。",
+    "result": "通过三阶段路线图（参考架构试点、跨变体与供应链扩展、组织锚定）实现变更鲁棒性提升、周期缩短、复用率改进及可持续性决策优化，适用于交通、医疗与公共部门等场景。",
+    "theme": "Systems and Control"
+  },
+  {
+    "arXiv id": "2510.27136v1",
+    "date": "2025-10-31",
+    "title": "FairAD: Computationally Efficient Fair Graph Clustering via Algebraic Distance",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27136v1",
+    "author list": [
+      "Minh Phu Vuong",
+      "Young-Ju Lee",
+      "Iván Ojeda-Ruiz",
+      "Chul-Ho Lee"
+    ],
+    "problem": "解决大规模图数据上公平图聚类算法的计算效率问题，现有方法在施加公平约束时计算开销大，难以扩展到大型图。",
+    "method": "提出FairAD方法：基于代数距离构建亲和矩阵以嵌入公平约束，通过图粗化过程选取代表节点，最后求解约束最小化问题获得公平聚类结果。",
+    "result": "在修正随机块模型和六个公开数据集上的实验表明，该方法在保持公平性的同时，比现有最优公平图聚类算法快达40倍。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27397v1",
+    "date": "2025-10-31",
+    "title": "Interpretable Model-Aware Counterfactual Explanations for Random Forest",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27397v1",
+    "author list": [
+      "Joshua S. Harvey",
+      "Guanchao Feng",
+      "Sai Anusha Meesala",
+      "Tina Zhao",
+      "Dhagash Mehta"
+    ],
+    "problem": "针对金融等受监管行业中机器学习模型解释性不足的问题，现有模型无关解释方法（如Shapley值）难以提供因果性解释，且反事实案例的搜索与关键特征解释仍具挑战。",
+    "method": "提出基于相似性学习的反事实搜索方法，利用随机森林模型自身学习的表征空间寻找反事实样本，并通过分析原始实例到反事实样本跨越的随机森林分区来计算特征重要性。",
+    "result": "在MNIST手写数字和德国信用数据集上的实验表明，该方法生成的解释比Shapley值更稀疏且更具实用性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27321v1",
+    "date": "2025-10-31",
+    "title": "MedM2T: A MultiModal Framework for Time-Aware Modeling with Electronic Health Record and Electrocardiogram Data",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27321v1",
+    "author list": [
+      "Yu-Chen Kuo",
+      "Yi-Ju Tseng"
+    ],
+    "problem": "解决电子健康记录和心电图等多模态医疗数据中固有的异构时间结构（稀疏不规则时间序列与密集时间序列并存）和模态间粒度差异对建模带来的挑战，应用于慢性与急性疾病动态预测任务。",
+    "method": "提出MedM2T框架，包含稀疏时间序列编码器处理不规则数据，分层时间感知融合捕捉心电等密集序列的微观与宏观时序模式，双模态注意力提取跨模态交互，并通过预训练编码器与特征对齐桥接模态粒度差异。",
+    "result": "在MIMIC-IV和MIMIC-IV-ECG数据集上，90天心血管疾病预测（AUROC 0.947/AUPRC 0.706）、院内死亡率预测（AUROC 0.901/AUPRC 0.558）和ICU住院时间回归（MAE 2.31）均优于现有多模态学习框架与时序模型。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27304v1",
+    "date": "2025-10-31",
+    "title": "Binary Anomaly Detection in Streaming IoT Traffic under Concept Drift",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27304v1",
+    "author list": [
+      "Rodrigo Matos Carnier",
+      "Laura Lahesoo",
+      "Kensuke Fukuda"
+    ],
+    "problem": "针对物联网流式流量中的异常检测问题，传统批量学习模型难以适应概念漂移，导致维护成本高且对快速变化的异常模式适应性差。",
+    "method": "采用流式学习框架，结合在线增量学习与概念漂移检测机制，对比了基于树的自适应随机森林和Hoeffding自适应树等算法与批量学习方法。",
+    "result": "自适应随机森林在F1分数达0.990±0.006的同时计算成本降低三分之二；Hoeffding自适应树以四倍计算效率提升达到0.910±0.007的F1分数，但稳定性略有折损。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27329v1",
+    "date": "2025-10-31",
+    "title": "Reinforcement Learning for Long-Horizon Unordered Tasks: From Boolean to Coupled Reward Machines",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27329v1",
+    "author list": [
+      "Kristina Levina",
+      "Nikolaos Pappas",
+      "Athanasios Karapantelakis",
+      "Aneta Vulgarakis Feljan",
+      "Jendrik Seipp"
+    ],
+    "problem": "针对强化学习中长时域无序任务（多个子任务可按任意顺序执行）的奖励机制学习问题，传统奖励机在处理此类任务时所需学习信息量随子任务数量呈指数增长。",
+    "method": "提出三种奖励机泛化形式：数值奖励机支持紧凑任务表达，议程奖励机通过议程跟踪剩余子任务，耦合奖励机为议程中每个子任务关联耦合状态；并基于耦合奖励机构建组合学习算法CoRM。",
+    "result": "实验表明CoRM在包含无序子任务的长时域问题上，比最先进的奖励机算法具有更好的扩展性，能有效应对子任务数量增长带来的复杂度挑战。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27343v1",
+    "date": "2025-10-31",
+    "title": "Discriminative Rule Learning for Outcome-Guided Process Model Discovery",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27343v1",
+    "author list": [
+      "Ali Norouzifar",
+      "Wil van der Aalst"
+    ],
+    "problem": "传统过程模型发现方法忽略执行结果差异，导致模型难以区分高效/合规与低效/违规等不同质量的过程轨迹，不利于合规性检查和性能分析。",
+    "method": "通过基于控制流特征学习可解释的判别规则，将轨迹按期望程度分组后分别进行过程挖掘，生成聚焦于不同结果类型的独立模型。",
+    "result": "在多个真实事件日志上的评估表明，该方法能有效分离并可视化关键过程模式，工具已公开可用。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27527v1",
+    "date": "2025-10-31",
+    "title": "TetraJet-v2: Accurate NVFP4 Training for Large Language Models with Oscillation Suppression and Outlier Control",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27527v1",
+    "author list": [
+      "Yuxiang Chen",
+      "Xiaoming Xu",
+      "Pengle Zhang",
+      "Michael Beyer",
+      "Martin Rapp",
+      "Jun Zhu",
+      "Jianfei Chen"
+    ],
+    "problem": "大语言模型全量化训练在4位精度下面临权重振荡和异常值问题，导致训练性能显著下降，难以实现高效低精度训练。",
+    "method": "提出TetraJet-v2端到端4位训练框架，采用无偏双块量化方法处理NVFP4线性层，结合OsciReset算法抑制权重振荡和OutControl算法保留异常值精度。",
+    "result": "在最高370M参数和200B令牌的预训练任务中，相比现有FP4方法平均将性能差距缩小51.3%，显著接近全精度训练效果。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27383v1",
+    "date": "2025-10-31",
+    "title": "Realistic pedestrian-driver interaction modelling using multi-agent RL with human perceptual-motor constraints",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27383v1",
+    "author list": [
+      "Yueyang Wang",
+      "Mehmet Dogar",
+      "Gustav Markkula"
+    ],
+    "problem": "现有行人-驾驶员交互模型通常依赖规则逻辑或黑箱机器学习方法，缺乏灵活性且忽视人类感知与运动约束对交互行为的影响。",
+    "method": "提出多智能体强化学习框架，在行人-驾驶员交互模型中同时引入视觉约束（感知不确定性与视野限制）和运动约束（动作平滑性），并通过群体级分布建模个体差异。",
+    "result": "在无信号人行横道真实数据集上，同时包含视觉与运动约束的模型在交互真实性指标上表现最佳：运动约束使动作更平滑，视觉约束引发更谨慎的减速行为；在数据有限条件下优于监督行为克隆模型。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27480v1",
+    "date": "2025-10-31",
+    "title": "Simplex-to-Euclidean Bijections for Categorical Flow Matching",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27480v1",
+    "author list": [
+      "Bernardo Williams",
+      "Victor M. Yeom-Song",
+      "Marcelo Hartmann",
+      "Arto Klami"
+    ],
+    "problem": "针对单纯形上的概率分布学习与采样问题，提出一种支持分类数据建模的方法，需处理离散观测的连续化与分布精确恢复。",
+    "method": "通过基于Aitchison几何的光滑双射将开单纯形映射到欧几里得空间，利用狄利克雷插值对离散观测进行去量化，实现在欧氏空间中的密度建模。",
+    "result": "在合成与真实数据集上取得竞争性性能，相较于基于黎曼几何或自定义噪声过程的现有方法，本方法在保持Aitchison几何结构的同时实现了离散分布的精确恢复。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27207v1",
+    "date": "2025-10-31",
+    "title": "Feature-Function Curvature Analysis: A Geometric Framework for Explaining Differentiable Models",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27207v1",
+    "author list": [
+      "Hamed Najafi",
+      "Dongsheng Luo",
+      "Jason Liu"
+    ],
+    "problem": "主流可解释AI方法将特征重要性压缩为单一分数，难以处理模型非线性与交互效应，且仅提供训练完成后的静态解释，无法揭示学习动态过程。",
+    "method": "提出特征-函数曲率分析框架，通过四维特征签名量化特征的冲击力、波动性、非线性与交互强度，并扩展为动态原型分析以追踪训练全过程特征演化的几何轨迹。",
+    "result": "首次通过动态特征演化直接验证了模型的层次学习规律（先学习线性效应后习得复杂交互），同时该框架可诊断模型容量不足并预测过拟合发生时机，为学习过程提供几何层面的可解释性保障。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27504v1",
+    "date": "2025-10-31",
+    "title": "DP-FedPGN: Finding Global Flat Minima for Differentially Private Federated Learning via Penalizing Gradient Norm",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27504v1",
+    "author list": [
+      "Junkang Liu",
+      "Yuxuan Tian",
+      "Fanhua Shang",
+      "Yuanyuan Liu",
+      "Hongying Liu",
+      "Junchao Zhou",
+      "Daorui Ding"
+    ],
+    "problem": "客户端差分隐私联邦学习（CL-DPFL）方法在保护隐私时通常导致损失景观更尖锐，从而降低模型泛化能力；现有基于SAM的方法仅寻求局部平坦最小值，但局部平坦性在CL-DPFL中不能反映全局平坦性。",
+    "method": "提出DP-FedPGN算法，通过在局部损失中引入全局梯度范数惩罚项，以寻找全局平坦最小值；该方法同时减少局部更新范数，从而降低梯度裁剪误差，并消除数据异构性影响以实现快速收敛。",
+    "result": "在ResNet和Transformer模型上，于六个视觉与自然语言处理任务中相比现有SOTA算法取得显著提升；理论分析表明该方法缓解了DP导致的性能下降，并使用Rényi DP提供严格隐私保证与局部更新敏感性分析。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27588v1",
+    "date": "2025-10-31",
+    "title": "Learned Static Function Data Structures",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27588v1",
+    "author list": [
+      "Stefan Hermann",
+      "Hans-Peter Lehmann",
+      "Giorgio Vinciguerra",
+      "Stefan Walzer"
+    ],
+    "problem": "针对静态键值对集合的存储问题，传统静态函数数据结构虽节省空间但受限于值序列的零阶经验熵。本文旨在突破此熵限，在支持点查询的同时进一步压缩存储空间。",
+    "method": "提出学习型静态函数，通过机器学习模型捕捉键与值的关联性，为每个键生成值分布并构建键专属前缀码，将编码后的真实值存入经典静态函数结构。",
+    "result": "实验表明，该方法在真实数据上可实现高达一个数量级的空间节省，在合成数据上节省达三个数量级，且保持点查询功能。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27274v1",
+    "date": "2025-10-31",
+    "title": "Traceable Drug Recommendation over Medical Knowledge Graphs",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27274v1",
+    "author list": [
+      "Yu Lin",
+      "Zhen Jia",
+      "Philipp Christmann",
+      "Xu Zhang",
+      "Shengdong Du",
+      "Tianrui Li"
+    ],
+    "problem": "现有药物推荐系统虽采用深度学习提升性能，但无法提供推荐依据的可解释性，这在医疗等高风险应用中构成关键局限。",
+    "method": "提出TraceDR系统，基于医疗知识图谱构建多任务学习框架，同时预测药物推荐及相关证据路径，实现推荐过程的溯源能力。",
+    "result": "构建了涵盖更广疾病与药物类型的DrugRec大规模测试基准，通过自动生成患者健康记录框架验证系统的可追踪性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27151v1",
+    "date": "2025-10-31",
+    "title": "Confined Space Underwater Positioning Using Collaborative Robots",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27151v1",
+    "author list": [
+      "Xueliang Cheng",
+      "Kanzhong Yao",
+      "Andrew West",
+      "Ognjen Marjanovic",
+      "Barry Lennox",
+      "Keir Groves"
+    ],
+    "problem": "解决水下机器人在狭窄杂乱空间（如工业环境）中的定位难题，现有系统依赖外部基础设施或特征丰富环境，在GPS拒止、多径效应严重的受限场景中精度与可靠性不足。",
+    "method": "提出协作水下定位系统，采用水面移动机器人作为引导者，通过协同机器人技术与传感器融合，实现水下机器人在无GPS、无固定基础设施环境中的实时定位与轨迹控制。",
+    "result": "在大型测试池中验证，实时定位的均方欧氏距离误差为70毫米，无需固定基础设施、复杂校准或环境特征，支持可重复自主任务。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27281v1",
+    "date": "2025-10-31",
+    "title": "HiF-DTA: Hierarchical Feature Learning Network for Drug-Target Affinity Prediction",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27281v1",
+    "author list": [
+      "Minghui Li",
+      "Yuanhang Wang",
+      "Peijin Guo",
+      "Wei Wan",
+      "Shengshan Hu",
+      "Shengqing Hu"
+    ],
+    "problem": "药物靶点亲和力预测任务中，现有序列深度学习方法未能同时建模药物与蛋白质的全局序列语义特征和局部拓扑结构特征，且将药物表示为扁平序列而缺乏原子、子结构和分子尺度的多尺度特征。",
+    "method": "提出HiF-DTA分层网络，采用双通路策略分别提取药物与蛋白质序列的全局语义和局部拓扑特征，并通过多尺度双线性注意力模块融合药物的原子级、子结构级和分子级表示。",
+    "result": "在Davis、KIBA和Metz数据集上超越现有最优基线，消融实验验证了全局-局部特征提取与多尺度融合模块的有效性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27396v1",
+    "date": "2025-10-31",
+    "title": "Distributed Derivative-Free Optimization Using Inexact ADMM and Trust-Region Methods",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27396v1",
+    "author list": [
+      "Damilola Fasiku",
+      "Wentao Tang"
+    ],
+    "problem": "针对高维黑盒场景下的非凸无导数优化问题，目标函数为加性可分离形式且受线性等式约束，旨在降低计算复杂度并实现可扩展的分布式求解。",
+    "method": "采用双层ADMM框架：内层执行交替方向乘子法的序列更新，外层通过乘子法驱动松弛变量归零；各子问题使用无导数信赖域求解器进行非精确求解，误差容忍度随迭代递减。",
+    "result": "理论证明该方法能收敛至近似解，在高维基准测试中相比集中式无导数优化显著提升计算效率，并在分布式学习任务中展现有效性能。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27584v1",
+    "date": "2025-10-31",
+    "title": "Image Hashing via Cross-View Code Alignment in the Age of Foundation Models",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27584v1",
+    "author list": [
+      "Ilyass Moummad",
+      "Kawtar Zaher",
+      "Hervé Goëau",
+      "Alexis Joly"
+    ],
+    "problem": "针对大规模图像检索中高维基础模型嵌入计算开销大的问题，研究如何生成紧凑且判别性强的二进制哈希码，以支持高效的汉明距离搜索。",
+    "method": "提出CroVCA框架，通过单一二元交叉熵损失实现语义对齐视图间的哈希码一致性，并采用编码率最大化作为防坍塌正则项；设计轻量级HashCoder网络（含批归一化层），支持冻结嵌入探测或LoRA微调适配。",
+    "result": "在16比特设定下，无监督COCO哈希训练仅需2分钟，监督ImageNet100哈希训练约3分钟（单GPU），在多个基准测试中达到最优性能，显著提升训练效率与泛化能力。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27178v1",
+    "date": "2025-10-31",
+    "title": "MobiDock: Design and Control of A Modular Self Reconfigurable Bimanual Mobile Manipulator via Robotic Docking",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27178v1",
+    "author list": [
+      "Xuan-Thuan Nguyen",
+      "Khac Nam Nguyen",
+      "Ngoc Duy Tran",
+      "Thi Thoa Mac",
+      "Anh Nguyen",
+      "Hoang Hiep Ly",
+      "Tung D. Ta"
+    ],
+    "problem": "多机器人系统（特别是移动机械臂）在协同工作时面临控制协调与动态稳定性挑战，需要将复杂的多机器人控制问题转化为更简单的单系统管理。",
+    "method": "提出MobiDock模块化自重构移动机械臂系统，通过基于AprilTag标记的计算机视觉自主对接策略和螺纹螺旋锁紧机构，使两个独立机器人物理连接形成统一的双臂移动平台。",
+    "result": "对接构型相比独立协作机器人表现出更优性能：RMS加速度与加加速度值更低、角精度更高、任务完成时间显著缩短，验证了物理重构可简化协同控制并提升稳定性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27645v1",
+    "date": "2025-10-31",
+    "title": "Convergence Analysis of Distributed Optimization: A Dissipativity Framework",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27645v1",
+    "author list": [
+      "Aron Karakai",
+      "Jaap Eising",
+      "Andrea Martinelli",
+      "Florian Dörfler"
+    ],
+    "problem": "针对分布式优化算法的收敛性分析问题，传统方法依赖特定网络结构，缺乏统一的分析框架。",
+    "method": "提出基于系统理论的框架，将分布式算法建模为动态系统网络，利用增量耗散性和收缩理论建立收敛条件，并通过线性矩阵不等式表达分析条件。",
+    "result": "在分布式梯度下降场景中与传统分析方法进行数值比较，验证了所提框架的通用性，其分析流程独立于网络拓扑结构。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.27659v1",
+    "date": "2025-10-31",
+    "title": "Challenges in Credit Assignment for Multi-Agent Reinforcement Learning in Open Agent Systems",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27659v1",
+    "author list": [
+      "Alireza Saleh Abadi",
+      "Leen-Kiat Soh"
+    ],
+    "problem": "研究开放多智能体强化学习系统中的信用分配问题，其中智能体数量、任务类型及智能体能力随时间动态变化，传统方法基于静态环境假设难以适用。",
+    "method": "通过概念分析提出开放性的新子类别，揭示智能体流动与任务变更对环境稳态假设的破坏；采用代表性时空与结构算法进行实证研究。",
+    "result": "实验表明开放性直接导致信用分配错误，表现为损失函数不稳定与系统性能显著下降，验证了传统方法在动态环境中的局限性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27630v1",
+    "date": "2025-10-31",
+    "title": "Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27630v1",
+    "author list": [
+      "Dayuan Fu",
+      "Yunze Wu",
+      "Xiaojie Cai",
+      "Lyumanshan Ye",
+      "Shijie Xia",
+      "Zhen Huang",
+      "Weiye Si",
+      "Tianze Xu",
+      "Jie Sun",
+      "Keyu Li",
+      "Mohan Jiang",
+      "Junfei Wang",
+      "Qishuo Hua",
+      "Pengrui Lu",
+      "Yang Xiao",
+      "Pengfei Liu"
+    ],
+    "problem": "针对长周期、领域专业化任务训练LLM智能体时，现有方法面临密集人工标注成本过高或基于结果的采样因有效轨迹稀疏而失效的挑战。",
+    "method": "提出Apollo框架，通过异步人工干预机制（在智能体偏离轨迹时提供先验知识或策略建议）结合动作级数据过滤，实现低成本持续交互与错误传播抑制。",
+    "result": "在InnovatorBench测试中，使用Apollo训练的GLM-4.5模型相比未训练基线提升50%以上，相比无人交互训练变体提升28%，验证了人机协同采样对长周期任务的有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27524v1",
+    "date": "2025-10-31",
+    "title": "Higher-order phase reduction for delay-coupled oscillators beyond the phase-shift approximation",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27524v1",
+    "author list": [
+      "Christian Bick",
+      "Bob W. Rink",
+      "Babette A. J. de Wolff"
+    ],
+    "problem": "研究时滞耦合振子网络的相位动力学，传统一阶相位约化方法将时滞简化为相位偏移，无法捕捉高阶效应。",
+    "method": "通过将时滞微分方程重写为常微分方程与输运方程的耦合形式，按耦合强度逐阶展开求解，构建任意阶数的有限维相位动力学近似。",
+    "result": "二阶相位约化揭示时滞存在非平凡依赖关系，并在两个时滞耦合Stuart-Landau振子中证明了同步双稳态区域的存在。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.27213v1",
+    "date": "2025-10-31",
+    "title": "Privacy-Aware Continual Self-Supervised Learning on Multi-Window Chest Computed Tomography for Domain-Shift Robustness",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27213v1",
+    "author list": [
+      "Ren Tasai",
+      "Guang Li",
+      "Ren Togo",
+      "Takahiro Ogawa",
+      "Kenji Hirata",
+      "Minghui Tang",
+      "Takaaki Yoshimura",
+      "Hiroyuki Sugimori",
+      "Noriko Nishioka",
+      "Yukie Shimizu",
+      "Kohsuke Kudo",
+      "Miki Haseyama"
+    ],
+    "problem": "解决医学图像诊断中因窗口设置差异导致的域偏移问题，同时满足数据隐私约束，避免在持续学习过程中重用历史数据。",
+    "method": "提出持续自监督学习框架，结合潜在重放机制保护隐私，并引入基于Wasserstein距离的知识蒸馏与批量知识集成技术增强特征鲁棒性。",
+    "result": "在两种窗口设置的胸部CT数据上验证，相比基线方法展现出更优的域偏移鲁棒性，且无需直接访问历史数据。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27606v1",
+    "date": "2025-10-31",
+    "title": "Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27606v1",
+    "author list": [
+      "Yuhong Liu",
+      "Beichen Zhang",
+      "Yuhang Zang",
+      "Yuhang Cao",
+      "Long Xing",
+      "Xiaoyi Dong",
+      "Haodong Duan",
+      "Dahua Lin",
+      "Jiaqi Wang"
+    ],
+    "problem": "大型视觉语言模型在空间理解方面存在不足，现有监督微调和强化学习方法依赖昂贵的人工标注或专用工具，限制了可扩展性。",
+    "method": "提出自监督强化学习框架Spatial-SSRL，通过从普通RGB或RGB-D图像自动构建五种空间结构预训练任务：乱序补丁重排、翻转补丁识别、裁剪补丁修复、区域深度排序和相对3D位置预测。",
+    "result": "在7个图像和视频空间理解基准测试中，相比Qwen2.5-VL基线模型，3B和7B参数模型分别获得平均4.63%和3.89%的准确率提升，同时保持通用视觉能力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27177v1",
+    "date": "2025-10-31",
+    "title": "A Polynomial-time Algorithm for Online Sparse Linear Regression with Improved Regret Bound under Weaker Conditions",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27177v1",
+    "author list": [
+      "Junfan Li",
+      "Shizhong Liao",
+      "Zenglin Xu",
+      "Liqiang Nie"
+    ],
+    "problem": "研究在线稀疏线性回归问题，算法在每轮预测中只能访问d个特征中的k个，且该问题已被证明是NP难问题。",
+    "method": "提出基于Dantzig Selector的多项式时间算法，采用算法依赖的协方差矩阵采样、自适应参数调整和批处理在线牛顿步等新技术。",
+    "result": "在较弱的兼容性条件下显著改进了现有遗憾界，通过更紧的ℓ₁范数误差收敛率实现，并扩展到带额外观测的OSLR场景中改进遗憾界。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27651v1",
+    "date": "2025-10-31",
+    "title": "Information-Theoretic Greedy Layer-wise Training for Traffic Sign Recognition",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27651v1",
+    "author list": [
+      "Shuyan Lyu",
+      "Zhanzimo Wu",
+      "Junliang Du"
+    ],
+    "problem": "解决端到端反向传播训练深度神经网络时存在的生物不可解释性、高内存开销及梯度消失/爆炸问题，同时将逐层贪婪训练方法扩展到现代深层CNN与复杂数据集。",
+    "method": "基于信息瓶颈理论与矩阵Rényi熵，提出逐层贪婪训练框架：每层与直接连接输出层的辅助分类器联合优化，通过确定性信息瓶颈学习最小充分的任务相关表示。",
+    "result": "在CIFAR-10/100上使用现代CNN验证，性能超越现有逐层训练基线，并达到与SGD相当的水平；在交通标志识别任务中展示了实际适用性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27627v1",
+    "date": "2025-10-31",
+    "title": "Ergodic averages for sparse corners",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27627v1",
+    "author list": [
+      "Nikos Frantzikinakis",
+      "Borys Kuca"
+    ],
+    "problem": "研究多个遍历平均在交换变换下的极限行为，特别是当所有迭代由同一稀疏序列（如[n^c]）给出时的收敛性问题，旨在解决Bergelson-Leibman-Lesigne联合相交性猜想和Furstenberg平均的稀疏序列不变性。",
+    "method": "结合度降低技术、半范平滑方法、Host的魔幻扩张理论，以及受Tao和Leng工作启发的结构化扩张，将分析简化为可使用Host-Kra特征因子理论和幂零流形等分布处理的场景。",
+    "result": "给出了三维多项式Szemerédi定理成立的充要条件；证明了两交换变换下Furstenberg平均沿稀疏序列（如非整数幂次）的不变性；将Chu的线性角点公共差结果推广到多项式和Hardy角点。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27206v1",
+    "date": "2025-10-31",
+    "title": "Fints: Efficient Inference-Time Personalization for LLMs with Fine-Grained Instance-Tailored Steering",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27206v1",
+    "author list": [
+      "Kounianhua Du",
+      "Jianxing Liu",
+      "Kangning Zhang",
+      "Wenxiang Jiao",
+      "Yuan Lu",
+      "Jiarui Jin",
+      "Weiwen Liu",
+      "Yong Yu",
+      "Weinan Zhang"
+    ],
+    "problem": "针对大语言模型在动态用户偏好和高数据稀疏场景下个性化适应能力不足的问题，研究如何实现高效推理时个性化。",
+    "method": "提出细粒度实例定制引导框架，通过捕获注意力层和MLP层激活信号，结合输入感知聚合模块动态生成样本级干扰向量，在模型前向传播中注入个性化增强。",
+    "result": "在短长文本生成和网页函数调用等场景的实验中，该方法在快速变化环境中显著提升个性化性能，同时保持不同交互模式和上下文长度的鲁棒性。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27244v1",
+    "date": "2025-10-31",
+    "title": "Vintage Code, Modern Judges: Meta-Validation in Low Data Regimes",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27244v1",
+    "author list": [
+      "Ora Nova Fandina",
+      "Gal Amram",
+      "Eitan Farchi",
+      "Shmulik Froimovich",
+      "Raviv Gal",
+      "Wesam Ibraheem",
+      "Rami Katan",
+      "Alice Podolsky",
+      "Orna Raz"
+    ],
+    "problem": "在COBOL等遗留语言的应用现代化中，面临专家资源和高质量人工评估数据短缺的问题，而使用大语言模型作为评判者（LaaJ）时，其可靠性在稀疏人工标注数据下难以验证，可能导致评估循环风险。",
+    "method": "提出SparseAlign框架，结合新颖的成对置信度概念和分数敏感对齐指标，共同捕捉排序一致性和分数接近性，实现有限标注数据下的可靠评估器选择。",
+    "result": "在COBOL代码解释任务中应用SparseAlign选择出对齐度最高的LaaJ，并集成到评估工作流指导模型发布决策；通过四个LaaJ的案例研究展示了该方法在实际评估场景中的有效性。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27432v1",
+    "date": "2025-10-31",
+    "title": "Mitigating Semantic Collapse in Partially Relevant Video Retrieval",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27432v1",
+    "author list": [
+      "WonJun Moon",
+      "MinSeok Jung",
+      "Gilhan Park",
+      "Tae-Young Kim",
+      "Cheol-Ho Cho",
+      "Woojin Jun",
+      "Jae-Pil Heo"
+    ],
+    "problem": "部分相关视频检索（PRVR）任务中，现有方法将标注的文本-视频对简单视为正样本，忽略视频内部和跨视频的语义多样性，导致同一视频内不同事件的查询与片段嵌入发生语义坍缩，限制多事件视频的检索性能。",
+    "method": "提出文本相关性保持学习，保留基础模型编码的文本查询间语义关系；设计跨分支视频对齐（CBVA），通过对比学习解耦多时间尺度的层次化视频表示，并引入保序令牌合并与自适应CBVA增强片段内一致性与片段间区分性。",
+    "result": "在PRVR基准上的实验表明，该方法有效缓解语义坍缩问题，显著提升检索准确率。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27327v1",
+    "date": "2025-10-31",
+    "title": "A Modular and Scalable System Architecture for Heterogeneous UAV Swarms Using ROS 2 and PX4-Autopilot",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27327v1",
+    "author list": [
+      "Robert Pommeranz",
+      "Kevin Tebbe",
+      "Ralf Heynicke",
+      "Gerd Scholl"
+    ],
+    "problem": "针对异构无人机集群的反无人机系统（C-UAS）开发，需解决硬件组件集成与集群通信的通用性问题，并支持集群机动与目标检测等关键功能。",
+    "method": "基于PX4-Autopilot与ROS 2框架，采用模块化架构为每个无人机组件设计独立ROS 2节点，通过软件抽象实现多通信技术的无缝兼容，支持领航跟随、编队飞行及视觉算法集成。",
+    "result": "在Gazebo仿真和实际演示中验证了系统可行性，实现了异构无人机集群的协调控制与目标跟踪功能，但未提供具体性能指标对比。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27663v1",
+    "date": "2025-10-31",
+    "title": "Bayesian model selection and misspecification testing in imaging inverse problems only from noisy and partial measurements",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27663v1",
+    "author list": [
+      "Tom Sprunck",
+      "Marcelo Pereyra",
+      "Tobias Liaudat"
+    ],
+    "problem": "针对贝叶斯成像模型在缺乏真实参考图像的情况下难以进行客观评估的问题，提出无监督的模型选择与误设诊断方法，解决现有方法计算成本高且不兼容隐式机器学习先验的局限性。",
+    "method": "结合贝叶斯交叉验证与数据分裂（随机测量分割）技术构建评估框架，兼容扩散采样和即插即用采样器等贝叶斯成像采样器，通过随机划分观测数据实现模型性能对比。",
+    "result": "在多种评分规则和模型误设场景的实验中，该方法以较低计算成本实现了优异的模型选择与误设检测精度，验证了其在成像逆问题中的有效性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27638v1",
+    "date": "2025-10-31",
+    "title": "Panprediction: Optimal Predictions for Any Downstream Task and Loss",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27638v1",
+    "author list": [
+      "Sivaraman Balakrishnan",
+      "Nika Haghtalab",
+      "Daniel Hsu",
+      "Brian Lee",
+      "Eric Zhao"
+    ],
+    "problem": "",
+    "method": "",
+    "result": "{\n  \"problem\": \"传统监督学习针对固定损失函数和任务进行优化，而实际应用中模型需适应多种下游任务和损失函数。本文提出panprediction框架，旨在学习能够同时应对无限多任务和损失函数的预测模型。\",\n  \"method\": \"通过建立从panprediction到步进校准（step calibration）的统计高效约简，设计了确定性和随机性panpredictor算法。核心思想是利用校准技术实现预测器对任意下游任务和损失函数的泛化能力。\",\n  \"result\": \"在温和假设下，确定性panpredictor样本复杂度为$\\tilde{O}(1/\\varepsilon^3)$，随机性版本为$\\tilde{O}(1/\\varepsilon^2)$，证明同时优化无限任务和损失与单任务单损失的统计难度相当。改进确定性omniprediction样本复杂度达$1/\\varepsilon$倍。\"\n}",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27338v1",
+    "date": "2025-10-31",
+    "title": "Reasoning Models Sometimes Output Illegible Chains of Thought",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27338v1",
+    "author list": [
+      "Arun Jose"
+    ],
+    "problem": "研究基于结果强化学习训练的语言模型在链式思维推理过程中产生的思维链可读性问题，这会影响对模型意图的理解和恶意行为检测的有效性。",
+    "method": "通过分析14个推理模型的链式思维输出，比较强化学习训练前后思维链的可读性变化，并探讨可读性与模型性能的关系。",
+    "result": "强化学习导致除Claude外的模型产生不可读的思维链（准确率下降53%），但可读性与性能无直接相关性，且问题难度增加会加剧可读性退化。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27421v1",
+    "date": "2025-10-31",
+    "title": "Who Does Your Algorithm Fail? Investigating Age and Ethnic Bias in the MAMA-MIA Dataset",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27421v1",
+    "author list": [
+      "Aditya Parikh",
+      "Sneha Das",
+      "Aasa Feragen"
+    ],
+    "problem": "研究深度学习模型在医学图像分割任务中的公平性问题，特别是针对乳腺癌肿瘤分割数据集MAMA-MIA中存在的年龄和种族偏见，这些偏见可能导致对特定人群的医疗质量差异。",
+    "method": "通过审计MAMA-MIA数据集提供的自动分割标签，评估分割质量在年龄、种族和数据来源维度上的差异，控制混杂因素后分析内在偏见。",
+    "result": "发现存在针对年轻患者的固有年龄相关偏见，且多数据源聚合会影响特定站点的种族偏见，强调需在细粒度层面调查数据。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27123v1",
+    "date": "2025-10-31",
+    "title": "Group-Sensitive Offline Contextual Bandits",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27123v1",
+    "author list": [
+      "Yihong Guo",
+      "Junjie Luo",
+      "Guodong Gao",
+      "Ritu Agarwal",
+      "Anqi Liu"
+    ],
+    "problem": "离线上下文赌博机在最大化整体期望奖励时，会无意中放大不同群体间的奖励差异，导致资源分配不公，尤其在资源有限时引发公平性担忧。",
+    "method": "提出带约束的离线策略优化框架，将群体间奖励差异约束引入基于梯度的离策略优化过程，并采用双重稳健估计器提升群体奖励差异的估计精度。",
+    "result": "在合成和真实数据集上的实验表明，该方法在保持整体性能竞争力的同时，有效降低了群体间的奖励差异，且为策略优化提供了收敛性保证。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27297v1",
+    "date": "2025-10-31",
+    "title": "Temporal Cardiovascular Dynamics for Improved PPG-Based Heart Rate Estimation",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27297v1",
+    "author list": [
+      "Berken Utku Demirel",
+      "Christian Holz"
+    ],
+    "problem": "解决光电容积脉搏波（PPG）信号在真实生活场景下心率估计的挑战，特别是心率振荡的非线性混沌特性导致的估计精度问题。",
+    "method": "提出基于互信息的非线性混沌分析方法，从数学角度建模心率时序复杂性，并与深度学习模型结合以提升估计性能。",
+    "result": "在四个真实场景数据集上验证，相比传统方法和现有机器学习技术，心率估计精度提升高达40%，且减少对多模态传感器的依赖并无需后处理步骤。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27486v1",
+    "date": "2025-10-31",
+    "title": "FedAdamW: A Communication-Efficient Optimizer with Convergence and Generalization Guarantees for Federated Large Models",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27486v1",
+    "author list": [
+      "Junkang Liu",
+      "Fanhua Shang",
+      "Kewen Zhu",
+      "Hongying Liu",
+      "Yuanyuan Liu",
+      "Jin Liu"
+    ],
+    "problem": "联邦学习中直接应用AdamW优化器面临数据异构性导致二阶矩估计方差高、局部过拟合引发客户端漂移、以及每轮重置矩估计拖慢收敛的问题。",
+    "method": "提出FedAdamW算法，通过局部修正机制和解耦权重衰减对齐局部与全局更新，并聚合二阶矩估计的均值以降低方差，同时重新初始化矩估计。",
+    "result": "理论证明无需异构性假设即可达到线性加速收敛率；在语言和视觉Transformer模型上的实验表明，相比基线方法显著减少通信轮数并提升测试精度。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27503v1",
+    "date": "2025-10-31",
+    "title": "pDANSE: Particle-based Data-driven Nonlinear State Estimation from Nonlinear Measurements",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27503v1",
+    "author list": [
+      "Anubhab Ghosh",
+      "Yonina C. Eldar",
+      "Saikat Chatterjee"
+    ],
+    "problem": "针对状态转移模型未知的模型无关过程，从非线性测量中估计系统状态，克服传统方法在非线性测量下无法获得闭式解的问题。",
+    "method": "提出粒子数据驱动非线性状态估计（pDANSE）：使用RNN基于历史测量生成高斯先验参数，通过重参数化粒子采样处理非线性测量，避免计算密集的序列蒙特卡洛方法。",
+    "result": "在随机Lorenz-63系统上验证了四种非线性测量场景（立方非线性、相机模型、半波整流、笛卡尔-球坐标转换），状态估计性能与已知状态转移模型的粒子滤波器相当。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27517v1",
+    "date": "2025-10-31",
+    "title": "Learning Sparse Approximate Inverse Preconditioners for Conjugate Gradient Solvers on GPUs",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27517v1",
+    "author list": [
+      "Zherui Yang",
+      "Zhehao Li",
+      "Kangbo Lyu",
+      "Yixuan Li",
+      "Tao Du",
+      "Ligang Liu"
+    ],
+    "problem": "针对GPU上共轭梯度法求解对称正定线性系统时，传统预条件子存在并行化困难与数据优化能力有限的问题，特别是基于不完全分解的方法因三角求解阻碍GPU并行且引入GNN难以建模的长程依赖。",
+    "method": "提出基于图神经网络构建稀疏近似逆预条件子，避免三角求解且每步仅需两次矩阵向量乘；设计统计驱动的尺度不变损失函数，使条件数优化与系统绝对尺度无关。",
+    "result": "在三个PDE数据集和一个合成数据集上，相比对角/IC/传统SPAI等预条件子，GPU求解时间减少40%-53%（加速68%-113%），条件数更优且泛化性能提升。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27607v1",
+    "date": "2025-10-31",
+    "title": "Dual-Stream Diffusion for World-Model Augmented Vision-Language-Action Model",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27607v1",
+    "author list": [
+      "John Won",
+      "Kyungmin Lee",
+      "Huiwon Jang",
+      "Dongyoung Kim",
+      "Jinwoo Shin"
+    ],
+    "problem": "在机器人策略学习中，联合预测下一状态观测和动作序列存在模态差异的挑战，现有世界模型增强的视觉-语言-动作模型难以协调多模态输出。",
+    "method": "提出双流扩散框架DUST，采用多模态扩散Transformer架构分别维护视觉与动作流，通过独立噪声扰动和解耦流匹配损失实现双向联合分布学习，避免统一潜在空间需求。",
+    "result": "在RoboCasa和GR-1模拟基准上超越基线方法6%，测试时异步缩放策略额外提升2-5%；真实弗兰卡机器人任务成功率提高13%，BridgeV2无动作视频预训练在RoboCasa实现显著迁移增益。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27172v1",
+    "date": "2025-10-31",
+    "title": "Adaptive Defense against Harmful Fine-Tuning for Large Language Models via Bayesian Data Scheduler",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27172v1",
+    "author list": [
+      "Zixuan Hu",
+      "Li Shen",
+      "Zhenyi Wang",
+      "Yongxian Wei",
+      "Dacheng Tao"
+    ],
+    "problem": "针对大型语言模型微调即服务中的有害微调安全风险，现有基于攻击模拟的防御方法难以应对未知攻击威胁，且缺乏对不同攻击场景的适应性。",
+    "method": "提出贝叶斯数据调度器（BDS），将防御建模为贝叶斯推断问题，通过计算数据点安全属性的后验分布，在微调过程中对数据加权约束，无需攻击模拟即可实现自适应防御。",
+    "result": "在多种攻击和防御设置下的实验表明，该方法实现了最先进的性能，并通过基于摊销贝叶斯学习的神经调度器实现对新数据的高效迁移。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27488v1",
+    "date": "2025-10-31",
+    "title": "Constructing directed networks with a desired minimum balanced coloring",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27488v1",
+    "author list": [
+      "Jonathan Martinez",
+      "Teresa Radice",
+      "Francesco Sorrentino"
+    ],
+    "problem": "针对生物、社会和技术系统中对称性驱动动力学（如集群同步）研究缺乏可控对称结构网络模型的问题，提出构建具有预设对称性的有向网络。",
+    "method": "通过从给定商网络构造扩展，系统化生成具有指定对称性的有向网络，实现对称结构的可控合成。",
+    "result": "该方法能合成具有预设对称性的现实网络模型，为研究对称性驱动的集群同步等动力学行为提供支持。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27238v1",
+    "date": "2025-10-31",
+    "title": "DRAMA: Unifying Data Retrieval and Analysis for Open-Domain Analytic Queries",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27238v1",
+    "author list": [
+      "Chuxuan Hu",
+      "Maxwell Yang",
+      "James Weiland",
+      "Yeji Lim",
+      "Suhas Palawala",
+      "Daniel Kang"
+    ],
+    "problem": "针对开放域大规模数据，解决自然语言分析查询自动化中数据收集、结构化转换与推理三个关键能力难以统一的问题，避免人工分析的低效与局限。",
+    "method": "提出DRAMA端到端范式，通过多智能体系统DRAMA-Bot协调数据检索器（收集与转换数据）与数据分析器（结构化推理），将数据收集、转换与分析整合为统一流程。",
+    "result": "在自建基准DRAMA-Bench（含声明验证与问答任务）上达到86.5%任务准确率，成本仅0.05美元，优于五个SOTA基线（最高提升6.9倍准确率且成本低于1/6）。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27448v1",
+    "date": "2025-10-31",
+    "title": "GeoFM: Enhancing Geometric Reasoning of MLLMs via Synthetic Data Generation through Formal Language",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27448v1",
+    "author list": [
+      "Yuhao Zhang",
+      "Dingxin Hu",
+      "Tinghao Yu",
+      "Hao Liu",
+      "Yiting Liu"
+    ],
+    "problem": "多模态大语言模型在数学几何推理任务中面临高质量几何数据稀缺的问题，现有合成数据方法生成的数据多样性不足、噪声多且与真实几何图示差异大。",
+    "method": "提出GeoFM方法，使用形式化语言在度量空间中探索条件组合，通过符号引擎保证正确性，生成高保真且多样化的几何问题数据。",
+    "result": "在MathVista几何问题解决任务上超越GPT-4o模型18.7%，在GeoQA上超越16.5%；相比领先开源模型在MathVista和GeoQA上分别提升5.7%和2.7%。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27186v1",
+    "date": "2025-10-31",
+    "title": "Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27186v1",
+    "author list": [
+      "Zixuan Hu",
+      "Yongxian Wei",
+      "Li Shen",
+      "Zhenyi Wang",
+      "Lei Li",
+      "Chun Yuan",
+      "Dacheng Tao"
+    ],
+    "problem": "现有稠密反演方法在从大规模视觉Transformer重构高分辨率图像时效率低下，主要由于冗余反演噪声背景和虚假相关特征（幻觉现象）。",
+    "method": "提出稀疏模型反演策略，通过选择性反演语义前景并停止背景与虚假相关的反演，作为即插即用模块加速现有稠密反演方法，无需修改原损失函数。",
+    "result": "在数据无关模型量化和知识迁移任务中，实现最高3.79倍加速且保持或提升下游性能，通过理论与实验验证了有效性。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27554v1",
+    "date": "2025-10-31",
+    "title": "Sybil-Resistant Service Discovery for Agent Economies",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27554v1",
+    "author list": [
+      "David Shi",
+      "Kevin Joo"
+    ],
+    "problem": "在基于加密货币支付的服务发现场景中，如何为智能代理可靠地识别可信的API、数据源和推理服务提供者，避免单纯依赖交易量而受女巫攻击影响。",
+    "method": "提出TraceRank算法，利用支付交易作为信誉背书，通过预计算的信誉指标在支付图中传播信誉，权重考虑交易金额与时间新近度，并结合语义搜索处理自然语言查询。",
+    "result": "在x402支付图上验证表明，该方法能根据高信誉用户的偏好推荐服务，使低信誉支付者主导的垃圾服务排名低于少数高信誉支付者的合法服务，优于纯交易量或纯语义方法。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27443v1",
+    "date": "2025-10-31",
+    "title": "MVeLMA: Multimodal Vegetation Loss Modeling Architecture for Predicting Post-fire Vegetation Loss",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27443v1",
+    "author list": [
+      "Meenu Ravi",
+      "Shailik Sarkar",
+      "Yanshen Sun",
+      "Vaishnavi Singh",
+      "Chang-Tien Lu"
+    ],
+    "problem": "预测野火后植被损失面临数据模态多样、特征交互复杂以及模型可解释性不足的挑战，现有方法未能充分利用多模态因素及其相互作用。",
+    "method": "提出MVeLMA多模态特征集成管道，采用堆叠集成架构整合不同数据模态，并通过概率建模进行不确定性估计。",
+    "result": "在预测植被损失的实验中优于多个SOTA和基线模型，生成的植被损失置信度地图可识别高风险县域，支持针对性生态恢复。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27498v1",
+    "date": "2025-10-31",
+    "title": "Minimax-Optimal Two-Sample Test with Sliced Wasserstein",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27498v1",
+    "author list": [
+      "Binh Thuan Tran",
+      "Nicolas Schreuder"
+    ],
+    "problem": "研究非参数双样本检验问题，旨在基于切片Wasserstein距离构建统计检验方法，以平衡计算效率与统计性能。",
+    "method": "提出基于置换的切片Wasserstein检验，通过随机投影将高维分布比较转化为一维问题，利用排列原理控制第一类错误。",
+    "result": "理论证明该方法在有限样本下达到极小极大分离率n^{-1/2}，数值实验显示其在不同场景下均保持稳定性能，且无需核函数调参。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27380v1",
+    "date": "2025-10-31",
+    "title": "Flatness of Two-Input Discrete-Time Systems and their Linearization",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27380v1",
+    "author list": [
+      "Johannes Schrotshamer",
+      "Bernd Kolar",
+      "Markus Schöberl"
+    ],
+    "problem": "研究双输入离散时间非线性系统的平坦性及其线性化问题，重点分析前向平坦和后向平坦两个子类的特性。",
+    "method": "通过平坦参数化Jacobian矩阵子矩阵的秩条件来区分系统子类，针对具有(x,u)-平坦输出的双输入系统，提出一种简单的动态扩展方法实现精确线性化。",
+    "result": "建立了秩条件与平坦子类的对应关系，所提动态扩展方法能够实现系统的精确线性化。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.27623v1",
+    "date": "2025-10-31",
+    "title": "Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27623v1",
+    "author list": [
+      "Qiusi Zhan",
+      "Hyeonjeong Ha",
+      "Rui Yang",
+      "Sirui Xu",
+      "Hanyang Chen",
+      "Liang-Yan Gui",
+      "Yu-Xiong Wang",
+      "Huan Zhang",
+      "Heng Ji",
+      "Daniel Kang"
+    ],
+    "problem": "针对基于多模态大语言模型的具身智能体，研究视觉后门攻击的安全风险，即智能体在正常场景下表现良好，但当环境中出现特定物体触发时，会持续执行攻击者预设的多步策略。",
+    "method": "提出BEAT框架，通过构建涵盖多样化场景、任务和触发物位置的训练集，并采用两阶段训练：先进行监督微调，再引入对比触发学习，将触发物判别建模为偏好学习问题以锐化决策边界。",
+    "result": "在多个具身智能体基准和MLLM上实现最高80%的攻击成功率，同时保持良性任务性能，并能泛化到分布外的触发物位置；对比触发学习在有限后门数据下将后门激活准确率提升达39%。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27210v1",
+    "date": "2025-10-31",
+    "title": "GUI-Rise: Structured Reasoning and History Summarization for GUI Navigation",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27210v1",
+    "author list": [
+      "Tao Liu",
+      "Chongyu Wang",
+      "Rongjie Li",
+      "Yingchen Yu",
+      "Xuming He",
+      "Bai Song"
+    ],
+    "problem": "针对多模态大语言模型在GUI导航任务中跨领域泛化能力不足和历史信息利用效率低的问题，提出增强推理框架。",
+    "method": "通过结构化推理生成包含进度估计与决策分析的思维链，结合动作预测与历史摘要模块，采用监督微调与基于GRPO的强化学习进行训练，并引入历史感知奖励机制。",
+    "result": "在相同训练数据条件下取得SOTA性能，尤其在跨领域场景表现突出，验证了框架在多样化GUI导航任务中保持鲁棒推理与泛化能力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27324v1",
+    "date": "2025-10-31",
+    "title": "Generative Semantic Coding for Ultra-Low Bitrate Visual Communication and Analysis",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27324v1",
+    "author list": [
+      "Weiming Chen",
+      "Yijia Wang",
+      "Zhihan Zhu",
+      "Zhihai He"
+    ],
+    "problem": "解决超低码率（如深空探测、战场侦察）下视觉通信与远程分析任务，需在极低带宽下准确重建视觉场景，同时保持视觉分析精度与人机交互性能。",
+    "method": "融合图像生成与深度压缩技术，通过联合文本语义描述与编码隐变量引导修正流模型，实现视觉场景的精确生成；两者均以极低码率编码传输。",
+    "result": "实验表明，在相同图像重建质量与视觉分析精度下，本方法比现有方案显著降低带宽消耗；代码将在论文接受后公开。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27173v1",
+    "date": "2025-10-31",
+    "title": "FMint-SDE: A Multimodal Foundation Model for Accelerating Numerical Simulation of SDEs via Error Correction",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27173v1",
+    "author list": [
+      "Jiaxin Yuan",
+      "Haizhao Yang",
+      "Maria Cameron"
+    ],
+    "problem": "传统数值积分器在随机微分方程（SDE）模拟中面临精度与计算效率的权衡，而现有神经网络方法通常需为每个案例单独训练模型，难以实现通用高效仿真。",
+    "method": "提出FMint-SDE多模态基础模型，基于仅解码器Transformer架构，通过上下文学习融合数值解与文本模态，学习通用误差校正机制；利用传统求解器生成的粗解序列进行提示训练，实现跨系统泛化。",
+    "result": "在分子动力学、机械系统、金融和生物学等领域的SDE基准测试中，相比经典求解器实现了更优的精度-效率权衡，验证了其作为通用动力学系统仿真工具的潜力。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.27253v1",
+    "date": "2025-10-31",
+    "title": "Not All Instances Are Equally Valuable: Towards Influence-Weighted Dataset Distillation",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27253v1",
+    "author list": [
+      "Qiyan Deng",
+      "Changqian Zheng",
+      "Lianpeng Qiao",
+      "Yuping Wang",
+      "Chengliang Chai",
+      "Lei Cao"
+    ],
+    "problem": "现有数据集蒸馏方法假设所有实例贡献均等，但真实数据集中存在冗余甚至有害样本，直接蒸馏会降低模型性能。",
+    "method": "提出影响加权蒸馏（IWD）框架，通过影响函数评估每个实例对蒸馏目标的影响，并为实例分配自适应权重以优先保留有益数据。该模块化设计可与多种蒸馏框架集成。",
+    "result": "在多个数据集上的实验表明，IWD能提升蒸馏数据集质量，模型准确率最高提升7.8%。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27197v1",
+    "date": "2025-10-31",
+    "title": "MDAS-GNN: Multi-Dimensional Spatiotemporal GNN with Spatial Diffusion for Urban Traffic Risk Forecasting",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27197v1",
+    "author list": [
+      "Ziyuan Gao"
+    ],
+    "problem": "解决城市交通网络中交通事故预测问题，传统模型将路段视为独立单元，难以捕捉复杂空间关系与时间依赖性。",
+    "method": "提出MDAS-GNN模型，融合交通安全、基础设施与环境风险三个维度，采用特征特定的空间扩散机制与多头时间注意力捕获多时间跨度依赖。",
+    "result": "在英国交通部三个城市数据集上优于基线方法，长时段预测表现突出；消融实验表明多维特征集成比单维方法降低预测误差达40%。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27641v1",
+    "date": "2025-10-31",
+    "title": "SpecAttn: Speculating Sparse Attention",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27641v1",
+    "author list": [
+      "Harsh Shah"
+    ],
+    "problem": "针对大语言模型推理中自注意力机制二次复杂度导致的计算瓶颈，特别是长上下文场景下的冗余计算问题。",
+    "method": "提出SpecAttn方法，在标准推测解码流程中利用草稿模型已计算的注意力权重，通过KL散度层对齐、GPU优化排序算法和动态KV缓存剪枝三项技术识别关键token。",
+    "result": "在PG-19数据集上实现KV缓存访问量降低75%以上，仅带来15.29%的困惑度上升，显著优于现有稀疏注意力方法。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27267v1",
+    "date": "2025-10-31",
+    "title": "MedCalc-Eval and MedCalc-Env: Advancing Medical Calculation Capabilities of Large Language Models",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27267v1",
+    "author list": [
+      "Kangkun Mao",
+      "Jinru Ding",
+      "Jiayuan Chen",
+      "Mouxiao Bian",
+      "Ruiyao Chen",
+      "Xinwei Peng",
+      "Sijie Ren",
+      "Linyang Li",
+      "Jie Xu"
+    ],
+    "problem": "现有医学大语言模型评测基准主要关注问答和描述性推理，缺乏对临床决策至关重要的定量计算能力评估，且现有数据集覆盖计算任务有限、未能反映真实临床场景。",
+    "method": "提出MedCalc-Eval大规模医学计算评测基准（含700+任务），包含基于公式的计算和基于规则的评分系统；并开发基于InternBootcamp的强化学习环境MedCalc-Env，支持多步临床推理与规划。",
+    "result": "在MedCalc-Eval基准上，通过MedCalc-Env微调的Qwen2.5-32B模型达到SOTA性能，在数值敏感性、公式选择和推理鲁棒性方面显著提升；当前挑战包括单位转换、多条件逻辑和上下文理解。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27163v1",
+    "date": "2025-10-31",
+    "title": "MARIA: A Framework for Marginal Risk Assessment without Ground Truth in AI Systems",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27163v1",
+    "author list": [
+      "Jieshan Chen",
+      "Suyu Ma",
+      "Qinghua Lu",
+      "Sung Une Lee",
+      "Liming Zhu"
+    ],
+    "problem": "在AI系统替换现有流程时，传统评估依赖难以获取的真实标签（如延迟结果、高成本数据），无法量化系统间的风险差异。",
+    "method": "提出边际风险评估框架MARIA，通过可预测性、能力与交互优势三类相对评估方法，直接比较新旧系统差异，避免对真实标签或绝对风险的依赖。",
+    "result": "框架为开发团队提供可操作指导，能识别AI系统在哪些场景提升效果、引入新风险，以及如何负责任地部署系统。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2510.27522v1",
+    "date": "2025-10-31",
+    "title": "Leveraging Generic Time Series Foundation Models for EEG Classification",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27522v1",
+    "author list": [
+      "Théo Gnassounou",
+      "Yessin Moakher",
+      "Shifeng Xie",
+      "Vasilii Feofanov",
+      "Ievgen Redko"
+    ],
+    "problem": "探索通用时间序列基础模型在脑电信号（EEG）分类任务中的适用性，包括运动想象分类和睡眠阶段预测，以弥补该领域对跨域预训练模型潜力研究的不足。",
+    "method": "采用两种预训练策略：在异构真实世界时间序列数据上预训练，以及仅使用合成数据预训练；将预训练后的通用时间序列分类基础模型直接迁移至EEG任务。",
+    "result": "两种预训练变体均表现强劲，在多个EEG任务上一致超越EEGNet卷积基线和最新的EEG专用基础模型CBraMod，表明即使使用非神经来源数据或合成信号预训练，通用时间序列模型也能有效迁移至EEG分析。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27650v1",
+    "date": "2025-10-31",
+    "title": "Imbalanced Classification through the Lens of Spurious Correlations",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27650v1",
+    "author list": [
+      "Jakob Hackstein",
+      "Sidney Bender"
+    ],
+    "problem": "类别不平衡导致分类器性能不可靠，其核心问题在于数据不平衡条件放大了对少数类的欠指定，从而加剧了Clever Hans效应（即模型学习到虚假相关性）。",
+    "method": "提出一种基于反事实解释的可解释AI方法，联合识别并消除不平衡条件下出现的Clever Hans效应，而非依赖传统的数据或损失重加权策略。",
+    "result": "在三个数据集上取得了有竞争力的分类性能，并通过实验展示了不平衡条件下Clever Hans效应的产生机制，这一视角被现有方法普遍忽视。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27403v1",
+    "date": "2025-10-31",
+    "title": "FedMuon: Accelerating Federated Learning with Matrix Orthogonalization",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27403v1",
+    "author list": [
+      "Junkang Liu",
+      "Fanhua Shang",
+      "Junchao Zhou",
+      "Hongying Liu",
+      "Yuanyuan Liu",
+      "Jin Liu"
+    ],
+    "problem": "联邦学习的核心瓶颈在于通信轮次过多，现有方法使用逐元素优化器（如Adam/SGD）忽略了权重矩阵的几何结构，导致病态方向放大、条件数恶化与收敛缓慢。",
+    "method": "提出FedMuon优化器，在本地使用矩阵正交化优化矩阵结构参数；通过动量聚合与局部-全局梯度对齐技术，缓解非独立同分布场景下的客户端漂移问题。",
+    "result": "理论证明FedMuon在线性加速收敛率下无需异质性假设；在视觉与语言模型实验中，相比基线方法显著减少通信轮次并提升测试精度。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27287v1",
+    "date": "2025-10-31",
+    "title": "Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27287v1",
+    "author list": [
+      "Harsh Vishwakarma",
+      "Ankush Agarwal",
+      "Ojas Patil",
+      "Chaitanya Devaguptapu",
+      "Mahesh Chandran"
+    ],
+    "problem": "在企业环境中开发和评估基于LLM的系统面临挑战，包括数据分散在多个来源且受复杂访问控制约束，导致难以实现智能自动化和高效信息检索。",
+    "method": "提出EnterpriseBench基准，通过模拟企业设置（数据碎片化、访问控制层级和跨职能工作流）构建500项多样化任务，并提供从组织元数据生成内部一致任务的数据生成流程。",
+    "result": "实验表明，即使最先进的LLM代理任务完成率仅为41.8%，揭示了企业AI系统在软件工程、HR、财务和行政领域仍有显著改进空间。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27408v1",
+    "date": "2025-10-31",
+    "title": "Estimation of aboveground biomass in a tropical dry forest: An intercomparison of airborne, unmanned, and space laser scanning",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27408v1",
+    "author list": [
+      "Nelson Mattié",
+      "Arturo Sanchez-Azofeifa",
+      "Pablo Crespo-Peremarch",
+      "Juan-Ygnacio López-Hernández"
+    ],
+    "problem": "针对热带干旱森林这一研究薄弱区域，开发精确的地上生物量估算方法，以满足《巴黎协定》对高质量森林碳汇数据的需求。",
+    "method": "采用机载、无人机和星载激光扫描系统，结合普通最小二乘与贝叶斯支持向量机回归，通过变量选择和交叉验证优化模型，重点利用树高相关指标与全波形信号特征。",
+    "result": "在哥斯达黎加10个样地的实测中，地上生物量估算范围26.02-175.43 Mg/ha，所有激光扫描系统的支持向量机回归均方根误差为17.89%，其中全波形星载激光扫描误差最低（17.07%）。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27153v1",
+    "date": "2025-10-31",
+    "title": "Exploring Landscapes for Better Minima along Valleys",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27153v1",
+    "author list": [
+      "Tong Zhao",
+      "Jiacheng Li",
+      "Yuanchang Zhou",
+      "Guangming Tan",
+      "Weile Jia"
+    ],
+    "problem": "针对深度学习优化器在达到局部极小值后停止搜索的问题，提出在损失函数景观的谷底区域继续探索以寻找更低且泛化能力更强的极小值，特别关注大批量训练场景。",
+    "method": "提出适配器'E'，可集成到梯度优化器中，使其在到达局部极小值后沿损失景观谷底（低且损失相近的区域）持续搜索；通过收敛性证明确保在凸和非凸场景下的理论保证。",
+    "result": "在大量大批量训练任务中，改进的Lamb优化器ALTO将当前最优方法的测试准确率平均提升2.5%，验证了沿谷底探索可获得更优泛化性能。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27679v1",
+    "date": "2025-10-31",
+    "title": "Dark-Field X-Ray Imaging Significantly Improves Deep-Learning based Detection of Synthetic Early-Stage Lung Tumors in Preclinical Models",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27679v1",
+    "author list": [
+      "Joyoni Dey",
+      "Hunter C. Meyer",
+      "Murtuza S. Taqi"
+    ],
+    "problem": "低剂量CT（LDCT）在肺癌筛查中面临基础设施不足和早期检测假阳性率高的问题（如NLST试验中假阳性率达26.6%），需开发更易获取且准确的早期肺肿瘤检测方法。",
+    "method": "结合X射线暗场成像（DFI）与深度学习分割，利用DFI对小角度散射敏感的特性增强早期肿瘤特征；采用U-Net网络在衰减图像（ATTN）、DFI及其组合通道上训练分割模型。",
+    "result": "在合成小鼠肺肿瘤数据上，仅DFI输入模型的真阳性检测率达83.7%（显著高于ATTN-only的51%），特异性保持90.5%；组合输入特异性达97.6%，证明DFI可替代标准放射成像用于资源有限场景。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27537v1",
+    "date": "2025-10-31",
+    "title": "AstuteRAG-FQA: Task-Aware Retrieval-Augmented Generation Framework for Proprietary Data Challenges in Financial Question Answering",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27537v1",
+    "author list": [
+      "Mohammad Zahangir Alam",
+      "Khandoker Ashik Uz Zaman",
+      "Mahdi H. Miraz"
+    ],
+    "problem": "针对金融问答任务中存在的专有数据集访问受限、检索精度不足、监管合规约束及敏感数据解释等挑战，提出任务自适应的检索增强生成框架。",
+    "method": "采用混合检索策略融合开源与专有金融数据，通过动态提示框架实时适配查询复杂度，并设计四层任务分类体系（显性/隐性事实、可解释/隐含因果推理）指导优化。集成差分隐私、数据匿名化等多层安全机制与实时合规监控。",
+    "result": "评估了上下文嵌入、小模型增强与定向微调三种数据集成技术的效率与可行性，框架通过任务分类与安全机制提升金融问答的精确性与合规性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27419v1",
+    "date": "2025-10-31",
+    "title": "DeepCompress: A Dual Reward Strategy for Dynamically Exploring and Compressing Reasoning Chains",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27419v1",
+    "author list": [
+      "Tian Liang",
+      "Wenxiang Jiao",
+      "Zhiwei He",
+      "Jiahao Xu",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "problem": "大型推理模型存在认知效率问题：简单问题上过度思考，复杂问题上思考不足。现有方法通过监督微调或强化学习优化效率，但往往以牺牲准确性为代价。",
+    "method": "提出DeepCompress框架，采用自适应长度奖励机制实时将问题分类为简单或困难，对简单问题鼓励短推理链，对困难问题促进长探索链，实现推理链长度的自主调整。",
+    "result": "在数学基准测试中优于基线方法，在保持更高准确率的同时显著提升token效率，验证了双奖励策略在精度和效率上的协同提升效果。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27506v1",
+    "date": "2025-10-31",
+    "title": "Asynchronous Risk-Aware Multi-Agent Packet Routing for Ultra-Dense LEO Satellite Networks",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27506v1",
+    "author list": [
+      "Ke He",
+      "Thang X. Vu",
+      "Le He",
+      "Lisheng Fan",
+      "Symeon Chatzinotas",
+      "Bjorn Ottersten"
+    ],
+    "problem": "针对超密集低轨卫星星座的大规模、动态拓扑和高延迟特性，解决传统路由算法依赖同步决策且忽略性能退化风险的问题，需在去中心化环境中平衡多QoS目标。",
+    "method": "提出PRIMAL事件驱动多智能体路由框架，通过原始-对偶方法使卫星按自身时间线独立决策，学习QoS目标的完整代价分布以约束尾部风险。",
+    "result": "在1584颗卫星的星座仿真中，相比风险无感知基线，排队延迟降低超70%，高负载场景端到端延迟减少近12毫秒，有效缓解最短路径与拥塞避免的核心冲突。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27571v1",
+    "date": "2025-10-31",
+    "title": "Towards Universal Video Retrieval: Generalizing Video Embedding via Synthesized Multimodal Pyramid Curriculum",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27571v1",
+    "author list": [
+      "Zhuoning Guo",
+      "Mingxin Li",
+      "Yanzhao Zhang",
+      "Dingkun Long",
+      "Pengjun Xie",
+      "Xiaowen Chu"
+    ],
+    "problem": "当前视频检索范式存在结构错配，狭窄基准导致训练数据受限且偏向单任务，抑制了模型在多任务、多领域的通用能力，缺乏能够诊断和驱动多维泛化的评估体系。",
+    "method": "提出协同设计框架：构建通用视频检索基准（UVRB）以诊断能力缺口；通过可扩展合成流程生成155万高质量数据对填充语义空间；设计模态金字塔课程，利用数据间潜在关联训练通用视频嵌入器（GVE）。",
+    "result": "在UVRB上实现零样本泛化的最先进性能，分析表明流行基准对通用能力预测性差，且部分相关检索是主导但被忽视的场景，验证了协同设计框架对突破现有局限的有效性。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27208v1",
+    "date": "2025-10-31",
+    "title": "Multi-Modal Feature Fusion for Spatial Morphology Analysis of Traditional Villages via Hierarchical Graph Neural Networks",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27208v1",
+    "author list": [
+      "Jiaxin Zhang",
+      "Zehong Zhu",
+      "Junye Deng",
+      "Yunqin Li",
+      "and Bowen Wang"
+    ],
+    "problem": "传统村落空间形态分析面临数据基础设施不足、多源数据融合困难的问题，现有研究多依赖单一学科视角和定性方法，难以应对空间特征消失与景观同质化的挑战。",
+    "method": "提出分层图神经网络（HGNN），通过输入节点与通信节点、静态边与动态边的设计，结合图卷积网络（GCN）和图注意力网络（GAT），实现多模态特征的两阶段融合与关系池化机制。",
+    "result": "在17个子类型的联合训练中，平均准确率/F1分数从独立模型的0.71/0.83提升至0.82/0.90，其中地块任务带来6%的性能增益，显著优于现有多模态融合与分类方法。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27156v1",
+    "date": "2025-10-31",
+    "title": "Variable Smoothing Alternating Proximal Gradient Algorithm for Coupled Composite Optimization",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27156v1",
+    "author list": [
+      "Xian-Jun Long",
+      "Kang Zeng",
+      "Gao-Xi Li",
+      "Minh N. Dao",
+      "Zai-Yun Peng"
+    ],
+    "problem": "针对一类非凸非光滑优化问题，其中目标函数包含线性算子复合的弱凸非光滑分量，常见于稀疏信号恢复和图像去噪等场景。",
+    "method": "提出变量平滑交替近端梯度算法，结合变量平滑技术与一阶方法，在步长和平滑水平上提供灵活的参数选择策略。",
+    "result": "理论证明达到ε-近似稳定点的迭代复杂度为O(ε⁻³)；在稀疏信号恢复和图像去噪实验中优于现有算法。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27540v1",
+    "date": "2025-10-31",
+    "title": "Linear Convergence and Error Bounds for Optimization Without Strong Convexity",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27540v1",
+    "author list": [
+      "Kira van Treek",
+      "Javier F. Peña",
+      "Juan C. Vera",
+      "Luis F. Zuluaga"
+    ],
+    "problem": "研究非强凸优化中固定点迭代（如梯度下降、邻近方法、算子分裂）的收敛速度问题，传统方法仅保证次线性收敛，缺乏线性收敛的通用条件。",
+    "method": "证明局部误差界条件是平均算子固定点迭代线性收敛的充要条件，并给出收敛速率与误差界常数的显式关系；特别证明分段线性算子满足该条件。",
+    "result": "为ADMM和Douglas-Rachford等算法在非强凸场景提供线性收敛框架：线性优化收敛速率与问题数据无关，二次优化仅依赖目标函数条件数。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27133v1",
+    "date": "2025-10-31",
+    "title": "WildfireX-SLAM: A Large-scale Low-altitude RGB-D Dataset for Wildfire SLAM and Beyond",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27133v1",
+    "author list": [
+      "Zhicong Sun",
+      "Jacqueline Lo",
+      "Jinxing Hu"
+    ],
+    "problem": "现有3D高斯溅射SLAM方法主要针对小规模室内场景，缺乏适用于大规模森林环境（如野火应急响应）的高质量数据集，数据采集成本高且技术不可行。",
+    "method": "基于Unreal Engine 5构建合成数据采集流程，生成低空无人机RGB-D图像序列，提供真实相机位姿及多模态数据，并支持光照、天气、火情类型等环境因素灵活控制。",
+    "result": "发布包含5.5千张图像、覆盖16平方公里森林的WildfireX-SLAM数据集，基准测试揭示了森林场景下3DGS-SLAM的独特挑战，为未来方法改进提供方向。",
+    "theme": "Robotics"
+  },
+  {
+    "arXiv id": "2510.27413v1",
+    "date": "2025-10-31",
+    "title": "Atlas-Alignment: Making Interpretability Transferable Across Language Models",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27413v1",
+    "author list": [
+      "Bruno Puri",
+      "Jim Berend",
+      "Sebastian Lapuschkin",
+      "Wojciech Samek"
+    ],
+    "problem": "现有可解释性方法（如稀疏自编码器）需要为每个新模型重复训练、标注和验证，成本高昂且难以扩展，阻碍了语言模型的透明与可控性。",
+    "method": "提出Atlas-Alignment框架，通过表征对齐技术将未知模型潜在空间与预构建的带标注概念图谱（Concept Atlas）对齐，仅需共享输入即可实现语义特征检索和沿概念引导生成。",
+    "result": "定量与定性评估表明，无需标注概念数据即可实现鲁棒的语义检索和可控生成，显著降低了新模型可解释化的边际成本。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2510.27420v1",
+    "date": "2025-10-31",
+    "title": "Towards a Multi-Embodied Grasping Agent",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27420v1",
+    "author list": [
+      "Roman Freiberg",
+      "Alexander Qualmann",
+      "Ngo Anh Vien",
+      "Gerhard Neumann"
+    ],
+    "problem": "多体抓取任务旨在开发能适应不同夹爪设计的通用抓取方法，现有方法常因需大规模数据且难以隐式学习机器人运动学结构而受限。",
+    "method": "提出基于流模型的等变抓取合成架构，仅利用夹爪与场景几何信息显式推导运动学模型，支持不同自由度夹爪；全部模块基于JAX实现，支持场景、夹爪与抓取批处理。",
+    "result": "在包含人形手到平行夹爪的25,000场景、2000万抓取数据集上验证，实现更平滑学习、更高性能与更快推理速度。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27364v1",
+    "date": "2025-10-31",
+    "title": "Fine-Tuning Open Video Generators for Cinematic Scene Synthesis: A Small-Data Pipeline with LoRA and Wan2.1 I2V",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27364v1",
+    "author list": [
+      "Meftun Akarsu",
+      "Kerem Catay",
+      "Sedat Bin Vedat",
+      "Enes Kutay Yarkan",
+      "Ilke Senturk",
+      "Arda Sar",
+      "Dafne Eksioglu"
+    ],
+    "problem": "解决从少量数据微调开源视频生成模型以合成影视级场景的问题，针对电视和电影制作场景，需保持视觉风格一致性和时间连贯性。",
+    "method": "采用两阶段流程：第一阶段使用LoRA模块微调Wan2.1 I2V-14B模型的交叉注意力层，实现视觉风格迁移；第二阶段通过视频解码器将风格化关键帧扩展为720p连贯序列，辅以轻量并行化和序列分区加速推理。",
+    "result": "在FVD、CLIP-SIM和LPIPS指标及专家评估中，相比基础模型在影视保真度和时间稳定性方面取得可量化提升，支持单GPU数小时内完成领域适应。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2510.27451v1",
+    "date": "2025-10-31",
+    "title": "Bi-martingale optimal transport and its applications",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27451v1",
+    "author list": [
+      "Karol Bołbotowski"
+    ],
+    "problem": "针对具有共同重心的概率测度对，在传统鞅最优传输（MOT）框架中，当边缘分布偏离凸序约束时，MOT在高维情况下对边缘分布变化的不稳定性问题。",
+    "method": "提出双鞅最优传输模型，其可行传输计划需满足两个鞅型约束；该框架统一了概率测度空间上的多个变分问题，包括二阶Zolotarev距离的传输解释及凸序约束下的优化问题。",
+    "result": "构建了经典MOT问题的Γ收敛双鞅逼近方案，该方案鲁棒地处理边缘分布对凸序的偏离，并克服了高维MOT对边缘分布变化的不稳定性。",
+    "theme": "Systems and Control"
+  },
+  {
+    "arXiv id": "2510.27182v1",
+    "date": "2025-10-31",
+    "title": "SERFLOW: A Cross-Service Cost Optimization Framework for SLO-Aware Dynamic ML Inference",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27182v1",
+    "author list": [
+      "Zongshun Zhang",
+      "Ibrahim Matta"
+    ],
+    "problem": "针对跨服务（FaaS与IaaS）动态卸载的ML推理任务，在考虑虚拟机冷启动、长尾服务时间分布等现实约束下，如何平衡处理与传输延迟并最小化云服务成本。",
+    "method": "将ML查询建模为无环多阶段流水线，每阶段以稀疏参数块结尾并允许请求提前退出；基于阶段级请求退出比例进行资源供给，并结合VM与无服务器函数的自适应负载均衡。",
+    "result": "在动态工作负载下实现云成本降低超过23%，通过阶段感知资源分配与跨服务负载均衡有效适应查询分布变化。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2510.27545v1",
+    "date": "2025-10-31",
+    "title": "EBT-Policy: Energy Unlocks Emergent Physical Reasoning Capabilities",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2510.27545v1",
+    "author list": [
+      "Travis Davies",
+      "Yiqi Huang",
+      "Alexi Gladstone",
+      "Yunxin Liu",
+      "Xiang Chen",
+      "Heng Ji",
+      "Huxian Liu",
+      "Luhui Hu"
+    ],
+    "problem": "解决机器人策略学习中隐式策略（如扩散策略）存在的计算成本高、暴露偏差和推理动态不稳定问题，以及在分布偏移下容易发散的核心挑战。",
+    "method": "提出基于能量变换器（EBT）的能量模型架构EBT-Policy，通过端到端学习能量景观并建模平衡动力学，支持不确定性感知推理和动态计算分配。",
+    "result": "在仿真和真实任务中一致优于扩散策略，训练和推理计算量更低；部分任务仅需2步推理（比扩散策略100步减少50倍），并涌现出零样本从失败动作序列恢复等新能力。",
+    "theme": "Machine Learning"
+  }
+]
