@@ -1,0 +1,130 @@
+[
+  {
+    "arXiv id": "2511.04103v1",
+    "date": "2025-11-06",
+    "title": "A Characterization of List Language Identification in the Limit",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04103v1",
+    "author list": [
+      "Moses Charikar",
+      "Chirag Pabbaraju",
+      "Ambuj Tewari"
+    ],
+    "problem": "研究语言极限识别问题，即从目标语言的示例序列中持续猜测目标语言，要求最终猜测稳定正确。经典结果表明对大多数语言集合该任务不可行，本文探讨允许学习者每次输出k个猜测的列表识别设定。",
+    "method": "基于Angluin经典表征的递归扩展，提出k-列表极限识别的精确表征。核心思想是将语言集合分解为k个子集，每个子集满足经典极限识别条件。",
+    "result": "证明语言集合可k-列表识别的充要条件是其可分解为k个经典可识别子集。在统计设定下，可识别集合能以指数速率收敛，而不可识别集合的误差率不会趋于零。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2511.04102v1",
+    "date": "2025-11-06",
+    "title": "A simulation that recapitulates the dynamics of PER-directed colloidal assembly",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04102v1",
+    "author list": [
+      "Cheng-Hung Chou",
+      "Pepijn G. Moerman",
+      "Sikao Guo",
+      "Yiben Fu",
+      "Margaret E. Johnson",
+      "Yannis Kevrekidis",
+      "Rebecca Schulman"
+    ],
+    "problem": "DNA包覆胶体在酶反应控制下的自组装过程复杂，传统分子动力学和布朗动力学模拟难以覆盖该层级自组装所需的长时程（小时级）演化。",
+    "method": "采用基于粒子的反应-扩散算法，模拟数百至数千个微米级DNA包覆胶体在空间与时间上的演化过程，构建数字孪生模型。",
+    "result": "模型定性复现了实验中观察到的核壳结构，重现了不同组装时间延迟引起的组分异质性；验证了该方法可捕捉长时程动力学与结构形成尺度，并用于探索结构演化的不同方案。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2511.04071v1",
+    "date": "2025-11-06",
+    "title": "Left Atrial Segmentation with nnU-Net Using MRI",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04071v1",
+    "author list": [
+      "Fatemeh Hosseinabadi",
+      "Seyedhassan Sharifi"
+    ],
+    "problem": "解决心脏MRI中左心房（LA）精确分割问题，以指导房颤消融治疗和构建生物物理心脏模型，替代耗时且主观的人工标注。",
+    "method": "采用nnU-Net框架，该自配置深度学习架构自动适配MRI数据的预处理、网络配置与训练流程，基于卷积神经网络实现端到端分割。",
+    "result": "在左心房分割挑战赛2013数据集（30例MRI）上达到93.5%平均Dice系数，优于传统方法，对心房形状、对比度和图像质量变化具有鲁棒性。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2511.04053v1",
+    "date": "2025-11-06",
+    "title": "Interpreting Multi-Attribute Confounding through Numerical Attributes in Large Language Models",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04053v1",
+    "author list": [
+      "Hirohane Takagi",
+      "Gouki Minegishi",
+      "Shota Kizawa",
+      "Issey Sukeda",
+      "Hitomi Yanaka"
+    ],
+    "problem": "研究大语言模型在数值推理中的错误机制，聚焦于模型如何整合单个实体的多个数值属性，以及无关数值上下文如何干扰表示与输出。",
+    "method": "结合线性探测与偏相关分析，通过基于提示的脆弱性测试，探究不同规模模型中数值属性在共享潜在子空间的编码与交互。",
+    "result": "发现LLMs编码真实世界数值相关性但系统性地放大它们；无关上下文引起幅度表示的一致偏移，下游影响随模型规模变化，揭示了多属性纠缠下决策脆弱性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2511.04086v1",
+    "date": "2025-11-06",
+    "title": "DeNoise: Learning Robust Graph Representations for Unsupervised Graph-Level Anomaly Detection",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04086v1",
+    "author list": [
+      "Qingfeng Chen",
+      "Haojin Zeng",
+      "Jingyi Jie",
+      "Shichao Zhang",
+      "Debo Cheng"
+    ],
+    "problem": "无监督图级异常检测中，训练集常被异常图污染，导致图神经网络学到的表示失真、性能下降。",
+    "method": "提出DeNoise框架，联合优化图级编码器、属性与结构解码器，通过对抗目标学习抗噪嵌入；引入编码器锚定对齐去噪机制融合正常图节点信息，并采用对比学习压缩正常图嵌入、排斥异常图。",
+    "result": "在八个真实数据集上，DeNoise在不同噪声强度下均能学习可靠的图级表示，显著优于当前最先进的无监督图级异常检测基线方法。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2511.04054v1",
+    "date": "2025-11-06",
+    "title": "Necessary and Sufficient Conditions for the Optimization-Based Concurrent Execution of Learned Robotic Tasks",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04054v1",
+    "author list": [
+      "Sheikh A. Tahmid",
+      "Gennaro Notomista"
+    ],
+    "problem": "研究多任务强化学习中的并发执行问题，即如何同时执行多个通过值函数编码的学习任务，确定在状态空间子集中并发执行的条件与限制。",
+    "method": "基于最小范数控制器框架，提出判定值函数并发执行必要与充分条件的理论定理；扩展优化框架以兼容带折扣因子的标准强化学习值函数。",
+    "result": "理论分析揭示了学习任务可并发执行、固有并发或不可并发的条件，为优化框架与标准RL实践的兼容性提供了理论基础。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2511.04069v1",
+    "date": "2025-11-06",
+    "title": "Pediatric Appendicitis Detection from Ultrasound Images",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04069v1",
+    "author list": [
+      "Fatemeh Hosseinabadi",
+      "Seyedhassan Sharifi"
+    ],
+    "problem": "针对儿童急性腹痛最常见的病因——阑尾炎，解决其超声诊断中因症状重叠、图像质量不一及低对比度、斑点噪声和解剖变异等挑战导致的诊断困难。",
+    "method": "基于预训练ResNet架构，通过归一化、尺寸调整与数据增强等预处理，微调模型以从右下腹及周边结构的超声图像中区分阑尾炎与非阑尾炎病例。",
+    "result": "在Regensburg儿科阑尾炎数据集上，模型整体准确率达93.44%，精确率91.53%，召回率89.8%，表明其能有效学习判别性空间特征并在异质超声图像中稳定识别阑尾炎。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2511.04094v1",
+    "date": "2025-11-06",
+    "title": "KoTaP: A Panel Dataset for Corporate Tax Avoidance, Performance, and Governance in Korea",
+    "arXiv pdf adress": "http://arxiv.org/pdf/2511.04094v1",
+    "author list": [
+      "Hyungjong Na",
+      "Wonho Song",
+      "Seungyong Han",
+      "Donghyeon Jo",
+      "Sejin Myung",
+      "Hyungjoon Kim"
+    ],
+    "problem": "构建一个用于研究韩国上市公司避税行为及其与公司绩效、治理等多领域关联的长期面板数据集，填补韩国特定制度背景下（如股权集中、外资持股高）相关数据资源的空白。",
+    "method": "提出韩国避税面板数据集（KoTaP），通过筛选2011-2024年KOSPI/KOSDAQ非金融企业，构建包含12,653个公司-年度观测值的平衡面板；采用现金有效税率、GAAP有效税率和账税差异等多指标度量避税，并标准化关联盈余管理、盈利能力、稳定性、成长性与治理变量。",
+    "result": "数据集具备平衡面板结构与核心指标分布与国际文献的一致性，同时反映了韩国企业流动性比率高等独特制度特征；支持计量经济学与深度学习模型的基准测试、外部有效性检验及可解释AI分析，适用于政策评估与投资分析。",
+    "theme": "Machine Learning"
+  }
+]
