@@ -1,0 +1,1602 @@
+[
+  {
+    "arXiv id": "1905.13547v4",
+    "date": "2019-05-28",
+    "title": "Learning robust control for LQR systems with multiplicative noise via policy gradient",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1905.13547v4",
+    "author list": [
+      "Benjamin Gravell",
+      "Peyman Mohajerin Esfahani",
+      "Tyler Summers"
+    ],
+    "problem": "针对具有乘性噪声的线性二次调节器（LQR）系统，研究如何在系统动态存在固有不确定性时学习鲁棒控制策略，以解决传统强化学习方法因忽略不确定性而导致的策略脆弱性或收敛失败问题。",
+    "method": "采用策略梯度算法，利用乘性噪声LQR成本函数具备梯度支配特性的性质，在模型已知和模型未知两种设置下，通过优化非凸成本函数实现全局收敛至最优控制策略。",
+    "result": "理论证明策略梯度算法能够以多项式依赖问题参数的效率全局收敛到最优控制策略，并在模型未知时通过系统轨迹样本估计梯度保持收敛性，为乘性噪声下的鲁棒控制提供了理论保证。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2304.11315v1",
+    "date": "2023-04-22",
+    "title": "Unmatched uncertainty mitigation through neural network supported model predictive control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2304.11315v1",
+    "author list": [
+      "Mateus V. Gasparino",
+      "Prabhat K. Mishra",
+      "Girish Chowdhary"
+    ],
+    "problem": "针对具有未知结构、不匹配且有界的状态-动作依赖不确定性的系统，研究其实时鲁棒控制问题。",
+    "method": "提出基于深度学习的模型预测控制方法，使用深度神经网络在线估计不匹配不确定性；采用双时间尺度自适应机制，实时更新网络最后一层权重，同时利用在线采集数据缓存在较慢时间尺度训练内层。",
+    "result": "在喷气发动机压缩系统模型上的数值实验表明，该方法可实现实时控制，并保持了学习型模型预测控制的理論保证。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2212.13902v2",
+    "date": "2022-12-20",
+    "title": "Likelihood-based generalization of Markov parameter estimation and multiple shooting objectives in system identification",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2212.13902v2",
+    "author list": [
+      "Nicholas Galioto",
+      "Alex Arkady Gorodetsky"
+    ],
+    "problem": "针对线性与非线性非自治系统，从噪声且稀疏的数据中估计系统模型，解决传统方法在数据条件差（如噪声大、数据点少）时性能下降的问题。",
+    "method": "基于贝叶斯框架提出随机动力学隐马尔可夫模型的似然目标函数，将传统马尔可夫参数估计（最小二乘）与多重射击法统一为该目标在条件独立与零模型误差假设下的特例。",
+    "result": "数值仿真显示，在噪声和稀疏数据下，均方误差比多重射击法降低8.7倍以上；该方法在参数多于数据或系统呈混沌行为时仍能获得准确且可泛化的模型。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "1912.06085v1",
+    "date": "2019-12-12",
+    "title": "Control-Tutored Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1912.06085v1",
+    "author list": [
+      "Francesco De Lellis",
+      "Fabrizia Auletta",
+      "Giovanni Russo",
+      "Piero De Lellis",
+      "Mario di Bernardo"
+    ],
+    "problem": "解决多智能体平面环境中，控制一个或多个智能体将自由移动的目标智能体驱赶并围堵在目标区域内的任务，旨在减少强化学习的探索时间与提升状态空间探索效率。",
+    "method": "提出控制辅导强化学习（CTRL）算法，将基于模型的辅导控制策略知识融入表格学习算法，指导探索过程；利用有限的环境模型信息生成控制建议，辅助智能体决策。",
+    "result": "通过仿真实验验证了该方法能有效加速学习过程，并在多智能体围堵任务中展现出优于纯强化学习方法的性能，减少了训练所需步数。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2309.09358v1",
+    "date": "2023-09-17",
+    "title": "An Automatic Tuning MPC with Application to Ecological Cruise Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2309.09358v1",
+    "author list": [
+      "Mohammad Abtahi",
+      "Mahdis Rabbani",
+      "Shima Nazari"
+    ],
+    "problem": "模型预测控制（MPC）的性能高度依赖代价函数调参，传统手动调参难以保证最优性。该研究以生态巡航控制为应用场景，需利用道路坡度预览实现燃油经济性优化。",
+    "method": "通过动态规划离线求解全局燃油最小化问题，利用逆优化方法反推MPC代价函数参数，并采用神经网络在线生成自适应权重。",
+    "result": "在不同道路几何场景的仿真中验证了方法的有效性，实现了基于道路预览的燃油节约，但未提供具体节油比例或对比基准数据。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1909.06493v1",
+    "date": "2019-09-14",
+    "title": "Flight Controller Synthesis Via Deep Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1909.06493v1",
+    "author list": [
+      "William Koch"
+    ],
+    "problem": "传统控制方法在应对无人机等网络物理系统的不可预测交互、条件或故障模式时存在不足，特别是在需要执行高级认知功能（如规划与推理）的部署场景中。",
+    "method": "提出基于深度强化学习的飞行控制器合成方法，开发了包含数字孪生建模、训练环境调优框架（GymFC）及神经网络固件（Neuroflight）的全栈开源方案，实现从仿真到硬件的无缝迁移。",
+    "result": "实验表明，强化学习训练的神经网络控制器不仅能保持稳定飞行，还能在真实环境中完成精确特技机动，为下一代飞行控制系统开发奠定基础。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2310.15386v2",
+    "date": "2023-10-23",
+    "title": "Course Correcting Koopman Representations",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2310.15386v2",
+    "author list": [
+      "Mahan Fathi",
+      "Clement Gehring",
+      "Jonathan Pilault",
+      "David Kanaa",
+      "Pierre-Luc Bacon",
+      "Ross Goroshin"
+    ],
+    "problem": "针对非线性动力系统的长时间未来状态预测任务，现有基于Koopman表示的自动编码器方法在潜在空间中预测时存在误差累积问题，难以准确捕捉长期动态。",
+    "method": "提出周期性重编码机制，在推理阶段定期将预测状态重新映射回潜在空间以校正误差；该方法基于自动编码器框架学习使潜在动态线性的特征表示。",
+    "result": "在低维和高维非线性动力系统上的实验表明，周期性重编码能显著提升长期预测精度；理论分析和实证结果共同验证了该方法的有效性。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "1810.02022v1",
+    "date": "2018-10-04",
+    "title": "Convergence of the Expectation-Maximization Algorithm Through Discrete-Time Lyapunov Stability Theory",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1810.02022v1",
+    "author list": [
+      "Orlando Romero",
+      "Sarthak Chatterjee",
+      "Sérgio Pequito"
+    ],
+    "problem": "针对期望最大化（EM）算法在统计学与机器学习中收敛性分析的理论空白，研究其作为非线性动态系统的稳定性问题。",
+    "method": "将EM算法重构为非线性状态空间动态系统，利用离散时间Lyapunov稳定性理论框架，将算法极限点与似然函数局部极大值等价视为系统平衡点。",
+    "result": "通过Lyapunov渐近稳定性理论严格证明了EM算法的收敛性，为这类邻近点算法提供了动态系统视角的收敛保证。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2111.03915v1",
+    "date": "2021-11-06",
+    "title": "Robust Deep Reinforcement Learning for Quadcopter Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2111.03915v1",
+    "author list": [
+      "Aditya M. Deshpande",
+      "Ali A. Minai",
+      "Manish Kumar"
+    ],
+    "problem": "解决深度强化学习在无人机控制中从训练环境迁移到测试环境时泛化能力不足的问题，特别是面对训练时未见的环境参数变化。",
+    "method": "采用鲁棒马尔可夫决策过程（RMDP）框架，结合鲁棒控制与强化学习思想，通过悲观优化策略处理环境转移中的潜在差异。",
+    "result": "在MuJoCo模拟器的四旋翼位置控制任务中，鲁棒策略在未见环境参数下优于标准强化学习智能体，显示出更强的环境适应性与泛化能力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2211.09619v6",
+    "date": "2022-11-17",
+    "title": "Introduction to Online Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2211.09619v6",
+    "author list": [
+      "Elad Hazan",
+      "Karan Singh"
+    ],
+    "problem": "针对动态系统控制和可微分强化学习中的在线非随机控制问题，研究在对抗性选择成本函数和系统扰动的情况下，如何实现与事后最优策略相比的低悔恨性能。",
+    "method": "采用在线凸优化框架和凸松弛技术，基于迭代数学优化算法构建控制策略，目标是最小化相对于基准策略类的悔恨值。",
+    "result": "该方法具有有限时间悔恨保证和计算复杂度保证，为经典最优控制和鲁棒控制场景提供了新的可证明性能的理论框架。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2008.08734v1",
+    "date": "2020-08-20",
+    "title": "Model-free optimal control of discrete-time systems with additive and multiplicative noises",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2008.08734v1",
+    "author list": [
+      "Jing Lai",
+      "Junlin Xiong",
+      "Zhan Shu"
+    ],
+    "problem": "研究离散时间随机系统在加性和乘性噪声下的最优控制问题，要求在不依赖系统矩阵知识的情况下寻找最优容许控制策略。",
+    "method": "提出基于随机Lyapunov方程和随机代数Riccati方程的无模型强化学习算法，通过系统状态和输入数据，结合批量最小二乘与数值平均实现策略迭代。",
+    "result": "理论证明算法收敛至最优容许控制策略，数值实验表明其性能优于其他策略迭代算法。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2006.14123v1",
+    "date": "2020-06-25",
+    "title": "On Lyapunov Exponents for RNNs: Understanding Information Propagation Using Dynamical Systems Tools",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2006.14123v1",
+    "author list": [
+      "Ryan Vogt",
+      "Maximilian Puelma Touzel",
+      "Eli Shlizerman",
+      "Guillaume Lajoie"
+    ],
+    "problem": "循环神经网络（RNN）的训练对参数初始化、架构和优化器超参数敏感，现有方法在理解训练稳定性方面存在局限，要么是适用范围有限的数学方法，要么是计算成本高的经验方法。",
+    "method": "将RNN视为动力系统，利用李雅普诺夫指数（LEs）谱来量化非线性系统轨迹的渐近扩张与收缩率，并实现训练过程中LEs的高效计算，以分析信息前向传播与误差梯度反向传播的稳定性。",
+    "result": "研究表明李雅普诺夫谱可作为训练稳定性的鲁棒指标，在不同超参数下均能有效反映RNN训练动态的稳定性，为理解RNN优化提供了理论依据。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "1712.00634v1",
+    "date": "2017-12-02",
+    "title": "PFAx: Predictable Feature Analysis to Perform Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1712.00634v1",
+    "author list": [
+      "Stefan Richthofer",
+      "Laurenz Wiskott"
+    ],
+    "problem": "解决高维输入信号中可预测特征的提取问题，并利用外部辅助信息提升预测质量，同时探索辅助信息对特征选择的影响及其在控制任务中的应用。",
+    "method": "扩展可预测特征分析（PFA）为PFAx，在保留从主输入提取特征的基础上，引入外部辅助信息作为预测条件；通过逆向关系生成辅助信息以引导主信号达到期望状态。",
+    "result": "在强化学习环境中验证了方法能局部优化智能体状态（如接近目标），并预告后续工作将扩展至全局优化。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2003.13839v1",
+    "date": "2020-03-30",
+    "title": "Model-Reference Reinforcement Learning Control of Autonomous Surface Vehicles with Uncertainties",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2003.13839v1",
+    "author list": [
+      "Qingrui Zhang",
+      "Wei Pan",
+      "Vasso Reppa"
+    ],
+    "problem": "针对存在建模不确定性的自主水面船舶，设计一种能够保证闭环稳定性并提升样本效率的控制方法。",
+    "method": "结合传统控制与深度强化学习：传统控制提供基线控制律保证稳定性，强化学习直接学习补偿建模不确定性的控制律，通过参考模型定义期望性能。",
+    "result": "仿真实验表明，与传统深度强化学习方法相比，所提方法能提供稳定性保证并具有更好的样本效率。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2210.04361v3",
+    "date": "2022-10-09",
+    "title": "Iterative Convex Optimization for Model Predictive Control with Discrete-Time High-Order Control Barrier Functions",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2210.04361v3",
+    "author list": [
+      "Shuo Liu",
+      "Jun Zeng",
+      "Koushil Sreenath",
+      "Calin A. Belta"
+    ],
+    "problem": "解决模型预测控制中安全约束优化问题的实时计算挑战，特别是针对高阶控制屏障函数在大预测时域下的计算效率问题。",
+    "method": "提出基于迭代凸优化的框架，在每个时间步对非线性系统动力学和高阶离散控制屏障函数约束进行线性化处理，适用于任意相对阶数的控制屏障函数。",
+    "result": "数值实验验证了该方法在保证安全性的同时具有快速计算性能，适用于任意相对阶数的控制屏障函数约束。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1807.03769v1",
+    "date": "2018-07-10",
+    "title": "Kernel-Based Learning for Smart Inverter Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1807.03769v1",
+    "author list": [
+      "Aditie Garg",
+      "Mana Jalali",
+      "Vassilis Kekatos",
+      "Nikolaos Gatsis"
+    ],
+    "problem": "针对配电网中光伏发电间歇性引起的频繁电压波动问题，研究如何通过智能逆变器协调控制来调节电压并减少欧姆损耗，避免传统预设局部控制规则性能不佳与集中优化计算复杂的两难困境。",
+    "method": "提出非线性逆变器控制策略，将无功控制建模为基于核函数的回归任务；利用线性化电网模型和预期数据场景，通过线性约束二次规划在馈线层面联合设计控制规则，优化电压偏差与损耗的凸组合目标。",
+    "result": "在基准馈线真实数据测试表明，结合少量非本地测量的非线性控制规则能达到接近最优控制的性能，有效平衡电压调节与损耗抑制。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2101.12501v2",
+    "date": "2021-01-29",
+    "title": "Learning-based vs Model-free Adaptive Control of a MAV under Wind Gust",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2101.12501v2",
+    "author list": [
+      "Thomas Chaffre",
+      "Julien Moras",
+      "Adrien Chan-Hon-Tong",
+      "Julien Marzat",
+      "Karl Sammut",
+      "Gilles Le Chenadec",
+      "Benoit Clement"
+    ],
+    "problem": "解决微型飞行器在风扰条件下的自适应控制问题，重点应对现实世界中未知变化环境带来的不确定性，避免对精确系统模型的依赖。",
+    "method": "提出基于深度强化学习（Soft Actor-Critic算法）的全状态反馈控制器，通过传感器反馈直接学习系统物理特性，并与同等框架下的无模型控制器进行对比。",
+    "result": "仿真实验表明，基于学习的自适应控制方法在现代动态系统中展现出巨大潜力，能有效处理风扰条件下的控制任务。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2304.03326v4",
+    "date": "2023-04-06",
+    "title": "Finite Time Lyapunov Exponent Analysis of Model Predictive Control and Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2304.03326v4",
+    "author list": [
+      "Kartik Krishna",
+      "Steven L. Brunton",
+      "Zhuoyuan Song"
+    ],
+    "problem": "研究在已知非定常流场中，具有驱动能力的移动智能体（如自主航行器）如何规划能量高效的导航轨迹，并分析其最优输运路径与安全区域。",
+    "method": "提出受控有限时间李雅普诺夫指数（cFTLE）方法，将传统FTLE从被动示踪剂扩展至采用模型预测控制（MPC）或强化学习（RL）策略的主动智能体，通过计算流场中受控轨迹的拉格朗日相干结构。",
+    "result": "cFTLE结构可揭示流场中通往目标位置具有相似输运代价的区域边界，其形态受规划算法的优化时域、驱动代价等超参数影响，为自主系统在海洋或大气中的鲁棒运动控制与部署位置选择提供依据。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2401.07862v1",
+    "date": "2024-01-15",
+    "title": "Adaptive Neural-Operator Backstepping Control of a Benchmark Hyperbolic PDE",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2401.07862v1",
+    "author list": [
+      "Maxence Lamarque",
+      "Luke Bhan",
+      "Yuanyuan Shi",
+      "Miroslav Krstic"
+    ],
+    "problem": "针对具有再循环的一维双曲型偏微分方程，在系统函数系数未知的情况下，实时求解控制器所需的增益核函数PDE计算成本高，阻碍自适应控制的实时实现。",
+    "method": "提出基于神经算子的自适应反步控制方法，通过离线训练的神经网络近似增益核函数映射，替代在线实时求解PDE；结合Lyapunov分析保证稳定性，并引入被动辨识器避免核函数强可微性假设。",
+    "result": "数值仿真验证了闭环系统的全局稳定性，相比传统方法实现最高三个数量级的计算加速，证明了神经算子在自适应控制中的实时有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1912.03821v1",
+    "date": "2019-12-09",
+    "title": "Decentralized Multi-Agent Reinforcement Learning with Networked Agents: Recent Advances",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1912.03821v1",
+    "author list": [
+      "Kaiqing Zhang",
+      "Zhuoran Yang",
+      "Tamer Başar"
+    ],
+    "problem": "研究多智能体在无中央控制器协调的情况下，通过通信网络与邻居交换信息，完成共同环境中的序贯决策问题，应用于机器人、无人机、移动传感器网络和智能电网等领域。",
+    "method": "综述去中心化多智能体强化学习的最新进展，重点分析基于网络化智能体的算法设计，强调理论支撑的方法开发，涵盖智能体间局部通信与分布式决策机制。",
+    "result": "总结该方向的研究成果与发展趋势，指出理论分析支撑的算法进步，并呼吁未来投入更多研究资源以解决这一领域的挑战性问题。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2209.01092v1",
+    "date": "2022-09-02",
+    "title": "Inference and dynamic decision-making for deteriorating systems with probabilistic dependencies through Bayesian networks and deep reinforcement learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2209.01092v1",
+    "author list": [
+      "Pablo G. Morato",
+      "Charalampos P. Andriotis",
+      "Konstantinos G. Papakonstantinou",
+      "Philippe Rigo"
+    ],
+    "problem": "针对土木工程系统在退化环境中的系统级运维决策问题，现有方法因计算复杂性多简化为部件级优化，难以在联合系统状态描述下直接优化检查与维护策略。",
+    "method": "将决策问题建模为部分可观测马尔可夫决策过程，利用贝叶斯网络编码系统动态，并通过高斯层次结构和动态贝叶斯网络处理部件间的退化相关性；采用深度分散式多智能体演员-评论家强化学习框架，由演员网络近似策略、评论家网络指导优化。",
+    "result": "在9选10系统和疲劳退化钢框架的数值实验中，DDMAC策略相比现有启发式方法展现出显著优势，其学习到的策略能本质考虑系统效应，实现系统级成本优化。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2412.01591v3",
+    "date": "2024-12-02",
+    "title": "Kernel-Based Optimal Control: An Infinitesimal Generator Approach",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2412.01591v3",
+    "author list": [
+      "Petar Bevanda",
+      "Nicolas Hoischen",
+      "Tobias Wittmann",
+      "Jan Brüdigam",
+      "Sandra Hirche",
+      "Boris Houska"
+    ],
+    "problem": "针对非线性随机系统的最优控制问题，提出一种数据驱动的解决方案，仅需系统动态和阶段成本函数的数据样本，同时考虑控制惩罚和约束条件。",
+    "method": "基于再生核希尔伯特空间的算子理论框架，直接学习受控随机扩散过程的无穷小生成器，并与凸算子理论的Hamilton-Jacobi-Bellman递推相结合。",
+    "result": "在从合成微分方程到模拟机器人系统的数值实验中，相比现代数据驱动方法和经典非线性规划方法，展示了所提方法的优势。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2309.04831v1",
+    "date": "2023-09-09",
+    "title": "Global Convergence of Receding-Horizon Policy Search in Learning Estimator Designs",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2309.04831v1",
+    "author list": [
+      "Xiangyuan Zhang",
+      "Saviz Mowlavi",
+      "Mouhacine Benosman",
+      "Tamer Başar"
+    ],
+    "problem": "解决无限时域卡尔曼滤波器设计问题，该问题在策略参数空间中具有约束性和非凸性，且不要求系统开环稳定或依赖先验知识进行初始化。",
+    "method": "提出后退水平策略梯度算法，将经典策略梯度嵌入动态规划外循环，将原问题分解为一系列无约束强凸的静态估计子问题。",
+    "result": "理论证明算法具有全局收敛性和样本复杂度保证，并在大规模对流-扩散模型上验证了卡尔曼滤波器学习的有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2503.17640v1",
+    "date": "2025-03-22",
+    "title": "On the Hopf-Cole Transform for Control-affine Schrödinger Bridge",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2503.17640v1",
+    "author list": [
+      "Alexis Teter",
+      "Abhishek Halder"
+    ],
+    "problem": "研究控制仿射薛定谔桥问题在一般情形（即不假设控制与噪声系数矩阵满足特定比例关系）下的求解困难，揭示传统 Hopf-Cole 变换在此类问题中的局限性。",
+    "method": "通过 Hopf-Cole 变换分析一般控制仿射薛定谔桥的最优性条件，得到一对非线性且方程级耦合的前向-后向偏微分方程，其非线性源于包含似然梯度（即得分）的附加漂移项和反应项。",
+    "result": "证明仅当控制与噪声系数矩阵满足比例关系时，系统退化为边界耦合的线性偏微分方程，可通过动态 Sinkhorn 递归求解；一般情形需进一步开发数值算法，可能需推广动态 Sinkhorn 递归或其他方法。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2012.14654v1",
+    "date": "2020-12-29",
+    "title": "The Adaptive Dynamic Programming Toolbox",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2012.14654v1",
+    "author list": [
+      "Xiaowei Xing",
+      "Dong Eui Chang"
+    ],
+    "problem": "解决连续时间非线性系统的最优控制问题，包括模型已知和模型未知两种情况下的反馈控制设计。",
+    "method": "基于自适应动态规划技术，在模型驱动模式下利用系统动力学，在无模型模式下利用系统轨迹测量数据计算最优反馈控制，并提供多种定制选项。",
+    "result": "在卫星姿态控制问题中验证了计算精度和速度优于其他常用最优控制软件工具箱。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2002.10069v3",
+    "date": "2020-02-24",
+    "title": "Robust Learning-Based Control via Bootstrapped Multiplicative Noise",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2002.10069v3",
+    "author list": [
+      "Benjamin Gravell",
+      "Tyler Summers"
+    ],
+    "problem": "针对基于有限、噪声数据估计的模型所固有的非渐近不确定性，设计能够提供鲁棒性的控制器。",
+    "method": "提出一种鲁棒自适应控制算法，包含最小二乘名义模型估计、自助重采样量化估计方差，以及使用乘性噪声的线性二次调节器（LQR）进行鲁棒控制设计。",
+    "result": "数值实验表明，该鲁棒自适应控制器在期望后悔和后悔风险指标上均显著优于确定性等价控制器。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2501.12408v1",
+    "date": "2025-01-17",
+    "title": "Control-ITRA: Controlling the Behavior of a Driving Model",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2501.12408v1",
+    "author list": [
+      "Vasileios Lioutas",
+      "Adam Scibior",
+      "Matthew Niedoba",
+      "Berend Zwartsenberg",
+      "Frank Wood"
+    ],
+    "problem": "在复杂交通环境中，模拟可控的驾驶行为以定制特定研究需求和安全场景，同时保持行为真实性和无违规轨迹。",
+    "method": "扩展ITRA多智能体驾驶模型，通过路径点分配和目标速度调制来控制智能体行为，使其遵循特定轨迹并间接调节攻击性；比较了训练中集成这些条件的不同方法。",
+    "result": "方法在已见和未见地点均能生成可控、无违规的轨迹，同时保持行为真实性，并通过对比实验验证了不同条件集成方式的效果。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1902.03765v1",
+    "date": "2019-02-11",
+    "title": "Latent Space Reinforcement Learning for Steering Angle Prediction",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1902.03765v1",
+    "author list": [
+      "Qadeer Khan",
+      "Torsten Schön",
+      "Patrick Wenzel"
+    ],
+    "problem": "在自动驾驶仿真环境中，从原始传感器数据（图像）学习车辆的转向控制策略，无需人类驾驶信号。",
+    "method": "提出模块化深度强化学习框架：语义提取模块将原始图像编码为低维潜向量，控制模块基于潜向量通过强化学习预测转向角度。",
+    "result": "实验表明该方法在仿真器中能自主学习车辆操控，无需人类控制信号干预，验证了潜空间表征对强化学习策略的有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2012.02788v1",
+    "date": "2020-12-04",
+    "title": "Neural Dynamic Policies for End-to-End Sensorimotor Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2012.02788v1",
+    "author list": [
+      "Shikhar Bahl",
+      "Mustafa Mukadam",
+      "Abhinav Gupta",
+      "Deepak Pathak"
+    ],
+    "problem": "当前传感器运动控制方法直接在原始动作空间（如力矩、关节角度）训练策略，导致在连续、高维、长时程任务中决策效率低且可扩展性差。",
+    "method": "提出神经动态策略（NDPs），将二阶微分方程结构嵌入神经网络策略，在轨迹分布空间进行预测而非原始控制空间，支持模仿学习与强化学习的端到端训练。",
+    "result": "在多种机器人控制任务中，NDPs在模仿学习和强化学习设定下均优于先前最优方法，在效率或性能上取得提升，项目视频与代码已公开。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2207.01062v2",
+    "date": "2022-07-03",
+    "title": "Distributed Online System Identification for LTI Systems Using Reverse Experience Replay",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2207.01062v2",
+    "author list": [
+      "Ting-Jui Chang",
+      "Shahin Shahrampour"
+    ],
+    "problem": "研究多智能体网络中线性时不变系统的分布式在线系统辨识问题，旨在通过智能体间的通信协作联合估计系统参数，并分析网络规模对估计误差的影响。",
+    "method": "提出DSGD-RER算法，作为SGD-RER的分布式扩展，采用反向经验回放机制将数据序列存储在多个缓冲区中，通过沿缓冲区反向执行随机梯度下降更新以打破数据点间的时间依赖性。",
+    "result": "理论分析表明估计误差随网络规模扩大而改善，数值实验验证了网络规模增长时估计误差的降低趋势。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2208.04883v8",
+    "date": "2022-08-09",
+    "title": "Neural-Rendezvous: Provably Robust Guidance and Control to Encounter Interstellar Objects",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2208.04883v8",
+    "author list": [
+      "Hiroyasu Tsukamoto",
+      "Soon-Jo Chung",
+      "Yashwanth Kumar Nakka",
+      "Benjamin Donitz",
+      "Declan Mages",
+      "Michel Ingham"
+    ],
+    "problem": "针对星际物体（ISO）轨道约束差、倾角高、相对速度快的特性，传统人工在环方法难以实现可靠交会，需开发实时、鲁棒、自主的制导与控制框架。",
+    "method": "提出Neural-Rendezvous框架：采用谱归一化深度神经网络建模制导策略，外层施加点式最小范数跟踪控制，其超参数通过直接惩罚MPC状态轨迹跟踪误差的损失函数优化。",
+    "result": "理论证明提供航天器交付误差的高概率指数界，数值仿真验证100个ISO候选均满足误差界；实证测试包括航天器模拟器及20架无人机群重构场景。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1806.04225v5",
+    "date": "2018-06-11",
+    "title": "PAC-Bayes Control: Learning Policies that Provably Generalize to Novel Environments",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1806.04225v5",
+    "author list": [
+      "Anirudha Majumdar",
+      "Alec Farid",
+      "Anoopkumar Sonar"
+    ],
+    "problem": "学习机器人控制策略，使其在给定示例环境数据集上训练后，能够可证明地泛化到新环境，适用于具有连续状态和动作空间、复杂非线性动力学的系统。",
+    "method": "利用PAC-Bayes框架，将控制策略泛化问题转化为监督学习泛化问题；通过最小化期望代价的概率上界，使用相对熵规划（有限策略空间）或随机梯度下降（神经网络策略）进行优化。",
+    "result": "在反应式避障和神经网络抓取任务中验证方法；硬件实验表明Parrot Swing无人机能在不同障碍环境中导航，为连续状态空间、非线性动力学和基于神经网络的策略提供了强泛化保证。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1811.01848v3",
+    "date": "2018-11-05",
+    "title": "Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1811.01848v3",
+    "author list": [
+      "Kendall Lowrey",
+      "Aravind Rajeswaran",
+      "Sham Kakade",
+      "Emanuel Todorov",
+      "Igor Mordatch"
+    ],
+    "problem": "解决智能体在持续行动与学习环境中，如何高效结合模型预测控制与价值函数学习的问题，特别是在复杂控制任务（如人形运动、灵巧手操作）中实现快速稳定的策略学习。",
+    "method": "提出POLO框架，融合局部轨迹优化与全局价值函数学习：利用轨迹优化补偿价值函数近似误差并引导探索，同时用价值函数缩短规划视野以突破局部最优策略。",
+    "result": "在仿真控制任务中验证了框架有效性，仅需相当于现实世界数分钟的经验即可完成人形运动与灵巧手操作等复杂任务，实现了学习速度与稳定性的显著提升。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2009.12576v2",
+    "date": "2020-09-26",
+    "title": "Inverse Rational Control with Partially Observable Continuous Nonlinear Dynamics",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2009.12576v2",
+    "author list": [
+      "Minhae Kwon",
+      "Saurabh Daptardar",
+      "Paul Schrater",
+      "Xaq Pitkow"
+    ],
+    "problem": "研究如何从行为数据推断动物在部分可观测环境下使用的内部世界模型，解释其看似次优但理性的决策行为。",
+    "method": "提出逆理性控制框架，通过深度强化学习构建在连续非线性动力学下的贝叶斯智能体，使用梯度上升最大化行为轨迹的似然函数来反推内部模型参数。",
+    "result": "方法可处理连续状态空间和动作空间，并能推断被动物私有观测噪声污染的感觉信息，为行为实验数据提供模型拟合工具。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1908.00177v1",
+    "date": "2019-08-01",
+    "title": "Learning When to Drive in Intersections by Combining Reinforcement Learning and Model Predictive Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1908.00177v1",
+    "author list": [
+      "Tommy Tram",
+      "Ivo Batkovic",
+      "Mohammad Ali",
+      "Jonas Sjöberg"
+    ],
+    "problem": "解决自动驾驶车辆在交叉路口与其他可能非自动化车辆进行交互决策的问题，需在不确定的交通环境中实现安全高效的通行。",
+    "method": "采用强化学习实现高层决策模块以处理交互协商，结合模型预测控制作为底层规划模块进行局部轨迹优化。",
+    "result": "在模拟多种驾驶员行为与意图的交通场景中，相比对比控制器，该算法训练周期更短且成功率更高。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2505.24099v1",
+    "date": "2025-05-30",
+    "title": "Attractor learning for spatiotemporally chaotic dynamical systems using echo state networks with transfer learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2505.24099v1",
+    "author list": [
+      "Mohammad Shah Alam",
+      "William Ott",
+      "Ilya Timofeyev"
+    ],
+    "problem": "针对广义Kuramoto-Sivashinsky方程这一典型时空混沌系统，研究如何预测其在不同参数设置（如色散关系或空间域长度变化）下长期统计模式的变化，特别是底层混沌吸引子的演变。",
+    "method": "提出将回声状态网络与迁移学习相结合的方法，通过迁移学习使ESN能够适应gKS方程的不同参数体系，从而捕捉混沌吸引子的变化特征。",
+    "result": "成功利用迁移学习使ESN适应不同参数设置，有效捕捉了gKS模型中底层混沌吸引子的变化，表明该方法能够预测时空混沌系统长期统计特性的变化。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2112.05244v2",
+    "date": "2021-12-09",
+    "title": "An Experimental Design Perspective on Model-Based Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2112.05244v2",
+    "author list": [
+      "Viraj Mehta",
+      "Biswajit Paria",
+      "Jeff Schneider",
+      "Stefano Ermon",
+      "Willie Neiswanger"
+    ],
+    "problem": "针对强化学习中状态转移观测成本高昂的应用场景（如等离子体控制），研究如何在最小化环境查询次数的前提下高效学习策略。",
+    "method": "基于贝叶斯最优实验设计思想，提出一种量化状态动作对在马尔可夫决策过程中信息增益的采集函数，通过最大化该函数主动选择最具信息量的查询样本。",
+    "result": "在连续控制任务中，相比模型基基线节省5-1000倍数据，相比无模型基线节省10^3-10^5倍数据，消融实验验证了主动数据获取策略的有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2305.00092v1",
+    "date": "2023-04-28",
+    "title": "Improving Gradient Computation for Differentiable Physics Simulation with Contacts",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2305.00092v1",
+    "author list": [
+      "Yaofeng Desmond Zhong",
+      "Jiequn Han",
+      "Biswadip Dey",
+      "Georgia Olympia Brikis"
+    ],
+    "problem": "现有可微分物理仿真在接触法向不固定时（如两个运动物体碰撞）会产生错误梯度，影响基于梯度的动力学学习与优化控制性能。",
+    "method": "提出TOI-Velocity方法，通过连续碰撞检测获取碰撞时间点，并基于时间点精确计算碰撞后速度以改进梯度计算。",
+    "result": "在两个最优控制问题上验证：TOI-Velocity可获得与解析解匹配的最优控制序列，而现有方法无法实现。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2007.00178v1",
+    "date": "2020-07-01",
+    "title": "Reinforcement Learning based Control of Imitative Policies for Near-Accident Driving",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2007.00178v1",
+    "author list": [
+      "Zhangjie Cao",
+      "Erdem Bıyık",
+      "Woodrow Z. Wang",
+      "Allan Raventos",
+      "Adrien Gaidon",
+      "Guy Rosman",
+      "Dorsa Sadigh"
+    ],
+    "problem": "针对自动驾驶在临近事故高风险场景中，传统强化学习和模仿学习难以建模快速状态转换且无法覆盖所有状态的问题，研究如何在轻微动作变化导致截然不同后果的极端情况下确保安全驾驶。",
+    "method": "提出分层强化与模仿学习框架：底层通过模仿学习获得离散驾驶模式的策略，高层通过强化学习学习在不同驾驶模式间切换的元策略，整合两种学习方法的优势实现统一决策。",
+    "result": "实验表明该方法在临近事故场景中能实现更高效率与安全性，用户研究验证其优越性，策略分析显示高层策略能适时切换底层驾驶模式以应对复杂路况。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2102.09111v2",
+    "date": "2021-02-18",
+    "title": "Online Optimization and Ambiguity-based Learning of Distributionally Uncertain Dynamic Systems",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2102.09111v2",
+    "author list": [
+      "Dan Li",
+      "Dariush Fooladivanda",
+      "Sonia Martinez"
+    ],
+    "problem": "针对分布不确定动态系统约束下的在线优化问题，要求在有限历史数据集下同时学习系统分布不确定性并做出在线决策，同时提供概率遗憾函数界保证。",
+    "method": "基于分布鲁棒优化理论，构建参数化、控制依赖的模糊集来描述分布不确定性；提出在线优化的可处理重构方法，并引入Nesterov加速梯度算法的在线版本，利用耗散性理论分析性能。",
+    "result": "理论分析提供了概率遗憾界保证，相比标准鲁棒优化方法具有更少保守性；方法适用于非线性系统最优控制和资源分配两类问题，并通过耗散性理论证明了算法性能。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2006.03937v3",
+    "date": "2020-06-06",
+    "title": "Memory-Efficient Learning of Stable Linear Dynamical Systems for Prediction and Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2006.03937v3",
+    "author list": [
+      "Giorgos Mamakoukas",
+      "Orest Xherija",
+      "T. D. Murphey"
+    ],
+    "problem": "学习稳定线性动态系统时，需在最小化重构误差的同时保证系统稳定性，现有方法在输入存在时无法同时优化状态和控制矩阵，且内存效率低难以扩展到高维系统。",
+    "method": "基于稳定矩阵的新表征提出优化算法，通过梯度方向在每一步强制保持稳定性，并支持对含输入系统的状态矩阵和控制矩阵进行联合更新以扩大解空间。",
+    "result": "在动态纹理学习和机器人控制任务中，重构误差比现有方法降低数个数量级，控制性能更优，且内存复杂度从O(n^4)降至O(n^2)，可扩展至高维系统。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1809.06404v3",
+    "date": "2018-09-17",
+    "title": "Adversarial Imitation via Variational Inverse Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1809.06404v3",
+    "author list": [
+      "Ahmed H. Qureshi",
+      "Byron Boots",
+      "Michael C. Yip"
+    ],
+    "problem": "解决在未知系统动力学下从专家示例中学习奖励函数与策略的问题，旨在避免策略对专家数据的过拟合，提升在动态或结构不同的测试环境中的泛化能力。",
+    "method": "基于生成对抗网络框架，提出赋能正则化的最大熵逆强化学习，通过变分信息最大化同时学习奖励、策略及状态-动作互信息的赋能正则项，以对抗形式优化策略。",
+    "result": "在高维复杂控制任务中，所学奖励与策略匹配专家行为且接近最优；在动态或结构变化的迁移学习测试中，性能显著优于现有逆强化学习算法。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2301.07733v5",
+    "date": "2023-01-18",
+    "title": "Learning-Rate-Free Learning by D-Adaptation",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2301.07733v5",
+    "author list": [
+      "Aaron Defazio",
+      "Konstantin Mishchenko"
+    ],
+    "problem": "针对凸Lipschitz函数优化中的学习率自动设置问题，传统方法需手动调参或引入额外计算开销与对数因子。",
+    "method": "提出D-Adaptation方法，通过动态估计梯度范数上界自适应调整学习率，无需回溯搜索或每步额外计算函数值/梯度，适用于SGD和Adam优化器变体。",
+    "result": "理论证明该方法渐近达到凸函数最优收敛速率；实验表明在十余个机器学习任务（包括大规模视觉与语言问题）中自动匹配人工调优学习率的效果。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "1910.12453v1",
+    "date": "2019-10-28",
+    "title": "Asynchronous Methods for Model-Based Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1910.12453v1",
+    "author list": [
+      "Yunzhi Zhang",
+      "Ignasi Clavera",
+      "Boren Tsai",
+      "Pieter Abbeel"
+    ],
+    "problem": "现有基于模型的强化学习方法虽数据效率高，但需大量计算与数据收集交替进行，导致实际运行时长远超智能体交互时间，无法满足机器人实时学习需求。",
+    "method": "提出异步框架，将模型学习、策略优化与环境交互并行执行；通过并行化缩短墙钟时间，并利用改进的探索机制缓解策略对缺陷动力学模型的过拟合。",
+    "result": "在MuJoCo基准和三项真实机器人操作任务中验证，异步学习不仅显著缩短墙钟时间至仅需数据收集时长，还进一步降低了基于模型方法的样本复杂度。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2303.12289v1",
+    "date": "2023-03-22",
+    "title": "Adaptive Road Configurations for Improved Autonomous Vehicle-Pedestrian Interactions using Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2303.12289v1",
+    "author list": [
+      "Qiming Ye",
+      "Yuxiang Feng",
+      "Jose Javier Escribano Macias",
+      "Marc Stettler",
+      "Panagiotis Angeloudis"
+    ],
+    "problem": "自动驾驶车辆部署背景下，缺乏能够根据实时交通需求动态生成车辆与行人路权分配方案的运行框架。",
+    "method": "采用强化学习方法，分别实现集中式与分布式学习范式，通过微观交通仿真动态控制道路网络的路权配置。",
+    "result": "分布式学习算法在计算成本降低49.55%、基准奖励提升25.35%等指标上优于集中式方法，同时提高了交通流效率并分配更多行人空间。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2006.11441v3",
+    "date": "2020-06-19",
+    "title": "Task-Agnostic Online Reinforcement Learning with an Infinite Mixture of Gaussian Processes",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2006.11441v3",
+    "author list": [
+      "Mengdi Xu",
+      "Wenhao Ding",
+      "Jiacheng Zhu",
+      "Zuxin Liu",
+      "Baiming Chen",
+      "Ding Zhao"
+    ],
+    "problem": "解决任务不可知、无明确任务边界的在线强化学习问题，应对现实物理任务中常见的非平稳性、任务分布偏移和动态变化等挑战。",
+    "method": "采用基于模型的持续在线强化学习框架，使用无限高斯过程混合表示不同动态类型，通过序列变分推断在线更新专家混合模型，并引入转移先验处理流数据中的时序依赖。",
+    "result": "在动态变化的经典控制任务和不同驾驶场景决策任务中，该方法在非平稳环境下表现优于对比方法，能够可靠处理任务分布偏移。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1906.05015v12",
+    "date": "2019-06-12",
+    "title": "Deep Reinforcement Learning for Unmanned Aerial Vehicle-Assisted Vehicular Networks",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1906.05015v12",
+    "author list": [
+      "Ming Zhu",
+      "Xiao-Yang Liu",
+      "Anwar Walid"
+    ],
+    "problem": "针对道路交叉口车辆通信热点区域，研究无人机辅助车载网络中如何联合优化传输控制（功率与信道）与三维飞行轨迹，以最大化系统总吞吐量。",
+    "method": "采用深度确定性策略梯度（DDPG）算法，通过马尔可夫决策过程建模无人机与车辆的移动性及状态转移，提出三种不同控制目标的解决方案，并引入自适应学习率机制以调节无人机移动。",
+    "result": "在简化模型下验证了算法最优性，相比两种基准方案，在现实模型中显著提升了总吞吐量，并进一步扩展为能量效率最大化目标。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2208.00003v1",
+    "date": "2022-07-28",
+    "title": "RangL: A Reinforcement Learning Competition Platform",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2208.00003v1",
+    "author list": [
+      "Viktor Zobernig",
+      "Richard A. Saldanha",
+      "Jinke He",
+      "Erica van der Sar",
+      "Jasper van Doorn",
+      "Jia-Chen Hua",
+      "Lachlan R. Mason",
+      "Aleksander Czechowski",
+      "Drago Indjic",
+      "Tomasz Kosmala",
+      "Alessandro Zocca",
+      "Sandjai Bhulai",
+      "Jorge Montalvo Arvizu",
+      "Claude Klöckl",
+      "John Moriarty"
+    ],
+    "problem": "推动强化学习在现实世界动态决策问题中的广泛应用，特别是针对英国2050年净零碳排放的能源转型政策优化问题。",
+    "method": "开发了基于OpenAI Gym的强化学习环境，并集成开源EvalAI平台，支持参赛者提交和评估智能体策略，提供可复用的竞赛框架结构。",
+    "result": "项目成功举办了2022年净零挑战赛，代码库包含了所有获胜的智能体策略，展示了该平台对未来挑战的可扩展性支持。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2005.05178v1",
+    "date": "2020-05-06",
+    "title": "DeepRacing: Parameterized Trajectories for Autonomous Racing",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2005.05178v1",
+    "author list": [
+      "Trent Weiss",
+      "Madhur Behl"
+    ],
+    "problem": "解决高速自主赛车在真实F1环境中的控制问题，重点评估端到端控制、航点预测和参数化轨迹预测等不同方法在闭环驾驶性能上的差异。",
+    "method": "提出DeepRacing开源框架，利用F1游戏构建高保真仿真环境；比较端到端控制、航点预测和新型参数化轨迹预测方法，后者通过深度网络输出参数化轨迹而非离散航点或直接控制指令。",
+    "result": "实验表明参数化轨迹预测方法显著优于端到端控制和航点预测；发现端到端模型的开环控制误差与闭环赛道驾驶性能无必然相关性，凸显了闭环评估的重要性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2003.02655v2",
+    "date": "2020-03-02",
+    "title": "PPMC RL Training Algorithm: Rough Terrain Intelligent Robots through Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2003.02655v2",
+    "author list": [
+      "Tamir Blum",
+      "Kazuya Yoshida"
+    ],
+    "problem": "解决机器人在月球表面等崎岖地形中因环境不确定性导致的运动泛化问题，需实现跨不同机器人结构的通用路径规划与运动控制。",
+    "method": "提出路径规划与运动控制训练算法，结合通用强化学习框架，通过单一神经网络实现用户指令响应与目标位置导航，不依赖特定机器人结构。",
+    "result": "在轮式 rover 和四足机器人上验证算法，在未训练过的崎岖地形地图中保持 100% 导航成功率，证明其跨平台与地形泛化能力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1910.14033v2",
+    "date": "2019-10-30",
+    "title": "Plan Arithmetic: Compositional Plan Vectors for Multi-Task Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1910.14033v2",
+    "author list": [
+      "Coline Devin",
+      "Daniel Geng",
+      "Pieter Abbeel",
+      "Trevor Darrell",
+      "Sergey Levine"
+    ],
+    "problem": "解决自主智能体在真实环境中需要掌握大量技能时，独立学习每个任务效率低下的问题，并实现任务间的知识共享，使模型能够泛化到新任务，特别是先前任务组合或子集的情况。",
+    "method": "提出组合计划向量（CPVs），将轨迹表示为其中子任务的和，在一次性模仿学习框架中无需额外监督或任务层次信息即可学习，支持通过向量加法组合任务。",
+    "result": "实验表明，CPVs使演示条件策略能够泛化到训练时所见任务技能数量两倍的组合任务，并支持类似词向量的算术运算，如通过向量加法命令智能体组合两个不同任务。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2311.17855v1",
+    "date": "2023-11-29",
+    "title": "Maximum Entropy Model Correction in Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2311.17855v1",
+    "author list": [
+      "Amin Rakhsha",
+      "Mete Kemertas",
+      "Mohammad Ghavamzadeh",
+      "Amir-massoud Farahmand"
+    ],
+    "problem": "强化学习中近似模型误差会降低规划性能，传统模型算法依赖精确模型，而模型自由算法收敛慢。",
+    "method": "提出最大熵模型校正（MoCo），通过最大熵密度估计修正模型的状态转移分布；基于MoCo设计MoCoVI和MoCoDyna算法，结合近似模型与值迭代。",
+    "result": "理论证明MoCoVI和MoCoDyna能收敛到真实值函数，在模型足够准确时加速收敛，且收敛速度显著快于传统模型自由算法。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1805.09613v1",
+    "date": "2018-05-24",
+    "title": "A0C: Alpha Zero in Continuous Action Space",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1805.09613v1",
+    "author list": [
+      "Thomas M. Moerland",
+      "Joost Broekens",
+      "Aske Plaat",
+      "Catholijn M. Jonker"
+    ],
+    "problem": "将Alpha Zero的树搜索与深度学习交替框架扩展到连续动作空间领域，如机器人控制、导航和自动驾驶等现实世界强化学习任务。",
+    "method": "提出Alpha Zero在连续动作空间的理论扩展，核心是保持树搜索与深度学习的交替迭代框架，但针对连续动作特性调整搜索与学习机制。",
+    "result": "在Pendulum摆动任务上进行初步实验，实证表明该方法在连续动作空间中具有可行性，为迭代搜索与学习在连续控制领域的应用提供了第一步验证。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1902.07656v1",
+    "date": "2019-02-20",
+    "title": "LOSSGRAD: automatic learning rate in gradient descent",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1902.07656v1",
+    "author list": [
+      "Bartosz Wójcik",
+      "Łukasz Maziarka",
+      "Jacek Tabor"
+    ],
+    "problem": "针对神经网络训练中梯度下降法的学习率选择问题，提出自动调整步长的需求，以避免手动调参的敏感性并寻找局部最优步长。",
+    "method": "提出LOSSGRAD算法，通过二次逼近直接求解使目标函数值最小的局部最优步长，即在每步梯度下降中动态计算h=argmin_{t≥0} f(x-t∇f)。",
+    "result": "实验表明该方法对初始学习率选择不敏感，在保持实现简便性的同时，达到与其他自动学习率方法相当的性能。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "1909.05477v2",
+    "date": "2019-09-12",
+    "title": "Maximum Likelihood Constraint Inference for Inverse Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1909.05477v2",
+    "author list": [
+      "Dexter R. R. Scobee",
+      "S. Shankar Sastry"
+    ],
+    "problem": "传统逆强化学习主要估计奖励函数，但专家行为可能更简洁地由简单奖励与硬约束共同表示；本文研究如何在已知环境模型和名义奖励下，从专家演示中推断状态、动作和特征约束。",
+    "method": "基于最大熵逆强化学习框架，提出最大似然约束推断算法，迭代地寻找能最大程度提高专家演示似然的环境约束。",
+    "result": "在模拟行为和人类导航障碍物的真实记录数据上验证了算法有效性，表明能够准确推断出解释专家行为的约束条件。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2203.16673v1",
+    "date": "2022-03-30",
+    "title": "System Identification via Nuclear Norm Regularization",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2203.16673v1",
+    "author list": [
+      "Yue Sun",
+      "Samet Oymak",
+      "Maryam Fazel"
+    ],
+    "problem": "研究低阶线性系统的辨识问题，重点解决在样本复杂度受限条件下如何准确估计系统脉冲响应和Hankel矩阵，并分析输入激励设计对系统辨识效率的影响。",
+    "method": "采用Hankel核范数正则化方法，通过强制Hankel矩阵的低秩性来保证系统的低阶特性；对比分析了正则化估计器与无正则化最小二乘(OLS)估计器的性能差异。",
+    "result": "理论证明在适当输入激励下，Hankel正则化能以最优样本复杂度实现系统辨识，且比OLS更适用于低阶慢衰减系统；正则化方法产生的Hankel矩阵具有更明显的奇异值间隙，有利于系统定阶，且对超参数选择不敏感。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2008.05556v3",
+    "date": "2020-08-12",
+    "title": "Model-Based Offline Planning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2008.05556v3",
+    "author list": [
+      "Arthur Argenson",
+      "Gabriel Dulac-Arnold"
+    ],
+    "problem": "解决离线强化学习场景下，直接从系统操作数据中学习策略而不与环境交互的问题，重点在于生成易于控制、可解释且能集成到更大系统中的策略。",
+    "method": "提出基于模型的离线规划（MBOP）方法，通过从离线数据学习环境模型，并直接利用该模型进行规划来控制系统，无需在线交互即可生成目标条件策略。",
+    "result": "在机器人任务仿真中，仅用50秒真实交互数据即找到接近最优策略，并实现零样本目标条件策略，展示了规划有效处理环境约束的能力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2206.09977v2",
+    "date": "2022-06-20",
+    "title": "Analysis of Thompson Sampling for Controlling Unknown Linear Diffusion Processes",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2206.09977v2",
+    "author list": [
+      "Mohamad Kazem Shirani Faradonbeh",
+      "Sadegh Shirani",
+      "Mohsen Bayati"
+    ],
+    "problem": "针对未知漂移矩阵的线性扩散过程控制问题，在系统参数（如医疗应用中患者特异性血糖动态）未知时，需要设计自适应策略来同时保证系统稳定性和最优性能。",
+    "method": "采用汤普森采样算法，通过从参数后验分布中抽取样本作为真实值来设计控制策略，结合对漂移矩阵几何与最优控制关系的最优性流形分析。",
+    "result": "理论证明该算法实现了平方根时间级遗憾界并能快速稳定系统；在血糖控制和飞行控制的三组实验中，相比现有最优算法显著降低了遗憾值，表明其探索过程更为谨慎。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2211.13937v1",
+    "date": "2022-11-25",
+    "title": "Operator Splitting Value Iteration",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2211.13937v1",
+    "author list": [
+      "Amin Rakhsha",
+      "Andrew Wang",
+      "Mohammad Ghavamzadeh",
+      "Amir-massoud Farahmand"
+    ],
+    "problem": "针对折扣马尔可夫决策过程（MDP），传统值迭代算法在环境模型存在近似误差时收敛速度受限，需平衡模型利用与收敛鲁棒性。",
+    "method": "提出算子分裂值迭代（OS-VI），将值迭代算子拆分为模型相关与模型无关部分，结合分裂数值方法加速策略评估与控制；同时设计样本版算法OS-Dyna，在模型误差下仍保证收敛到正确值函数。",
+    "result": "理论证明当模型足够精确时OS-VI获得显著更快的收敛速率；OS-Dyna在传统Dyna架构基础上改进，对模型误差具有鲁棒性，均通过数值实验验证了效率提升。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2208.13915v1",
+    "date": "2022-08-29",
+    "title": "Finite Sample Identification of Bilinear Dynamical Systems",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2208.13915v1",
+    "author list": [
+      "Yahya Sattar",
+      "Samet Oymak",
+      "Necmiye Ozay"
+    ],
+    "problem": "研究从单条系统状态和输入轨迹中学习双线性动力系统的有限样本辨识问题，旨在确定达到期望精度所需的最小数据量。",
+    "method": "基于边际均方稳定性假设，应用鞅小球条件证明技术，推导出最优样本复杂度和统计误差率。",
+    "result": "理论证明样本复杂度和误差率在轨迹长度、系统维度和输入大小方面达到最优，且误差率不随系统不稳定性增加而恶化，数值实验与理论结果一致。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "1812.05905v2",
+    "date": "2018-12-13",
+    "title": "Soft Actor-Critic Algorithms and Applications",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1812.05905v2",
+    "author list": [
+      "Tuomas Haarnoja",
+      "Aurick Zhou",
+      "Kristian Hartikainen",
+      "George Tucker",
+      "Sehoon Ha",
+      "Jie Tan",
+      "Vikash Kumar",
+      "Henry Zhu",
+      "Abhishek Gupta",
+      "Pieter Abbeel",
+      "Sergey Levine"
+    ],
+    "problem": "针对无模型深度强化学习存在的高样本复杂度和对超参数敏感的问题，限制了在真实机器人控制任务中的应用。",
+    "method": "提出基于最大熵框架的离线演员-评论家算法SAC，通过同时最大化期望回报和动作熵，并引入自动调节温度参数的约束形式化以提高训练稳定性。",
+    "result": "在基准测试和真实机器人任务中达到SOTA性能，样本效率和渐进性能优于现有方法，且在不同随机种子下表现稳定，验证了在真实机器人任务中的应用潜力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2110.03032v3",
+    "date": "2021-10-06",
+    "title": "Learning Multi-Objective Curricula for Robotic Policy Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2110.03032v3",
+    "author list": [
+      "Jikun Kang",
+      "Miao Liu",
+      "Abhinav Gupta",
+      "Chris Pal",
+      "Xue Liu",
+      "Jie Fu"
+    ],
+    "problem": "现有自动课程学习（ACL）方法仅遵循单一预定义范式（如子目标生成、奖励塑形等），无法自动发现互补范式并协调潜在冲突，限制了深度强化学习在机器人策略学习中的样本效率与最终性能。",
+    "method": "提出统一ACL框架，通过一组参数化课程模块生成多目标课程；采用多任务超网络学习框架，用单一超网络参数化所有模块以协调冲突；额外设计灵活记忆机制学习难以手动设计的抽象课程。",
+    "result": "在系列机器人操作任务上验证，样本效率与最终性能均优于现有ACL方法；记忆机制可自动学习有效抽象课程，多模块协同提升策略学习效果。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2407.08803v2",
+    "date": "2024-07-11",
+    "title": "PID Accelerated Temporal Difference Algorithms",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2407.08803v2",
+    "author list": [
+      "Mark Bedaywi",
+      "Amin Rakhsha",
+      "Amir-massoud Farahmand"
+    ],
+    "problem": "针对强化学习中折扣因子较大的长时程任务，传统时序差分（TD）学习算法收敛速度慢且效率低下的问题。",
+    "method": "提出PID TD学习和PID Q学习算法，将控制理论中的PID思想引入样本驱动的强化学习框架，通过动态调整PID增益来适应环境噪声。",
+    "result": "理论分析证明了PID TD学习相比传统TD学习的加速收敛性，并经验验证了自适应PID增益在噪声环境中的有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2210.08642v2",
+    "date": "2022-10-16",
+    "title": "Data-Efficient Pipeline for Offline Reinforcement Learning with Limited Data",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2210.08642v2",
+    "author list": [
+      "Allen Nie",
+      "Yannis Flet-Berliac",
+      "Deon R. Jordan",
+      "William Steenbergen",
+      "Emma Brunskill"
+    ],
+    "problem": "离线强化学习中，不同算法及超参数选择对策略性能影响显著，但在数据量有限的实际场景下，缺乏仅依赖历史数据进行系统化算法-超参数选择的通用流程。",
+    "method": "提出一种任务与方法无关的自动化流程，通过多重数据划分来提升选择可靠性，涵盖策略训练、比较、选择与部署环节，其设计灵感来源于监督学习的统计模型选择方法。",
+    "result": "在医疗、教育、机器人等模拟领域中，相比其他方法，该流程能从多种离线策略学习算法中输出更高性能的部署策略，尤其在数据集较小时提升显著。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2306.09537v1",
+    "date": "2023-06-15",
+    "title": "QuadSwarm: A Modular Multi-Quadrotor Simulator for Deep Reinforcement Learning with Direct Thrust Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2306.09537v1",
+    "author list": [
+      "Zhehui Huang",
+      "Sumeet Batra",
+      "Tao Chen",
+      "Rahul Krupani",
+      "Tushar Kumar",
+      "Artem Molchanov",
+      "Aleksei Petrenko",
+      "James A. Preiss",
+      "Zhaojing Yang",
+      "Gaurav S. Sukhatme"
+    ],
+    "problem": "深度强化学习在机器人控制中需要大量数据训练，但现有仿真器在速度与物理真实性上难以平衡，阻碍了多旋翼无人机策略的仿真到现实迁移。",
+    "method": "提出QuadSwarm模块化仿真器，采用前向动力学传播与渲染解耦架构，支持直接推力控制，内置多机器人训练场景与领域随机化以促进策略迁移。",
+    "result": "在16核CPU上单无人机达48,500 SPS、八无人机达62,000 SPS，线性扩展的吞吐量为多智能体强化学习提供高效仿真基础。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2011.03168v4",
+    "date": "2020-11-06",
+    "title": "Neural Stochastic Contraction Metrics for Learning-based Control and Estimation",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2011.03168v4",
+    "author list": [
+      "Hiroyasu Tsukamoto",
+      "Soon-Jo Chung",
+      "Jean-Jacques E. Slotine"
+    ],
+    "problem": "针对一类随机非线性系统，解决具有可证明稳定性的鲁棒控制与估计问题，要求在随机扰动下保证系统轨迹的指数有界性。",
+    "method": "提出神经随机收缩度量（NSCM），使用谱归一化深度神经网络构建随机收缩度量，并通过简化凸优化进行采样，约束度量状态导数的Lipschitz连续性以实现稳定性保证。",
+    "result": "在仿真中优于状态依赖Riccati方程、迭代LQR、EKF和确定性神经收缩度量等方法，实现实时近似最优稳定控制与估计策略，并证明随机扰动下均方距离的指数有界性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2312.05873v1",
+    "date": "2023-12-10",
+    "title": "Learning for CasADi: Data-driven Models in Numerical Optimization",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2312.05873v1",
+    "author list": [
+      "Tim Salzmann",
+      "Jon Arrizabalaga",
+      "Joel Andersson",
+      "Marco Pavone",
+      "Markus Ryll"
+    ],
+    "problem": "现有优化框架如CasADi难以将数据驱动的学习模型无缝集成到数值优化中，限制了复杂过程建模在优化任务中的应用。",
+    "method": "提出L4CasADi框架，将PyTorch训练的模型与CasADi集成，支持高效且硬件加速的数值优化，通过自动微分实现梯度传播。",
+    "result": "通过两个示例验证框架适用性：优化鱼类在湍流中能量效率轨迹，以及利用隐式神经辐射场进行最优控制；代码与文档已在MIT许可下开源。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1806.06790v3",
+    "date": "2018-06-14",
+    "title": "Towards Distributed Energy Services: Decentralizing Optimal Power Flow with Machine Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1806.06790v3",
+    "author list": [
+      "Roel Dobbe",
+      "Oscar Sondermeijer",
+      "David Fridovich-Keil",
+      "Daniel Arnold",
+      "Duncan Callaway",
+      "Claire Tomlin"
+    ],
+    "problem": "解决电力系统中多分布式能源资源（DER）的电压与潮流优化控制问题，传统集中式最优潮流方法依赖大量通信，而分布式控制需在仅利用局部信息的情况下实现近似集中式性能。",
+    "method": "提出数据驱动的去中心化学习方法，各DER基于局部信息学习控制策略以逼近集中式最优潮流解；结合率失真理论分析策略重构性能，并指导通信节点选择以提升个体策略精度。",
+    "result": "在单相与三相测试馈线网络中验证，基于真实负荷与分布式发电机数据，去中心化控制器能紧密匹配集中式最优潮流解，满足系统约束且实现近最优性能，为无时序依赖的DER提供分布式能源服务框架。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1909.06034v1",
+    "date": "2019-09-13",
+    "title": "Deep Learned Path Planning via Randomized Reward-Linked-Goals and Potential Space Applications",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1909.06034v1",
+    "author list": [
+      "Tamir Blum",
+      "William Jones",
+      "Kazuya Yoshida"
+    ],
+    "problem": "针对空间探索任务中的路径规划与运动控制问题，研究如何在未知地形环境下实现机器人自主导航，同时支持用户指定路径点以应对通信延迟。",
+    "method": "采用深度强化学习端到端训练框架，通过随机化奖励函数参数和随机生成与奖励关联的目标点坐标作为网络输入，使单一神经网络同时学习路径规划和运动控制。",
+    "result": "在仿真环境中成功训练八自由度四足机器人实现任意区域导航，无需环境模型或先验知识，验证了方法在高速度轮式机器人和腿式洞穴机器人等空间探索平台的应用潜力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2505.12350v1",
+    "date": "2025-05-18",
+    "title": "Multi-CALF: A Policy Combination Approach with Statistical Guarantees",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2505.12350v1",
+    "author list": [
+      "Georgiy Malaniya",
+      "Anton Bolychev",
+      "Grigory Yaremenko",
+      "Anastasia Krasnaya",
+      "Pavel Osinenko"
+    ],
+    "problem": "解决强化学习策略在控制任务中平衡性能与稳定性的问题，要求在保证收敛性和安全约束的同时提升策略效果。",
+    "method": "提出Multi-CALF算法，基于策略相对价值改进的统计指标，将标准RL策略与具备理论保证的替代策略进行组合，继承稳定性证明框架。",
+    "result": "理论证明组合策略以已知概率收敛至目标集，给出最大偏差与收敛时间的精确界；控制任务实验显示在保持稳定性保证的同时获得性能提升。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2007.07170v2",
+    "date": "2020-07-14",
+    "title": "Goal-Aware Prediction: Learning to Model What Matters",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2007.07170v2",
+    "author list": [
+      "Suraj Nair",
+      "Silvio Savarese",
+      "Chelsea Finn"
+    ],
+    "problem": "基于学习的动力学模型在视觉控制任务中面临目标不匹配问题：模型以未来状态重建为目标，而下游规划器或策略以完成任务为目标，在复杂现实环境中模型容量不足时该问题尤为突出。",
+    "method": "提出目标感知预测方法，通过自监督学习使模型仅关注与当前任务相关的状态空间部分，无需奖励函数或图像标签即可实现任务条件化的动力学建模。",
+    "result": "在视觉控制任务中，该方法比标准任务无关动力学模型和无模型强化学习更有效地建模目标相关场景内容，表现出更优的性能。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1809.10253v3",
+    "date": "2018-09-26",
+    "title": "Scaling simulation-to-real transfer by learning composable robot skills",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1809.10253v3",
+    "author list": [
+      "Ryan Julian",
+      "Eric Heiden",
+      "Zhanpeng He",
+      "Hejia Zhang",
+      "Stefan Schaal",
+      "Joseph J. Lim",
+      "Gaurav Sukhatme",
+      "Karol Hausman"
+    ],
+    "problem": "解决仿真到现实迁移中低层技能难以组合复用完成高层任务的问题，旨在减少真实机器人上的训练时间。",
+    "method": "通过联合学习参数化的低层技能策略和技能嵌入表示，使高层策略能通过该嵌入组合调用低层技能，实现仅关节空间控制下的任务分解与迁移。",
+    "result": "在Sawyer机器人上验证了自由运动和接触动作技能的迁移与组合，仅使用预学习技能即可通过学习或搜索规划完成高层任务，无需真实机器人额外训练。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2203.08715v1",
+    "date": "2022-03-16",
+    "title": "Multiscale Sensor Fusion and Continuous Control with Neural CDEs",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2203.08715v1",
+    "author list": [
+      "Sumeet Singh",
+      "Francis McCann Ramirez",
+      "Jacob Varley",
+      "Andy Zeng",
+      "Vikas Sindhwani"
+    ],
+    "problem": "机器人学习通常基于离散时间MDP建模，但物理机器人需要近连续的多尺度反馈控制，且多传感器数据（如视觉30Hz、本体感知100Hz、力矩500Hz）存在异步异频特性，传统固定时间窗口编码方法难以高效处理。",
+    "method": "提出InFuser架构，基于神经控制微分方程（CDE）在连续时间中建模潜在状态动态，通过积分与融合多频率传感器观测来演化统一状态表示，并实现连续时间动作推断，消除离散时间假设。",
+    "result": "行为克隆实验表明，在动态任务（如摆球入杯）中，当某传感器观测间隔远稀疏于其他模态时，InFuser学习到的策略显著优于多个基线，展现出更强的鲁棒性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1701.00178v3",
+    "date": "2016-12-31",
+    "title": "Lazily Adapted Constant Kinky Inference for Nonparametric Regression and Model-Reference Adaptive Control",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1701.00178v3",
+    "author list": [
+      "Jan-Peter Calliess"
+    ],
+    "problem": "针对非参数回归和模型参考自适应控制（MRAC）问题，提出一种在线学习方法，适用于目标函数Hölder常数未知且观测值可能受有界噪声污染的场景。",
+    "method": "基于Hölder连续性假设，在线估计目标函数的Hölder常数，并结合kinky inference规则构建自适应非参数学习框架，无需预设Lipschitz常数先验。",
+    "result": "理论证明方法具有强通用逼近性质，在飞机滚转动力学仿真中优于高斯过程和RBF神经网络方法；对离散时间系统提供了批学习和在线学习场景下的跟踪性能保证。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1902.08705v2",
+    "date": "2019-02-22",
+    "title": "A General Framework for Structured Learning of Mechanical Systems",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1902.08705v2",
+    "author list": [
+      "Jayesh K. Gupta",
+      "Kunal Menda",
+      "Zachary Manchester",
+      "Mykel J. Kochenderfer"
+    ],
+    "problem": "针对机械系统动力学建模中白盒方法（高偏差）与黑盒方法（高方差）的不足，提出一种灵活灰盒框架，可在先验知识可用时无缝融合，在缺乏先验时使用函数逼近器。",
+    "method": "通过神经网络分别参数化系统的拉格朗日量和广义力，构建结构化力学模型；训练时结合物理先验与数据驱动学习，实现机械系统的灰度建模。",
+    "result": "在仿真驱动双摆系统上验证：相比朴素黑盒模型，本方法在数据效率和基于模型的强化学习性能上均更优；系统研究表明引入先验知识可进一步提升数据效率。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2208.12534v1",
+    "date": "2022-06-28",
+    "title": "Learning energy-efficient driving behaviors by imitating experts",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2208.12534v1",
+    "author list": [
+      "Abdul Rahman Kreidieh",
+      "Zhe Fu",
+      "Alexandre M. Bayen"
+    ],
+    "problem": "在密集交通场景中，自动化车辆需缓解交通不稳定性以提升能效，但现有控制策略依赖非本地感知或多车协同，难以适应实际通信与感知受限的约束。",
+    "method": "通过模仿学习策略，将依赖全局信息的控制器视为专家，仅利用局部观测数据学习驾驶策略，以弥合理想控制与现实感知局限间的差距。",
+    "result": "实验表明，当5%的车辆采用该策略时，在不同交通条件下可使路网能源效率提升约15%，且仅依赖局部观测。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2201.04976v1",
+    "date": "2022-01-13",
+    "title": "Data-Driven Modeling and Prediction of Non-Linearizable Dynamics via Spectral Submanifolds",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2201.04976v1",
+    "author list": [
+      "Mattia Cenedese",
+      "Joar Axås",
+      "Bastian Bäuerlein",
+      "Kerstin Avila",
+      "George Haller"
+    ],
+    "problem": "针对具有双曲线性部分且受有限频率外部激励的非线性化动力系统，从高维数据构建低维预测模型，以捕捉其本质非线性动力学行为。",
+    "method": "基于谱子流形（SSM）理论，通过数据驱动的稀疏非线性建模方法，将系统动力学约简为低维吸引SSM上的扩展范式。",
+    "result": "在梁振动、涡旋脱落和水箱晃荡等实验数据上验证，仅用无激励数据训练的SSM约简模型能准确预测外加激励下的非线性响应。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2002.12475v1",
+    "date": "2020-02-27",
+    "title": "Cautious Reinforcement Learning via Distributional Risk in the Dual Domain",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2002.12475v1",
+    "author list": [
+      "Junyu Zhang",
+      "Amrit Singh Bedi",
+      "Mengdi Wang",
+      "Alec Koppel"
+    ],
+    "problem": "研究在状态和动作空间可数的马尔可夫决策过程中估计风险敏感策略的问题，传统方法因风险敏感MDP的时间不一致性面临计算挑战。",
+    "method": "提出一种称为谨慎风险的新风险定义，作为惩罚项添加到强化学习线性规划对偶目标中；采用以KL散度为近端项的随机原始对偶方法进行在线无模型求解。",
+    "result": "证明了该方案达到近似最优解所需的迭代次数与状态动作空间基数紧密相关；实验表明该方法能在不增加计算负担的情况下提高奖励积累的可靠性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1903.00979v4",
+    "date": "2019-03-03",
+    "title": "Analysis of a Generalized Expectation-Maximization Algorithm for Gaussian Mixture Models: A Control Systems Perspective",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1903.00979v4",
+    "author list": [
+      "Sarthak Chatterjee",
+      "Orlando Romero",
+      "Sérgio Pequito"
+    ],
+    "problem": "针对高斯混合模型参数估计问题，分析传统期望最大化算法在无监督聚类中的收敛特性，从控制系统视角研究其理论性质。",
+    "method": "提出广义EM算法，将最大化步替换为递增步，将其建模为带反馈非线性项的线性时不变系统，利用鲁棒控制理论工具分析收敛性。",
+    "result": "通过控制理论框架证明了算法的收敛性质，并给出教学设计案例展示该方法相对于传统EM算法的优势。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2310.02605v1",
+    "date": "2023-10-04",
+    "title": "Multi-Agent Reinforcement Learning for Power Grid Topology Optimization",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2310.02605v1",
+    "author list": [
+      "Erica van der Sar",
+      "Alessandro Zocca",
+      "Sandjai Bhulai"
+    ],
+    "problem": "电力网络面临日益增长的能源需求和风能、太阳能等可再生能源的不可预测性挑战，需通过母线切换和线路切换等拓扑动作进行优化，但网络规模扩大时动作空间庞大难以高效处理。",
+    "method": "提出分层多智能体强化学习框架，利用电网固有的层次结构特性，高层智能体协调低层智能体，分别采用不同RL算法与策略处理大规模拓扑动作空间。",
+    "result": "实验表明该MARL框架与单智能体RL方法性能相当，并比较了低层智能体的不同RL算法及高层智能体的不同策略效果。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1803.00444v3",
+    "date": "2018-03-01",
+    "title": "Inverse Reinforcement Learning via Nonparametric Spatio-Temporal Subgoal Modeling",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1803.00444v3",
+    "author list": [
+      "Adrian Šošić",
+      "Elmar Rueckert",
+      "Jan Peters",
+      "Abdelhak M. Zoubir",
+      "Heinz Koeppl"
+    ],
+    "problem": "传统逆强化学习假设专家演示反映单一全局意图，难以处理单个轨迹中意图随时间变化的情况，导致行为预测在动态环境中失效。",
+    "method": "提出基于非参数时空子目标建模的贝叶斯推理框架，将轨迹分解为局部上下文相关的子目标序列，通过隐式意图模型实现行为预测与策略估计。",
+    "result": "在动态意图变化场景中显著优于现有逆强化学习方法，提供平滑且与专家计划一致的政策估计，并能直接应用于主动学习场景优化专家演示过程。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2311.00983v1",
+    "date": "2023-11-02",
+    "title": "Optimizing Inventory Routing: A Decision-Focused Learning Approach using Neural Networks",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2311.00983v1",
+    "author list": [
+      "MD Shafikul Islam",
+      "Azmine Toushik Wasi"
+    ],
+    "problem": "解决库存路径问题(IRP)中需求预测不准确导致路径优化次优的挑战，传统两阶段方法因动态商业环境影响预测精度，进而影响后续优化决策。",
+    "method": "提出决策聚焦学习方法，将库存预测与路径优化直接整合到端到端系统中，通过神经网络联合优化预测与决策模块。",
+    "result": "实验表明传统机器学习模型因预测误差导致优化结果次优，所提方法通过端到端学习潜在确保更鲁棒的供应链策略。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2306.09210v1",
+    "date": "2023-06-15",
+    "title": "Optimal Exploration for Model-Based RL in Nonlinear Systems",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2306.09210v1",
+    "author list": [
+      "Andrew Wagenmaker",
+      "Guanya Shi",
+      "Kevin Jamieson"
+    ],
+    "problem": "针对未知非线性动力系统的强化学习控制问题，传统方法需先探索环境并学习系统模型，但未考虑不同系统参数对控制器性能的影响差异，导致探索效率不足。",
+    "method": "提出将策略优化问题转化为特定任务度量下的最优实验设计问题，通过分析控制器损失与参数估计的关系，开发能高效探索关键参数的算法。",
+    "result": "理论证明该算法以接近实例最优的速率学习控制器，并在真实非线性机器人系统中通过实验验证了方法的有效性。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2201.04962v1",
+    "date": "2022-01-10",
+    "title": "Distributed Cooperative Multi-Agent Reinforcement Learning with Directed Coordination Graph",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2201.04962v1",
+    "author list": [
+      "Gangshan Jing",
+      "He Bai",
+      "Jemin George",
+      "Aranya Chakrabortty",
+      "Piyush. K. Sharma"
+    ],
+    "problem": "解决分布式协作多智能体强化学习在定向协调图下的全局共识通信成本高、可扩展性差的问题，适用于资源分配等场景。",
+    "method": "提出基于局部价值函数的分布式RL算法，通过定向学习诱导的通信图实现邻居间局部通信，无需全局共识；采用基于参数扰动的零阶优化方法进行梯度估计。",
+    "result": "理论分析表明算法具有高可扩展性；分布式资源分配案例验证了算法有效性，避免了传统共识算法的高通信开销。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2404.07956v2",
+    "date": "2024-04-11",
+    "title": "Lyapunov-stable Neural Control for State and Output Feedback: A Novel Formulation",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2404.07956v2",
+    "author list": [
+      "Lujie Yang",
+      "Hongkai Dai",
+      "Zhouxing Shi",
+      "Cho-Jui Hsieh",
+      "Russ Tedrake",
+      "Huan Zhang"
+    ],
+    "problem": "针对基于神经网络的控制策略在非线性动力系统中难以获得形式化（Lyapunov）稳定性保证与区域吸引（ROA）验证的问题，现有方法依赖计算代价高昂的求解器（如SOS、MIP、SMT）。",
+    "method": "提出一种结合快速经验证伪与策略正则化的框架，学习神经网络控制器及Lyapunov证书；采用新颖的约束形式，放宽对Lyapunov导数的传统限制，聚焦于可认证的ROA，并通过基于线性边界传播的神经网络验证技术进行严格后验验证。",
+    "result": "该方法在GPU上高效实现训练与验证，无需依赖昂贵求解器；首次在文献中实现了具有形式稳定性保证的Lyapunov稳定输出反馈控制，涵盖神经网络控制器与观测器的协同设计。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2007.06007v4",
+    "date": "2020-07-12",
+    "title": "Universal Approximation Power of Deep Residual Neural Networks via Nonlinear Control Theory",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2007.06007v4",
+    "author list": [
+      "Paulo Tabuada",
+      "Bahman Gharesifard"
+    ],
+    "problem": "研究深度残差神经网络在紧集上逼近任意连续函数的普适近似能力，特别关注简单架构（每层n+1个神经元）能否实现精确逼近。",
+    "method": "通过几何非线性控制理论，将残差网络与控制系统建立联系；提出激活函数或其导数需满足二次微分方程的充分条件，并利用李代数技术分析系统可控性。",
+    "result": "证明当激活函数满足二次微分方程条件时，简单二值权重的残差网络能以一致范数任意精确逼近R^n到R^n的连续函数；该条件被实践中常用激活函数（如Sigmoid、Tanh）近似满足。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2508.16817v2",
+    "date": "2025-08-22",
+    "title": "Predictability Enables Parallelization of Nonlinear State Space Models",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2508.16817v2",
+    "author list": [
+      "Xavier Gonzalez",
+      "Leo Kozachkov",
+      "David M. Zoltowski",
+      "Kenneth L. Clarkson",
+      "Scott W. Linderman"
+    ],
+    "problem": "研究非线性状态空间模型在并行计算硬件上的高效并行化条件，重点分析决定并行优化问题难度的关键因素，以克服现有方法适用性受限的问题。",
+    "method": "通过建立非线性系统动力学特性与对应优化问题条件数之间的理论关系，提出以系统的可预测性（状态微小扰动对未来行为的影响程度）作为并行化效率的核心判据。",
+    "result": "理论证明可预测系统仅需O((log T)²)时间即可完成状态轨迹计算，而混沌系统条件数随序列长度指数级恶化；实验验证了可预测性作为并行化设计原则的有效性。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "1912.10116v3",
+    "date": "2019-12-20",
+    "title": "Probabilistic Safety Constraints for Learned High Relative Degree System Dynamics",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1912.10116v3",
+    "author list": [
+      "Mohammad Javad Khojasteh",
+      "Vikas Dhiman",
+      "Massimo Franceschetti",
+      "Nikolay Atanasov"
+    ],
+    "problem": "在线学习系统动力学模型时需满足安全性约束，避免依赖离线系统辨识或人工指定的动力学模型，使系统能在在线运行中安全自主地估计和适应自身模型。",
+    "method": "基于系统状态的流式观测，采用贝叶斯学习获得系统动力学的概率分布，并通过在控制屏障函数上设置概率机会约束来优化系统行为，以高概率保证安全性。",
+    "result": "通过概率安全约束确保系统在在线学习过程中的安全性，控制屏障函数的机会约束提供了高概率的安全保证，但具体实验数据集与指标未在摘要中说明。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2409.19279v1",
+    "date": "2024-09-28",
+    "title": "Distributed Optimization via Energy Conservation Laws in Dilated Coordinates",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2409.19279v1",
+    "author list": [
+      "Mayank Baranwal",
+      "Kushal Chakrabarti"
+    ],
+    "problem": "分布式优化在多智能体系统中至关重要，但缺乏统一的分析方法来推导算法的收敛速率。",
+    "method": "提出基于能量守恒的分析框架，在扩张坐标系中建立守恒量，并构造二阶分布式加速梯度流，通过半二阶辛欧拉离散化得到迭代算法。",
+    "result": "理论证明算法在光滑凸优化中达到O(1/k^{2-ε})的收敛速率，据称是目前分布式优化中最优的收敛速率，并在大规模实际问题中验证了其加速性能优于现有先进算法。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2410.03737v1",
+    "date": "2024-09-30",
+    "title": "Meta Reinforcement Learning Approach for Adaptive Resource Optimization in O-RAN",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2410.03737v1",
+    "author list": [
+      "Fatemeh Lotfi",
+      "Fatemeh Afghah"
+    ],
+    "problem": "解决开放无线接入网(O-RAN)中动态资源分配的挑战，包括无线资源块和下行功率分配，以应对不可预测网络环境下的变化需求。",
+    "method": "提出基于模型无关元学习(MAML)的元深度强化学习策略，利用O-RAN分解架构和虚拟分布式单元，实现自适应和本地化决策。",
+    "result": "相比传统方法，网络管理性能提升19.8%，能够快速适应新网络条件并实时优化资源分配。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2211.01962v4",
+    "date": "2022-11-03",
+    "title": "GEC: A Unified Framework for Interactive Decision Making in MDP, POMDP, and Beyond",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2211.01962v4",
+    "author list": [
+      "Han Zhong",
+      "Wei Xiong",
+      "Sirui Zheng",
+      "Liwei Wang",
+      "Zhaoran Wang",
+      "Zhuoran Yang",
+      "Tong Zhang"
+    ],
+    "problem": "研究在交互决策框架（包括MDP、POMDP和PSR）下实现样本高效强化学习的根本挑战，旨在找到支持高效探索与利用权衡的最小假设条件。",
+    "method": "提出广义eluder系数（GEC）作为衡量探索难度的新复杂度指标；设计一种通用后验采样算法，采用偏向高值假设的乐观先验分布，并基于历史数据经验损失设置对数似然函数，支持无模型和基于模型两种实现方式。",
+    "result": "理论证明该算法在GEC定义的问题类（包含低Bellman eluder维、双线性类、广义正则PSR等）上具有次线性遗憾界；新发现的广义正则PSR类覆盖了几乎所有已知易处理的POMDP与PSR模型。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2009.08973v2",
+    "date": "2020-09-18",
+    "title": "GRAC: Self-Guided and Self-Regularized Actor-Critic",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2009.08973v2",
+    "author list": [
+      "Lin Shao",
+      "Yifan You",
+      "Mengyuan Yan",
+      "Qingyun Sun",
+      "Jeannette Bohg"
+    ],
+    "problem": "深度强化学习中目标网络虽能缓解Q函数学习发散，但会因延迟更新而减慢学习速度；同时Q函数逼近的局部噪声易导致策略优化陷入次优解。",
+    "method": "提出自正则化TD学习，通过单网络架构避免目标网络的需求；结合策略梯度与零阶优化，在宽邻域内搜索更高Q值动作以指导策略更新。",
+    "result": "在OpenAI Gym基准测试中，GRAC在所有环境中达到或超越当时最优性能，验证了其无需目标网络下的稳定学习与高效策略搜索能力。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2304.05310v1",
+    "date": "2023-04-11",
+    "title": "Neural Delay Differential Equations: System Reconstruction and Image Classification",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2304.05310v1",
+    "author list": [
+      "Qunxi Zhu",
+      "Yao Guo",
+      "Wei Lin"
+    ],
+    "problem": "传统神经常微分方程（NODEs）在表示复杂动力学系统时存在局限性，尤其无法直接建模轨迹交叉或混沌等无限维延迟动力学行为。",
+    "method": "提出神经延迟微分方程（NDDEs），在连续深度网络中引入时滞机制，通过伴随灵敏度方法计算含延迟的梯度动力学，增强非线性表示能力。",
+    "result": "在合成数据和CIFAR10图像分类任务中，NDDEs相比NODEs实现更低损失与更高准确率；成功以无模型/基于模型方式重建具有轨迹交叉和混沌特性的延迟系统。",
+    "theme": "Dynamical Systems"
+  },
+  {
+    "arXiv id": "2008.12228v1",
+    "date": "2020-08-06",
+    "title": "Towards General and Autonomous Learning of Core Skills: A Case Study in Locomotion",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2008.12228v1",
+    "author list": [
+      "Roland Hafner",
+      "Tim Hertweck",
+      "Philipp Klöppner",
+      "Michael Bloesch",
+      "Michael Neunert",
+      "Markus Wulfmeier",
+      "Saran Tunyasuvunakool",
+      "Nicolas Heess",
+      "Martin Riedmiller"
+    ],
+    "problem": "研究强化学习在无需特定调整或工程的情况下，如何泛化解决多种腿式机器人的运动控制问题，包括双足、三足、四足和六足机器人及其轮式变体。",
+    "method": "采用数据高效、离策略的多任务强化学习算法，仅依赖少量语义统一的奖励函数和板载传感，保持超参数和奖励定义在所有实验中不变。",
+    "result": "在九种不同机器人（含真实四足机器人）上验证了同一算法能快速学习多样且可复用的运动技能，无需平台特定调整或额外仪器支持。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2306.01986v2",
+    "date": "2023-06-03",
+    "title": "A Novel Correlation-optimized Deep Learning Method for Wind Speed Forecast",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2306.01986v2",
+    "author list": [
+      "Yang Yang",
+      "Jin Lang",
+      "Jian Wu",
+      "Yanyan Zhang",
+      "Xiang Zhao"
+    ],
+    "problem": "针对风电并网对电力系统可靠运行的挑战，解决传统深度学习方法在风速预测中存在的模型可解释性差和硬件限制问题。",
+    "method": "提出基于深度知识的混合学习方法，结合预训练和自编码器结构，通过相关性优化构建多层网络知识库，并设计认知记忆单元(CMU)增强Seq2Seq框架的数据表征能力。",
+    "result": "在辽宁风电场三个预测案例中验证，相比传统LSTM和基于LSTM/GRU的Seq2Seq方法，本方法在预测稳定性和训练效率方面均有提升。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "1809.02926v1",
+    "date": "2018-09-09",
+    "title": "Probabilistic Prediction of Interactive Driving Behavior via Hierarchical Inverse Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1809.02926v1",
+    "author list": [
+      "Liting Sun",
+      "Wei Zhan",
+      "Masayoshi Tomizuka"
+    ],
+    "problem": "自动驾驶车辆需对周围车辆行为进行概率预测，以应对人类行为的不确定性；该预测需具备交互性，即预测车辆轨迹分布不仅依赖历史信息，还受其他车辆未来规划影响，特别是在匝道汇入等交互场景中。",
+    "method": "基于分层逆强化学习，显式建模人类驾驶员的层次化轨迹生成过程（包含离散驾驶决策与连续轨迹）；通过逆强化学习分层学习真实驾驶数据中的分布，将未来轨迹分布表示为按离散决策划分的混合分布。",
+    "result": "匝道汇入场景案例研究表明，该方法能准确预测离散驾驶决策（如让行或通过）与连续轨迹；定量结果验证了其对交互驾驶行为的概率预测能力。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "1904.12901v1",
+    "date": "2019-04-29",
+    "title": "Challenges of Real-World Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/1904.12901v1",
+    "author list": [
+      "Gabriel Dulac-Arnold",
+      "Daniel Mankowitz",
+      "Todd Hester"
+    ],
+    "problem": "强化学习在现实世界应用中面临九大挑战，包括难以满足实际系统对安全性、样本效率、延迟等约束，阻碍了RL从模拟环境向实际场景的产业化部署。",
+    "method": "通过系统化定义每个挑战的内涵、总结现有应对方法（如安全约束处理、样本高效算法）并设计评估指标，构建了一个可复现这些挑战的测试环境。",
+    "result": "提出了涵盖仿真到现实差距、安全性、约束满足等维度的评估框架，为开发同时解决多挑战的实用RL方法提供了基准测试基础。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2006.01096v3",
+    "date": "2020-06-01",
+    "title": "Invariant Policy Optimization: Towards Stronger Generalization in Reinforcement Learning",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2006.01096v3",
+    "author list": [
+      "Anoopkumar Sonar",
+      "Vincent Pacelli",
+      "Anirudha Majumdar"
+    ],
+    "problem": "强化学习中的策略在训练域外泛化能力不足，难以适应未见过的操作环境，如机器人面对物理特性变化的门。",
+    "method": "提出不变策略优化（IPO）算法，基于不变性原理学习一个跨所有训练域同时最优的表示和动作预测器，以捕捉成功动作的因果因素。",
+    "result": "在线性二次调节器和网格世界问题中，相比标准策略梯度方法，在未见域上泛化性能显著提升；机器人开门任务中能适应不同物理性质的门。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2509.16650v1",
+    "date": "2025-09-20",
+    "title": "Safe Guaranteed Dynamics Exploration with Probabilistic Models",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2509.16650v1",
+    "author list": [
+      "Manish Prajapat",
+      "Johannes Köhler",
+      "Melanie N. Zeilinger",
+      "Andreas Krause"
+    ],
+    "problem": "在系统动力学未知的情况下，如何确保智能体在探索过程中同时满足最优性与安全性约束，特别是在自动驾驶和无人机导航等安全关键场景中。",
+    "method": "提出一种悲观安全框架，通过乐观探索信息丰富的状态来在线学习动力学模型，同时利用概率模型保证高概率安全操作，且无需环境重置。",
+    "result": "理论证明可在有限时间内将动力学模型学习到任意小误差（受噪声限制），并在自动驾驶赛车和无人机气动导航任务中实现全程安全的学习与接近最优的性能。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2006.04361v3",
+    "date": "2020-06-08",
+    "title": "Neural Contraction Metrics for Robust Estimation and Control: A Convex Optimization Approach",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2006.04361v3",
+    "author list": [
+      "Hiroyasu Tsukamoto",
+      "Soon-Jo Chung"
+    ],
+    "problem": "针对非线性系统在有界扰动下的鲁棒状态估计和最优运动规划问题，传统方法难以全局保证指数稳定性。",
+    "method": "提出神经收缩度量框架，利用LSTM网络全局逼近最优收缩度量，通过凸优化最小化受扰与未受扰轨迹的稳态欧氏距离上界，并基于对偶性设计在线估计器和控制器。",
+    "result": "在Lorenz振荡器状态估计和航天器运动规划任务中验证了框架有效性，通过凸优化获得的收缩度量保证了非线性系统的指数稳定性。",
+    "theme": "Data Driven Control"
+  }
+]
