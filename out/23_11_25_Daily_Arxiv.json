@@ -1,0 +1,116 @@
+[
+  {
+    "arXiv id": "2511.16090v1",
+    "date": "2025-11-20",
+    "title": "Mitigating Estimation Bias with Representation Learning in TD Error-Driven Regularization",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.16090v1",
+    "author list": [
+      "Haohui Chen",
+      "Zhiyong Chen",
+      "Aoxiang Liu",
+      "Wentuo Fang"
+    ],
+    "problem": "连续控制任务中的确定性策略梯度算法存在价值估计偏差问题，双评论家方法可减少偏差但双执行器的探索潜力尚未充分挖掘。",
+    "method": "基于时序差分误差驱动正则化（TDDR）的双执行器-评论家框架，提出对称与非对称凸组合策略平衡悲观估计以缓解高估，通过双执行器乐观探索缓解低估；引入增强的状态-动作表示学习提升性能。",
+    "result": "实验表明该方法在多个环境中持续超越基准算法，证明可调偏差机制的有效性，并揭示高估与低估可根据环境特性差异化利用。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2511.16084v1",
+    "date": "2025-11-20",
+    "title": "SpectralTrain: A Universal Framework for Hyperspectral Image Classification",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.16084v1",
+    "author list": [
+      "Meihua Zhou",
+      "Liping Yu",
+      "Jiawei Cai",
+      "Wai Kin Fung",
+      "Ruiguo Hu",
+      "Jiarui Zhao",
+      "Wenzhuo Liu",
+      "Nan Wan"
+    ],
+    "problem": "高光谱图像分类面临大规模数据和计算密集型训练的限制，阻碍深度学习模型在实际遥感任务中的部署。",
+    "method": "提出SpectralTrain通用框架，结合课程学习与基于PCA的光谱降采样，逐步引入光谱复杂度并保留关键信息，实现高效光谱-空间模式学习。该框架与具体架构、优化器或损失函数无关。",
+    "result": "在Indian Pines、Salinas-A和CloudPatch-7基准数据集上验证，训练时间减少2-7倍，精度变化较小；应用于云分类显示在气候遥感中的潜力。",
+    "theme": "Machine Learning"
+  },
+  {
+    "arXiv id": "2511.16087v1",
+    "date": "2025-11-20",
+    "title": "AssayMatch: Learning to Select Data for Molecular Activity Models",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.16087v1",
+    "author list": [
+      "Vincent Fan",
+      "Regina Barzilay"
+    ],
+    "problem": "药物发现中机器学习模型性能受限于训练数据的质量与一致性，现有方法聚合多源生物活性数据（如ChEMBL）会引入实验协议差异导致的噪声。",
+    "method": "提出AssayMatch框架，通过数据归因方法量化各训练实验对模型性能的贡献，并基于文本实验描述微调语言嵌入以捕捉实验间兼容性，实现面向未知标签测试集的训练数据筛选。",
+    "result": "在两种常见机器学习架构上，9/12的模型-靶点对性能超过全数据集训练模型，证明其能有效过滤有害噪声实验，提升预测能力与数据效率。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2511.16075v1",
+    "date": "2025-11-20",
+    "title": "A Hybrid Proactive And Predictive Framework For Edge Cloud Resource Management",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.16075v1",
+    "author list": [
+      "Hrikshesh Kumar",
+      "Anika Garg",
+      "Anshul Gupta",
+      "Yashika Agarwal"
+    ],
+    "problem": "传统边缘云工作负载资源管理依赖静态阈值，存在资源过度配置导致成本浪费或资源不足导致性能下降的被动响应问题。",
+    "method": "提出混合架构，结合CNN-LSTM模型进行时间序列预测，并将预测结果嵌入基于多智能体深度强化学习的编排器状态空间，实现长期资源规划决策。",
+    "result": "实验表明该系统显著优于传统方法，能同时优化成本节约、系统健康度和应用响应速度等多目标，实现复杂决策的平衡。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2511.16080v1",
+    "date": "2025-11-20",
+    "title": "Operon: Incremental Construction of Ragged Data via Named Dimensions",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.16080v1",
+    "author list": [
+      "Sungbin Moon",
+      "Jiho Park",
+      "Suyoung Hwang",
+      "Donghyun Koh",
+      "Seunghyun Moon",
+      "Minhyeong Lee"
+    ],
+    "problem": "现代数据处理工作流中常见不规则数据（如变长元素集合），现有工作流引擎缺乏对不规则数据形状和依赖关系的原生支持，导致用户需手动管理复杂索引和依赖关系。",
+    "method": "提出基于Rust的工作流引擎Operon，通过命名维度与显式依赖关系的形式化方法，提供静态验证维度注解的领域特定语言，运行时根据动态发现的数据形状增量调度任务。",
+    "result": "实验表明Operon相比现有工作流引擎降低14.94倍基线开销，在负载扩展时保持近线性端到端输出速率，特别适用于机器学习中的大规模数据生成管道。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2511.16093v1",
+    "date": "2025-11-20",
+    "title": "Parallelizable Complex Neural Dynamics Models for PMSM Temperature Estimation with Hardware Acceleration",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.16093v1",
+    "author list": [
+      "Xinyuan Liao",
+      "Shaowei Chen",
+      "Shuai Zhao"
+    ],
+    "problem": "解决永磁同步电机热管理中实时性能、估计精度与可解释性难以平衡的问题，需在硬件约束下实现高效温度估计。",
+    "method": "通过状态空间模型的线性解耦、对角化和重参数化构建硬件高效的复数神经动力学模型，结合物理知识与数据驱动方法，利用JAX框架与并行前缀和算法实现硬件加速。",
+    "result": "在真实电机实验验证中，该方法展现出优越的估计精度与并行化硬件加速能力，通过NVIDIA A800 GPU与CUDA平台实现高效计算。",
+    "theme": "Data Driven Modeling"
+  },
+  {
+    "arXiv id": "2511.16095v1",
+    "date": "2025-11-20",
+    "title": "Constructing bounded orbits of special types on homogeneous spaces",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.16095v1",
+    "author list": [
+      "Manfred Einsiedler",
+      "Dmitry Kleinbock",
+      "Anurag Rao"
+    ],
+    "problem": "研究非一致格点齐性空间上单参数子群作用下的有界轨道结构，重点关注预紧轨道点的稠密性与不可分解性。",
+    "method": "通过李群与格点理论，分析Ad-对角化单参数子群在齐性空间上的动力系统性质，利用混合性条件研究轨道闭包结构。",
+    "result": "证明预紧轨道点集在齐性空间中稠密且具有全Hausdorff维数，其任意点的正向轨道闭包包含不可数稠密子集；当中性子群维数为1时，存在轨道闭包紧致且Hausdorff维数接近空间维数的点。",
+    "theme": "Dynamical Systems"
+  }
+]
