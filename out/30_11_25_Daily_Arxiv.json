@@ -1,0 +1,48 @@
+[
+  {
+    "arXiv id": "2511.21107v1",
+    "date": "2025-11-26",
+    "title": "Dynamic Stratified Contrastive Learning with Upstream Augmentation for MILP Branching",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.21107v1",
+    "author list": [
+      "Tongkai Lu",
+      "Shuai Ma",
+      "Chongyang Tao"
+    ],
+    "problem": "针对混合整数线性规划（MILP）分支定界法中存在的语义跨深度变化、上游节点样本稀缺及强分支样本收集成本高的问题，提出改进分支策略的需求。",
+    "method": "提出动态分层对比学习框架（DSC），通过特征分布对分支定界节点分组，采用图卷积神经网络逐步分离不同组节点以学习细粒度表示；引入上游增强的MILP衍生过程，生成理论等价及扰动实例以缓解数据稀缺与不平衡。",
+    "result": "在标准MILP基准测试中，该方法显著提升分支准确率、减少求解时间，尤其在上游节点表现突出，并能有效泛化至未见实例。",
+    "theme": "Data Driven Control"
+  },
+  {
+    "arXiv id": "2511.21095v1",
+    "date": "2025-11-26",
+    "title": "Generative Early Stage Ranking",
+    "arXiv pdf adress": "https://arxiv.org/pdf/2511.21095v1",
+    "author list": [
+      "Juhee Hong",
+      "Meng Liu",
+      "Shengzhi Wang",
+      "Xiaoheng Mao",
+      "Huihui Cheng",
+      "Leon Gao",
+      "Christopher Leung",
+      "Jin Zhou",
+      "Chandra Mouli Sekar",
+      "Zhao Zhu",
+      "Ruochen Liu",
+      "Tuan Trieu",
+      "Dawei Sun",
+      "Jeet Kanjani",
+      "Rui Li",
+      "Jing Qian",
+      "Xuan Cao",
+      "Minjie Fan",
+      "Mingze Gao"
+    ],
+    "problem": "大规模推荐系统中的早期排序阶段采用用户-物品解耦方法，虽高效但难以捕捉细粒度用户-物品亲和性与交叉信号，导致效果受限。",
+    "method": "提出生成式早期排序范式，引入混合注意力模块：硬匹配注意力编码显式交叉信号，目标感知自注意力生成条件化用户表征，交叉注意力模块促进早期特征交互；最终通过多逻辑参数化门控模块融合新嵌入与主逻辑。",
+    "result": "离线和在线实验验证，该范式在顶层指标、用户参与度和消费任务上取得显著提升，首次实现目标感知注意力序列建模在早期排序阶段的大规模成功部署。",
+    "theme": "Data Driven Modeling"
+  }
+]
